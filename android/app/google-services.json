@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860899234123",
+    "project_id": "citb-cpd",
+    "storage_bucket": "citb-cpd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860899234123:android:994daf45f1ec1f9ca258ce",
+        "android_client_info": {
+          "package_name": "com.citb.cpd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860899234123-1hmetcnrk1mo6vje7k0o1ssluriace9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEmpU2O31VkiD2Ib_SWvtkVn7RfQGWvn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860899234123-1hmetcnrk1mo6vje7k0o1ssluriace9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
