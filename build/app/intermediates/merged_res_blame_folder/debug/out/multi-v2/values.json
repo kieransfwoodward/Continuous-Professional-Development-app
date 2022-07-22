@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/GitHub/cpd copy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/kieranwoodward/Documents/GitHub/cpd copy/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -97,23 +97,6 @@
                     }
                 },
                 {
-                    "source": "/Users/kieranwoodward/Documents/GitHub/cpd copy/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,706",
-                        "endColumns": "143,81,103,108,119,91,68",
-                        "endOffsets": "194,276,380,489,609,701,770"
-                    },
-                    "to": {
-                        "startLines": "126,130,131,132,133,134,135",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8973,9332,9414,9518,9627,9747,9839",
-                        "endColumns": "143,81,103,108,119,91,68",
-                        "endOffsets": "9112,9409,9513,9622,9742,9834,9903"
-                    }
-                },
-                {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -128,6 +111,23 @@
                         "startOffsets": "6434,7612",
                         "endColumns": "67,166",
                         "endOffsets": "6497,7774"
+                    }
+                },
+                {
+                    "source": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,706",
+                        "endColumns": "143,81,103,108,119,91,68",
+                        "endOffsets": "194,276,380,489,609,701,770"
+                    },
+                    "to": {
+                        "startLines": "126,130,131,132,133,134,135",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8973,9332,9414,9518,9627,9747,9839",
+                        "endColumns": "143,81,103,108,119,91,68",
+                        "endOffsets": "9112,9409,9513,9622,9742,9834,9903"
                     }
                 }
             ]
