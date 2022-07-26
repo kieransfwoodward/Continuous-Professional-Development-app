@@ -2,6 +2,8 @@ import 'package:cpd/styling/custom_border.dart';
 import 'package:cpd/widgets/buttons/button_contents.dart';
 import 'package:flutter/material.dart';
 
+import '../../screens/quiz_screen.dart';
+
 // Flat button with the app theme colour
 
 class FlatColourButton extends StatelessWidget {

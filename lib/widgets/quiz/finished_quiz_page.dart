@@ -1,6 +1,7 @@
 import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/styling/size_params.dart';
 import 'package:flutter/material.dart';
+import 'package:cpd/functions/firebase_functions.dart';
 
 // Finished quiz page - show completion
 
@@ -18,6 +19,36 @@ class FinishedQuizPage extends StatelessWidget {
 
   int _getPoints(BuildContext context) {
     if (QuizScreen.of(context) != null) {
+      String name1 = QuizScreen.of(context)!.moduleName;
+      if(name1 == "Module 1"){
+        FirebaseFunctions().Module1.set({
+          "progress": 0,
+          "completed": false,
+          "correct": 0,
+        });
+      }
+      if(name1 == "Module 2"){
+        FirebaseFunctions().Module2.set({
+          "progress": 0,
+          "completed": false,
+          "correct": 0,
+        });
+      }
+      if(name1 == "Module 3"){
+        FirebaseFunctions().Module3.set({
+          "progress": 0,
+          "completed": false,
+          "correct": 0,
+        });
+      }
+      if(name1 == "Module 4"){
+        FirebaseFunctions().Module4.set({
+          "progress": 0,
+          "completed": false,
+          "correct": 0,
+        });
+      }
+
       return QuizScreen.of(context)!.finalPoints;
     }
     return 0;

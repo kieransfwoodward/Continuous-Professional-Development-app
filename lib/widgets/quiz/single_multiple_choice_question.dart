@@ -5,6 +5,7 @@ import 'package:cpd/widgets/buttons/quiz/question_options/question_list_option.d
 import 'package:cpd/widgets/image/module_banner_image.dart';
 import 'package:cpd/widgets/lists/list_view_separator.dart';
 import 'package:flutter/material.dart';
+import 'package:cpd/functions/firebase_functions.dart';
 
 // Multiple choice question sheet, with the focus being the image
 
@@ -35,10 +36,104 @@ class _SingleMultipleChoiceQuestionState
   Future<void> _updatePoints() async {
     if (widget.data["correct_answer"] == _groupOptionVal) {
       if (QuizScreen.of(context) != null) {
-        QuizScreen.of(context)!.points =
-            QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
+
+        FirebaseFunctions().user.collection("activity").doc("progress").get().then((doc) {
+          if (doc.data() != null) {
+            int points =
+                (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
+            FirebaseFunctions().user.collection("activity").doc("progress").set({
+              "current_points": points + widget.data["points"] as int,
+
+            });
+
+          }
+        });
+
+        String name1 = QuizScreen.of(context)!.moduleName;
+
+        if(name1 == "Module 1"){
+          FirebaseFunctions().Module1.get().then((doc) {
+            if (doc.data() != null) {
+              int correct =
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+              FirebaseFunctions().Module1.update({
+                "correct": correct + 1,
+
+              });
+            }
+          });
+        }
+        if(name1 == "Module 2"){
+          FirebaseFunctions().Module2.get().then((doc) {
+            if (doc.data() != null) {
+              int correct =
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+              FirebaseFunctions().Module2.update({
+                "correct": correct + 1,
+
+              });
+            }
+          });
+        }
+        if(name1 == "Module 3"){
+          FirebaseFunctions().Module3.get().then((doc) {
+            if (doc.data() != null) {
+              int correct =
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+              FirebaseFunctions().Module3.update({
+                "correct": correct + 1,
+
+              });
+            }
+          });
+        }
+        if(name1 == "Module 4"){
+          FirebaseFunctions().Module4.get().then((doc) {
+            if (doc.data() != null) {
+              int correct =
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+              FirebaseFunctions().Module4.update({
+                "correct": correct + 1,
+
+              });
+            }
+          });
+        }
+
+
+
+
+
+
+
+        // QuizScreen.of(context)!.points =
+        //     QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
       }
     }
+
+    String name1 = QuizScreen.of(context)!.moduleName;
+    int page = QuizScreen.of(context)!.currentPageIndex +1;
+    if(name1 == "Module 1"){
+      FirebaseFunctions().Module1.update({
+        "progress": page,
+      });
+    }
+    if(name1 == "Module 2"){
+      FirebaseFunctions().Module2.update({
+        "progress": page,
+      });
+    }
+    if(name1 == "Module 3"){
+      FirebaseFunctions().Module3.update({
+        "progress": page,
+      });
+    }
+    if(name1 == "Module4 "){
+      FirebaseFunctions().Module4.update({
+        "progress": page,
+      });
+    }
+
   }
 
   @override
@@ -85,9 +180,15 @@ class _SingleMultipleChoiceQuestionState
                       groupValue: _groupOptionVal,
                     ))
                 .toList(),
-          )
+          ),
+          if(_optionSelected)Column(
+            children: <Widget>[
+              Text(widget.data["feedback"])
+            ],
+          ),
         ],
       ),
+
     );
   }
 }

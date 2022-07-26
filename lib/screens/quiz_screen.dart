@@ -6,6 +6,8 @@ import 'package:cpd/widgets/content_area.dart';
 import 'package:cpd/widgets/quiz/finished_quiz_page.dart';
 import 'package:flutter/material.dart';
 
+import '../functions/firebase_functions.dart';
+
 // Quiz page
 
 class QuizScreen extends StatefulWidget {
@@ -38,12 +40,22 @@ class _QuizScreenState extends State<QuizScreen> {
         () => _currentPageIndex = currentPageIndex,
       );
 
+
+
   // Used to update the points as a callback
   set points(int totalPoints) => setState(
-        () => _totalPoints = totalPoints,
+        () {
+          // Updates the Finished Quiz Page
+         //  _pages.removeAt(_pages.length - 1);
+         //  _pages.add(const FinishedQuizPage());
+          // Updates the total score
+        //  _totalPoints = totalPoints + _totalPoints;
+        },
       );
 
   // Gets the points
+  int get currentPageIndex => _currentPageIndex;
+
   int get finalPoints => _totalPoints;
 
   // Gets the module name
@@ -51,6 +63,34 @@ class _QuizScreenState extends State<QuizScreen> {
 
   // Gets the quiz questions
   Future<void> _prepareQuiz() async {
+
+
+
+      if(moduleName == "Module 1"){
+        FirebaseFunctions().Module1.get().then((doc){
+          _currentPageIndex =
+              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+        });
+      }
+      if(moduleName == "Module 2"){
+        FirebaseFunctions().Module2.get().then((doc){
+          _currentPageIndex =
+              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+        });
+      }
+      if(moduleName == "Module 3"){
+        FirebaseFunctions().Module3.get().then((doc){
+          _currentPageIndex =
+              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+        });
+      }
+      if(moduleName == "Module 4"){
+        FirebaseFunctions().Module4.get().then((doc){
+          _currentPageIndex =
+              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+        });
+      }
+
     await FirebaseFirestore.instance
         .collection("modules")
         .doc(widget.documentId)
@@ -77,6 +117,38 @@ class _QuizScreenState extends State<QuizScreen> {
         _isLoading = false;
       }),
     );
+  }
+
+  reset(){
+    String name1 = moduleName;
+    if(name1 == "Module 1"){
+      FirebaseFunctions().Module1.set({
+        "progress": 0,
+        "completed": true,
+        "correct": 0,
+      });
+    }
+    if(name1 == "Module 2"){
+      FirebaseFunctions().Module2.set({
+        "progress": 0,
+        "completed": true,
+        "correct": 0,
+      });
+    }
+    if(name1 == "Module 3"){
+      FirebaseFunctions().Module3.set({
+        "progress": 0,
+        "completed": true,
+        "correct": 0,
+      });
+    }
+    if(name1 == "Module 4"){
+      FirebaseFunctions().Module4.set({
+        "progress": 0,
+        "completed": true,
+        "correct": 0,
+      });
+    }
   }
 
   @override

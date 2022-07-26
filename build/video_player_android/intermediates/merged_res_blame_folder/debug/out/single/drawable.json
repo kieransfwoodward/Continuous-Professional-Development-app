@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/drawable/notification_tile_bg.xml"
+    }
+]

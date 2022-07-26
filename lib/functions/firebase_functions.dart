@@ -8,6 +8,27 @@ class FirebaseFunctions {
       .collection("users")
       .doc(FirebaseAuth.instance.currentUser!.uid);
 
+  DocumentReference Module3 = FirebaseFirestore.instance
+      .collection("modules")
+  .doc("Module3").collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
+
+  DocumentReference Module1 = FirebaseFirestore.instance
+      .collection("modules")
+      .doc("Module1").collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
+
+  DocumentReference Module2 = FirebaseFirestore.instance
+      .collection("modules")
+      .doc("Module2").collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
+
+  DocumentReference Module4 = FirebaseFirestore.instance
+      .collection("modules")
+      .doc("Module4").collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid);
+
+
   // Gets a firebase field once based on a passed in Document Reference and Field
   FutureBuilder getFieldByDocId({
     required DocumentReference ref,

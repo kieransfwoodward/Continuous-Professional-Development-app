@@ -7,6 +7,8 @@ import 'package:cpd/widgets/lists/module_learning/custom_progress_indicator.dart
 import 'package:cpd/widgets/lists/module_learning/module_tile_details.dart';
 import 'package:flutter/material.dart';
 
+import '../../../functions/firebase_functions.dart';
+
 // Details each module
 
 class ModuleItem extends StatefulWidget {
@@ -27,6 +29,7 @@ class ModuleItem extends StatefulWidget {
 
 class _ModuleItemState extends State<ModuleItem> {
   int? _duration, _totalPoints;
+  bool isComplete = false;
 
   // Gets the number of of questions and uses this to calculate the duration of the module
   // Also calculates the total points for that module
@@ -51,7 +54,12 @@ class _ModuleItemState extends State<ModuleItem> {
   @override
   void initState() {
     _getQuestionCount();
-    super.initState();
+
+    FirebaseFunctions().Module3.get().then((doc) {
+      isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
+    });
+
+      super.initState();
   }
 
   @override
@@ -79,7 +87,7 @@ class _ModuleItemState extends State<ModuleItem> {
                     children: [
                       Text(widget.data["name"],
                           style: Theme.of(context).textTheme.headline6),
-                      CustomProgressIndicator(),
+                      CustomProgressIndicator(module: 'widget.data["name"]', isComplete: isComplete),
                     ],
                   ),
                   Padding(

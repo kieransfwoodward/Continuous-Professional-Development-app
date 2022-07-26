@@ -22,7 +22,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   // Gets the leaderboard data
   Future<void> _getLeaderboardData() async {
     // First get their profile information
-    await FirebaseFirestore.instance.collection("users").get().then(
+    await FirebaseFirestore.instance.collection("users").orderBy('current_points', descending: true).get().then(
       (querySnapshot) async {
         for (DocumentSnapshot doc in querySnapshot.docs) {
           late String? docId, name, profileUrl;
@@ -32,23 +32,16 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           profileUrl = data["profile_url"];
 
           // Then get their progress information
-          await doc.reference
-              .collection("activity")
-              .doc("progress")
-              .get()
-              .then((aDoc) {
-            Map<String, dynamic> aData = aDoc.data() as Map<String, dynamic>;
             // Create a leaderboard item and add it to the list
             _items.add(
               LeaderboardItem(
                 imageUrl: profileUrl ?? "",
                 name: name ?? "Unknown user",
-                level: aData["level"] ?? 1,
-                points: aData["current_points"] ?? 0,
+                level: data["level"] ?? 1,
+                points: data["current_points"] ?? 0,
                 currentUser: docId == FirebaseAuth.instance.currentUser!.uid,
               ),
             );
-          });
         }
       },
     );

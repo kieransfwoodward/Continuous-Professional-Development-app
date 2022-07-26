@@ -41,18 +41,18 @@ class HomeAppBar extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16.0),
-                    child: AppBarButton(
-                      icon: Icons.person,
-                      onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const ProfileScreen(),
-                        ),
-                      ),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(left: 16.0),
+                  //   child: AppBarButton(
+                  //     icon: Icons.person,
+                  //     onTap: () => Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const ProfileScreen(),
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ],

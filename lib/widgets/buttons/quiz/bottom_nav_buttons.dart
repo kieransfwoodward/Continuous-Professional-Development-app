@@ -27,35 +27,40 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
   @override
   Widget build(BuildContext context) {
     return Padding(
+
       padding: const EdgeInsets.only(top: 16.0),
       child: Row(
+
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          FlatColourButton(
-            onTap: () => widget.isFirstPage
-                ? Navigator.pop(context)
-                : setState(() {
-                    // Go back to previous question
-                    if (QuizScreen.of(context) != null) {
-                      // Update the current page index
-                      QuizScreen.of(context)!.currentPage =
-                          widget.currentPageIndex - 1;
-                    }
-                  }),
-            child: Icon(
-              Icons.arrow_back_ios_new,
-              color: Theme.of(context).canvasColor,
-            ),
-            width: null,
-          ),
+
+          // FlatColourButton(
+          //   onTap: () => widget.isFirstPage
+          //       ? Navigator.pop(context)
+          //       : setState(() {
+          //           // Go back to previous question
+          //           if (QuizScreen.of(context) != null) {
+          //             // Update the current page index
+          //             QuizScreen.of(context)!.currentPage =
+          //                 widget.currentPageIndex - 1;
+          //           }
+          //         }),
+          //   child: Icon(
+          //     Icons.arrow_back_ios_new,
+          //     color: Theme.of(context).canvasColor,
+          //   ),
+          //   width: null,
+          // ),
+
           Padding(
             padding: const EdgeInsets.only(left: 16.0),
             child: FlatColourButton(
               onTap: () => widget.isLastPage
-                  ? Navigator.of(context).popUntil((route) => route.isFirst)
+                  ? finish()
                   : setState(() {
+
                       // Go to next question
                       if (QuizScreen.of(context) != null) {
                         // Update the current page index
@@ -67,6 +72,7 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
                 padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ContrastButtonText(
                   text: widget.isLastPage ? "Finish" : "Next",
+
                 ),
               ),
               width: SizeParams().twoThirdsWidthWithExtraSpace(context),
@@ -75,5 +81,12 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
         ],
       ),
     );
+  }
+
+  finish() {
+
+    QuizScreen.of(context)!.reset();
+    Navigator.of(context).popUntil((route) => route.isFirst);
+
   }
 }

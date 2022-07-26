@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
       // Verify the mobile number
       _auth.verifyPhoneNumber(
         // Pass in the entered mobile number
-        phoneNumber: _phoneNumber.text,
+        phoneNumber: "+44" + _phoneNumber.text,
         // Set an SMS received timeout of 1 minute
         timeout: const Duration(minutes: 1),
         // Run when the verification is complete
