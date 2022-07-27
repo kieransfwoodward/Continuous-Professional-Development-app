@@ -18,6 +18,8 @@ class FinishedQuizPage extends StatelessWidget {
   }
 
   int _getPoints(BuildContext context) {
+    QuizScreen.of(context)?.points();
+
     if (QuizScreen.of(context) != null) {
       String name1 = QuizScreen.of(context)!.moduleName;
       if(name1 == "Module 1"){
@@ -49,8 +51,9 @@ class FinishedQuizPage extends StatelessWidget {
         });
       }
 
-      return QuizScreen.of(context)!.finalPoints;
     }
+
+    return QuizScreen.of(context)!.finalPoints;
     return 999;
   }
 

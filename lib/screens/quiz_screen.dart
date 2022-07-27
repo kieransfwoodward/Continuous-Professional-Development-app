@@ -32,7 +32,7 @@ class QuizScreen extends StatefulWidget {
 class _QuizScreenState extends State<QuizScreen> {
   int _currentPageIndex = 0;
   List<Widget> _pages = [];
-  int _totalPoints = 0;
+  int _totalPoints = 917;
   bool _isLoading = true;
 
   // Used to update the question as a callback
@@ -43,54 +43,55 @@ class _QuizScreenState extends State<QuizScreen> {
 
 
   // Used to update the points as a callback
-  set points(int totalPoints) => setState(
-        () {
-          // Updates the Finished Quiz Page
-         //  _pages.removeAt(_pages.length - 1);
-         //  _pages.add(const FinishedQuizPage());
-          // Updates the total score
-       //   _totalPoints = totalPoints + _totalPoints;
+  void points() {
+    // Updates the Finished Quiz Page
+    _pages.removeAt(_pages.length - 1);
 
-          if(moduleName == "Module 1"){
-            FirebaseFunctions().Module1.get().then((doc) {
-              if (doc.data() != null) {
-                _totalPoints =
-                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+    // Updates the total score
+    // _totalPoints = totalPoints + _totalPoints;
 
-              }
-            });
-          }
-          else if(moduleName == "Module 2"){
-            FirebaseFunctions().Module2.get().then((doc) {
-              if (doc.data() != null) {
-                _totalPoints =
-                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-
-              }
-            });
-          }
-          else if(moduleName == "Module 3"){
-            FirebaseFunctions().Module3.get().then((doc) {
-              if (doc.data() != null) {
-                _totalPoints =
-                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-
-              }
-            });
-          }
-          else if(moduleName == "Module 4"){
-            FirebaseFunctions().Module4.get().then((doc) {
-              if (doc.data() != null) {
-                _totalPoints =
-                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-
-              }
-            });
-          }
+    if (moduleName == "Module 1") {
+      FirebaseFunctions().Module1.get().then((doc) {
+        if (doc.data() != null) {
+          _totalPoints =
+              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+        }
+      });
+    }
+    else if (moduleName == "Module 2") {
+      FirebaseFunctions().Module2.get().then((doc) {
+        if (doc.data() != null) {
+          _totalPoints =
+              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+        }
+      });
+    }
+    else if (moduleName == "Module 3") {
+      FirebaseFunctions().Module3.get().then((doc) {
+        if (doc.data() != null) {
+          _totalPoints =
+              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+        }
+      });
+    }
+    else if (moduleName == "Module 4") {
+      FirebaseFunctions().Module4.get().then((doc) {
+        if (doc.data() != null) {
+          _totalPoints =
+              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+        }
+      });
+    }
 
 
-        },
-      );
+
+    _pages.add(const FinishedQuizPage());
+
+    return _totalPoints;
+  }
+
+
+
 
   // Gets the points
   int get currentPageIndex => _currentPageIndex;
@@ -287,4 +288,6 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
     );
   }
+
+
 }
