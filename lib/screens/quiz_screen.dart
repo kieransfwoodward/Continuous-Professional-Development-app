@@ -49,7 +49,46 @@ class _QuizScreenState extends State<QuizScreen> {
          //  _pages.removeAt(_pages.length - 1);
          //  _pages.add(const FinishedQuizPage());
           // Updates the total score
-        //  _totalPoints = totalPoints + _totalPoints;
+       //   _totalPoints = totalPoints + _totalPoints;
+
+          if(moduleName == "Module 1"){
+            FirebaseFunctions().Module1.get().then((doc) {
+              if (doc.data() != null) {
+                _totalPoints =
+                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+
+              }
+            });
+          }
+          else if(moduleName == "Module 2"){
+            FirebaseFunctions().Module2.get().then((doc) {
+              if (doc.data() != null) {
+                _totalPoints =
+                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+
+              }
+            });
+          }
+          else if(moduleName == "Module 3"){
+            FirebaseFunctions().Module3.get().then((doc) {
+              if (doc.data() != null) {
+                _totalPoints =
+                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+
+              }
+            });
+          }
+          else if(moduleName == "Module 4"){
+            FirebaseFunctions().Module4.get().then((doc) {
+              if (doc.data() != null) {
+                _totalPoints =
+                    (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+
+              }
+            });
+          }
+
+
         },
       );
 
@@ -63,8 +102,6 @@ class _QuizScreenState extends State<QuizScreen> {
 
   // Gets the quiz questions
   Future<void> _prepareQuiz() async {
-
-
 
       if(moduleName == "Module 1"){
         FirebaseFunctions().Module1.get().then((doc){
@@ -120,32 +157,71 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   reset(){
+    bool complete = false;
+
     String name1 = moduleName;
     if(name1 == "Module 1"){
-      FirebaseFunctions().Module1.set({
+      FirebaseFunctions().Module1.get().then((doc){
+        int correct =
+            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        int total =
+            (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+        if (correct/total > 0.8){
+          complete=true;
+        }
+      });
+
+      FirebaseFunctions().Module1.update({
         "progress": 0,
-        "completed": true,
+        "completed": complete,
         "correct": 0,
       });
     }
     if(name1 == "Module 2"){
-      FirebaseFunctions().Module2.set({
+      FirebaseFunctions().Module2.get().then((doc){
+        int correct =
+            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        int total =
+            (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+        if (correct/total > 0.8){
+          complete=true;
+        }
+      });
+      FirebaseFunctions().Module2.update({
         "progress": 0,
-        "completed": true,
+        "completed": complete,
         "correct": 0,
       });
     }
     if(name1 == "Module 3"){
-      FirebaseFunctions().Module3.set({
+      FirebaseFunctions().Module3.get().then((doc){
+        int correct =
+            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        int total =
+            (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+        if (correct/total > 0.8){
+          complete=true;
+        }
+      });
+      FirebaseFunctions().Module3.update({
         "progress": 0,
-        "completed": true,
+        "completed": complete,
         "correct": 0,
       });
     }
     if(name1 == "Module 4"){
-      FirebaseFunctions().Module4.set({
+      FirebaseFunctions().Module4.get().then((doc){
+        int correct =
+            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        int total =
+            (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+        if (correct/total > 0.8){
+          complete=true;
+        }
+      });
+      FirebaseFunctions().Module4.update({
         "progress": 0,
-        "completed": true,
+        "completed": complete,
         "correct": 0,
       });
     }

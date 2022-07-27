@@ -32,11 +32,15 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   // Initialise the required functionality for receiving and processing entered data
   final GlobalKey<FormState> _numberKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _usernameKey = GlobalKey<FormState>();
+
   final GlobalKey<FormState> _verifyKey = GlobalKey<FormState>();
   final TextEditingController _phoneNumber = TextEditingController();
+  final TextEditingController _username = TextEditingController();
   final TextEditingController _verificationCode = TextEditingController();
 
   late FocusNode _phoneNumberFN;
+  late FocusNode _usernameFN;
   late FocusNode _verifyFN;
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -47,6 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
   void initState() {
     // Initialise the focus nodes, for listening to on-click events
     _phoneNumberFN = FocusNode();
+    _usernameFN = FocusNode();
     _verifyFN = FocusNode();
     super.initState();
   }
@@ -55,6 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
   void dispose() {
     // Close the focus nodes to prevent memory leaks
     _phoneNumberFN.dispose();
+    _usernameFN.dispose();
     _verifyFN.dispose();
     super.dispose();
   }
@@ -147,12 +153,12 @@ class _LoginScreenState extends State<LoginScreen> {
             (doc.data() as Map<String, dynamic>)["account_setup"] ?? false;
       }
       if (!accountSetup) {
-        FirebaseFunctions().user.collection("activity").doc("progress").set({
+        FirebaseFunctions().user.set({
           "level": 1,
           "current_points": 0,
         }).then(
           (value) => FirebaseFunctions().user.set({
-            "full_name": "Unknown user",
+            "full_name": _username.text,
             "profile_url": "",
             "account_setup": true,
           }),
@@ -219,7 +225,46 @@ class _LoginScreenState extends State<LoginScreen> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
+
                     children: [
+                      Form(
+                        //Used for validation
+                        key: _usernameKey,
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 20),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: TextFormField(
+                                  controller: _username,
+                                  onTap: () => _usernameFN.requestFocus(),
+                                  onEditingComplete: () {
+                                    _usernameFN.unfocus();
+                                  },
+                                  focusNode: _usernameFN,
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                      borderRadius: CustomBorder().borderRadius,
+                                    ),
+                                    labelText: "Username",
+                                    hintText: "E.g., JohnSmith",
+                                  ),
+                                  textInputAction: TextInputAction.done,
+                                  keyboardType: TextInputType.text,
+                                  validator: (name) {
+                                    if (name == null || name.isEmpty) {
+                                      return "Enter a valid username";
+                                    }
+                                    return null;
+                                  },
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+                      ),
+                      // If true, show the form field, if not show nothing
                       Form(
                         //Used for validation
                         key: _numberKey,
@@ -251,7 +296,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 16),
+                              padding: const EdgeInsets.only( left: 10),
                               child: FlatBorderButton(
                                 onTap: () {
                                   _phoneNumberFN.unfocus();
@@ -267,7 +312,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                       ),
-                      // If true, show the form field, if not show nothing
+
                       _showVerificationField
                           ? Column(
                               crossAxisAlignment: CrossAxisAlignment.start,

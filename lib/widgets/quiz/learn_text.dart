@@ -48,7 +48,7 @@ class _learn_textState
           if (doc.data() != null) {
             int points =
                 (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
-            FirebaseFunctions().user.collection("activity").doc("progress").set({
+            FirebaseFunctions().user.collection("activity").doc("progress").update({
               "current_points": points + widget.data["points"] as int,
 
             });

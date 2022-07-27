@@ -23,17 +23,17 @@ class ProgressWidgets extends StatelessWidget {
           textToInclude: null,
           returnValIfNull: 0,
         ),
-        Padding(
-          padding: EdgeInsets.only(left: 16.0),
-          child: ProgressItem(
-            icon: Icons.emoji_events,
-            collectionRefName: "activity",
-            docRefName: "progress",
-            field: "level",
-            textToInclude: null,
-            returnValIfNull: 1,
-          ),
-        )
+        // Padding(
+        //   padding: EdgeInsets.only(left: 16.0),
+        //   child: ProgressItem(
+        //     icon: Icons.emoji_events,
+        //     collectionRefName: "activity",
+        //     docRefName: "progress",
+        //     field: "level",
+        //     textToInclude: null,
+        //     returnValIfNull: 1,
+        //   ),
+        // )
       ],
     );
   }

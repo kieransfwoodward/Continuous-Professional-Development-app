@@ -1,5 +1,6 @@
 import 'package:cpd/functions/firebase_functions.dart';
 import 'package:cpd/styling/custom_border.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class ProgressItem extends StatelessWidget {
@@ -38,10 +39,10 @@ class ProgressItem extends StatelessWidget {
                 left: 8.0,
                 right: 2.0,
               ),
-              child: FirebaseFunctions().getFieldLiveByDocId(
+              child: FirebaseFunctions().getField(
                 collectionRef:
-                    FirebaseFunctions().user.collection(collectionRefName),
-                docRef: docRefName,
+                    FirebaseFunctions().userCol,
+                docRef: FirebaseAuth.instance.currentUser!.uid,
                 field: field,
                 prefixText: textToInclude,
                 returnValIfNull: returnValIfNull,

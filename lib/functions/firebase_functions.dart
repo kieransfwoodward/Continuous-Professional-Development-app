@@ -8,6 +8,9 @@ class FirebaseFunctions {
       .collection("users")
       .doc(FirebaseAuth.instance.currentUser!.uid);
 
+  CollectionReference<Map<String, dynamic>> userCol = FirebaseFirestore.instance
+      .collection("users");
+
   DocumentReference Module3 = FirebaseFirestore.instance
       .collection("modules")
   .doc("Module3").collection("users")
@@ -142,4 +145,71 @@ class FirebaseFunctions {
           );
         },
       );
+
+
+  StreamBuilder getField({
+    required  CollectionReference collectionRef,
+    required String docRef,
+    required String field,
+    required String? prefixText,
+    required int? returnValIfNull,
+    required TextStyle? style,
+  }) =>
+      StreamBuilder<QuerySnapshot<Object?>>(
+        stream: collectionRef.snapshots(),
+        builder: (BuildContext context,
+            AsyncSnapshot<QuerySnapshot<Object?>> snapshot) {
+          // Shown if there is an error
+          if (snapshot.hasError) {
+            return Text(
+              "ERROR",
+              style: style,
+            );
+          }
+
+          // Shown if there is no data, can be set beforehand or a default value used
+          if (!snapshot.hasData) {
+            return Text(
+              returnValIfNull != null ? returnValIfNull.toString() : "?",
+              style: style,
+            );
+          }
+
+          // If the connection is finished, show the text, including any prefix text
+          if (snapshot.connectionState != ConnectionState.waiting) {
+            // Get the first document where the ID of that document matches the passed in document
+            List<QueryDocumentSnapshot<Object?>> docs = snapshot.data!.docs
+                .where((doc) => doc.id.contains(docRef))
+                .toList();
+
+            String text =
+            returnValIfNull != null ? returnValIfNull.toString() : "?";
+            if (docs.isNotEmpty) {
+              Map<String, dynamic> data =
+              docs.first.data() as Map<String, dynamic>;
+              if (data.isNotEmpty) {
+                text = data[field].toString();
+              }
+            }
+
+            return Text(
+              "${prefixText ?? ""}$text",
+              style: style,
+            );
+          }
+
+          // Show a loading indicator
+          return SizedBox(
+            height: 12.0,
+            width: 12.0,
+            child: CircularProgressIndicator(
+              color: Theme.of(context).canvasColor,
+              strokeWidth: 2,
+            ),
+          );
+        },
+      );
+
+
+
 }

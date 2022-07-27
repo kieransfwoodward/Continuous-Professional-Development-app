@@ -31,7 +31,7 @@ class LeaderboardItem extends StatelessWidget {
       decoration:
       currentUser ? CustomBorder().leaderboardDecoration(context) : null,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,10 +51,10 @@ class LeaderboardItem extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 16.0),
-                  child: ModuleBannerImage(
-                    imagePath: imageUrl,
-                    imageType: ImageType.leaderboard,
-                  ),
+                  // child: ModuleBannerImage(
+                  //   imagePath: imageUrl,
+                  //   imageType: ImageType.leaderboard,
+                  // ),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,12 +67,12 @@ class LeaderboardItem extends StatelessWidget {
                             color: Theme.of(context).primaryColor,
                           ),
                     ),
-                    Text(
-                      "Level $level",
-                      style: Theme.of(context).textTheme.subtitle2?.copyWith(
-                            color: Theme.of(context).primaryColor,
-                          ),
-                    ),
+                    // Text(
+                    //   "Level $level",
+                    //   style: Theme.of(context).textTheme.subtitle2?.copyWith(
+                    //         color: Theme.of(context).primaryColor,
+                    //       ),
+                    // ),
                   ],
                 ),
               ],

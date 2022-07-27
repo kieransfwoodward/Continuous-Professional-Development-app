@@ -41,12 +41,6 @@ class _learn_videoState
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.network(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4')
-      ..initialize().then((_) {
-        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
-        setState(() {});
-      });
   }
 
 
@@ -57,7 +51,7 @@ class _learn_videoState
           if (doc.data() != null) {
             int points =
                 (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
-            FirebaseFunctions().user.collection("activity").doc("progress").set({
+            FirebaseFunctions().user.collection("activity").doc("progress").update({
               "current_points": points + widget.data["points"] as int,
 
             });

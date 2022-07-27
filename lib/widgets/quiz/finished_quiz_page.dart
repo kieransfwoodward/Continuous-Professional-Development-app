@@ -51,7 +51,7 @@ class FinishedQuizPage extends StatelessWidget {
 
       return QuizScreen.of(context)!.finalPoints;
     }
-    return 0;
+    return 999;
   }
 
   @override

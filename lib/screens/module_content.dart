@@ -124,39 +124,7 @@ class ModuleContent extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
-                                const ButtonText(text: "Learn"),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 16),
-                                  child: Icon(
-                                    Icons.play_circle_outline,
-                                    color: Theme.of(context).primaryColor,
-                                  ),
-                                ),
-
-                              ],
-
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16.0),
-                          child: InkWell(
-                            borderRadius: CustomBorder().borderRadius,
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => QuizScreen(
-                                  documentId: documentId,
-                                  reference: reference,
-                                  data: data,
-                                ),
-                              ),
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                const ButtonText(text: "PLAY GAME"),
+                                const ButtonText(text: "PLAY"),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 16),
                                   child: Icon(

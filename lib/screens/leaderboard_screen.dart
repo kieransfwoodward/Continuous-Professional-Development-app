@@ -22,7 +22,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   // Gets the leaderboard data
   Future<void> _getLeaderboardData() async {
     // First get their profile information
-    await FirebaseFirestore.instance.collection("users").orderBy('current_points', descending: true).get().then(
+    await FirebaseFirestore.instance.collection("users").orderBy('current_points').get().then(
       (querySnapshot) async {
         for (DocumentSnapshot doc in querySnapshot.docs) {
           late String? docId, name, profileUrl;
@@ -58,6 +58,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   Future<void> _updateList() async {
     setState(() {
       // Temporary list
+      _items = _items.reversed.toList();
       List<LeaderboardItem> tempItems = [];
       for (int i = 0; i < _items.length; i++) {
         LeaderboardItem item = _items.elementAt(i);
@@ -105,6 +106,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         : _items.isEmpty
                             ? const Text("There is no user activity to show")
                             : ListView.separated(
+                                //reverse: true,
                                 shrinkWrap: true,
                                 physics: const NeverScrollableScrollPhysics(),
                                 separatorBuilder: (context, index) =>
