@@ -2,6 +2,7 @@ import 'package:cpd/widgets/quiz/learn_text_input.dart';
 import 'package:cpd/widgets/quiz/single_image_multiple_choice_question.dart';
 import 'package:flutter/material.dart';
 
+import '../../widgets/quiz/learn_image.dart';
 import '../../widgets/quiz/learn_text.dart';
 import '../../widgets/quiz/learn_video.dart';
 import '../../widgets/quiz/single_multiple_choice_question.dart';
@@ -31,6 +32,13 @@ class QuestionFunctions {
     }
     if (type == "learn_text") {
       return learn_text(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_image") {
+      return LearnImage(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

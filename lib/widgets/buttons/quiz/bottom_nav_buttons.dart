@@ -85,14 +85,7 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
   }
 
   finish() {
-
     QuizScreen.of(context)!.reset();
-   // Navigator.of(context).popUntil((route) => route.isFirst);
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) {
-        return HomeScreen();
-      }),
-    );
+    // Navigator.of(context).popUntil((route) => route.isFirst);
   }
 }

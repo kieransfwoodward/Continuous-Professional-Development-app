@@ -23,31 +23,23 @@ class FinishedQuizPage extends StatelessWidget {
     if (QuizScreen.of(context) != null) {
       String name1 = QuizScreen.of(context)!.moduleName;
       if(name1 == "Module 1"){
-        FirebaseFunctions().Module1.set({
-          "progress": 0,
+        FirebaseFunctions().Module1.update({
           "completed": false,
-          "correct": 0,
         });
       }
       if(name1 == "Module 2"){
-        FirebaseFunctions().Module2.set({
-          "progress": 0,
+        FirebaseFunctions().Module2.update({
           "completed": false,
-          "correct": 0,
         });
       }
       if(name1 == "Module 3"){
-        FirebaseFunctions().Module3.set({
-          "progress": 0,
+        FirebaseFunctions().Module3.update({
           "completed": false,
-          "correct": 0,
         });
       }
       if(name1 == "Module 4"){
-        FirebaseFunctions().Module4.set({
-          "progress": 0,
+        FirebaseFunctions().Module4.update({
           "completed": false,
-          "correct": 0,
         });
       }
 
@@ -62,7 +54,7 @@ class FinishedQuizPage extends StatelessWidget {
     return Center(
       child: SizedBox(
         height: SizeParams().quarterHeight(context) * 3,
-        width: SizeParams().quarterWidth(context) * 2,
+        width: SizeParams().quarterWidth(context) * 3,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -76,12 +68,12 @@ class FinishedQuizPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 4.0),
               child: Text(
-                "Congratulations!",
+                "You've finished ${_getModuleName(context)}.",
                 style: Theme.of(context).textTheme.headline6,
               ),
             ),
             Text(
-              "You completed ${_getModuleName(context)} and received ${_getPoints(context)} points!",
+              "If you got over 80% correct the module will be marked as complete.",
               style: Theme.of(context).textTheme.bodyText1,
               textAlign: TextAlign.center,
             )

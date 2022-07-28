@@ -55,7 +55,7 @@ class _SingleMultipleChoiceQuestionState
           FirebaseFunctions().Module1.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module1.update({
                 "correct": correct + 1,
 
@@ -67,7 +67,7 @@ class _SingleMultipleChoiceQuestionState
           FirebaseFunctions().Module2.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module2.update({
                 "correct": correct + 1,
 
@@ -79,7 +79,7 @@ class _SingleMultipleChoiceQuestionState
           FirebaseFunctions().Module3.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module3.update({
                 "correct": correct + 1,
 
@@ -91,7 +91,7 @@ class _SingleMultipleChoiceQuestionState
           FirebaseFunctions().Module4.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module4.update({
                 "correct": correct + 1,
 

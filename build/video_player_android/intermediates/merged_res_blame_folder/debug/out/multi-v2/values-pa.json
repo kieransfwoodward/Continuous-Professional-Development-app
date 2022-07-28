@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/res/merged/debug/values-pa/values-pa.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-pa/values-pa.xml",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-pa/values-pa.xml",

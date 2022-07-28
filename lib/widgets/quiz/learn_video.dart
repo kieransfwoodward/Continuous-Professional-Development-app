@@ -9,6 +9,7 @@ import 'package:cpd/functions/firebase_functions.dart';
 import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 import 'package:vimeo_video_player/vimeo_video_player.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 // Multiple choice question sheet, with the focus being the image
 
@@ -36,10 +37,18 @@ class _learn_videoState
   int _groupOptionVal = 1;
   bool _optionSelected = false;
   bool ticked = false;
-  late VideoPlayerController _controller;
+  late YoutubePlayerController _controller;
 
   @override
   void initState() {
+     _controller = YoutubePlayerController(
+      initialVideoId: widget.data["question_subtitle"],
+      params: YoutubePlayerParams(
+        showControls: true,
+        showFullscreenButton: true,
+      ),
+    );
+
     super.initState();
   }
 
@@ -89,6 +98,8 @@ class _learn_videoState
 
   }
 
+
+
   @override
   Widget build(BuildContext context)
   {
@@ -108,15 +119,10 @@ class _learn_videoState
             ),
           ),
           const ListViewSeparator(),
-          VimeoVideoPlayer(
-          vimeoPlayerModel: VimeoPlayerModel(
-          url: widget.data["question_subtitle"],
-          deviceOrientation: DeviceOrientation.portraitUp,
-          systemUiOverlay: const [
-          SystemUiOverlay.top,
-          SystemUiOverlay.bottom,
-          ],
-          ),
+
+          YoutubePlayerIFrame(
+            controller: _controller,
+            aspectRatio: 16 / 9,
           ),
           // Checkbox(
           //   checkColor: Colors.white,

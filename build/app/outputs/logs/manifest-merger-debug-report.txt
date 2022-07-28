@@ -1,12 +1,16 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:3:4-33:19
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:3:4-33:19
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-analytics:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/899927462a023553c1302215c7034e04/jetified-firebase-analytics-21.0.0/AndroidManifest.xml:7:5-20
@@ -47,6 +51,12 @@ MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/k
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4d4339d5bf71040d00bbe7448a616aa7/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -54,19 +64,21 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kier
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-48:12
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b87197f3cd4f3726862964b399a6d469/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
@@ -78,6 +90,10 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/kieranwood
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4b1c6f63d723152997e30b9c383900a3/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3502eaa7e353c54fb20348dbc4b51b95/webkit-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/243d793bea812e07fee3a1bfc91eb622/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a0c936db2cfabdf4e4fb7590dc82d494/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eb8a0fe9e13a0381a9400982157eccde/jetified-exoplayer-hls-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eb3b1b2e6fce6cdfd27fda785508c251/jetified-exoplayer-dash-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/29f87bc9d2e004980ebe2cf5c524dbba/jetified-exoplayer-smoothstreaming-2.18.0/AndroidManifest.xml:17:1-24:12
@@ -97,68 +113,81 @@ MERGED from [com.google.android.gms:play-services-measurement-base:21.0.0] /User
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/c89d1ca901d007460d352f0669ab7316/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4d4339d5bf71040d00bbe7448a616aa7/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/cdca8c87c086ed3128ffd6b999f5886b/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/edeaaa7adad5fb3a857907044ae89502/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ee6571c1d79735ae091192c96adf08d0/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e52ce556f61c6c40e4af53b9b529117/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3675db606a1816f22fc48622f5f71b3a/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e4eed67bcb7dbacbb9f11dcbb8a9d90c/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/c09b628396f587bc5b05c9e3d35fef3b/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4b933f66da461b62aca365f1bf9405e2/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/77cb9e1c75b8e400c5b93a557ce386c9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/492c1aaf488c80948da0242314b61c4f/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f773f2485e57d361a20e8b3642838de7/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5bf109f5cc317547aee9579d2daddbb3/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d279a3e2d0797f68e92c9bfc9563a695/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/dec9a9e8433e886831ef22a361b486ec/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8e3d3c72635991273265cd11de00f915/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9a6e41bdc76a0069d9d1bd7a99dba98b/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/1307b7d92912dd76ed5cccf6e71fa1f1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/06a000b9bbe6042f7190a28a2838418e/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/11ef3c0c9e130315cec163e298fed58c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/72fe16d5d6c6dcb17d89b4d8892005ce/jetified-exoplayer-datasource-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f0f715a3b514f2d31ed24574c80d709d/jetified-exoplayer-extractor-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-decoder:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/16dfcce4269a978c4f35c126850791c1/jetified-exoplayer-decoder-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-database:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b13e7003f2bac3dff34e42571077e1ff/jetified-exoplayer-database-2.18.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e387cf8a8faa6df6f6f838a71dc1e0d3/jetified-exoplayer-common-2.18.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7abd29715fbf7468edb16e60842936a1/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/bc28ef320a78db4f673ce50dadaf1ce7/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8c355c68e5aba72e73f233a4035dfd6c/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8fbcaf625a49b4311b251dd1bd23cb0c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f93344c1ea3cc360a58278f6223c6d33/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/be1632c271929061a918c7538ac91c29/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/660179eb8da11e4da6703c08b47771ea/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/20ce7e5d12965d06473c4870cfd0196f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e719294d411f74ef67fbb910149f402c/jetified-grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:2:5-27
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
@@ -181,6 +210,14 @@ MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoo
 MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3502eaa7e353c54fb20348dbc4b51b95/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3502eaa7e353c54fb20348dbc4b51b95/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/243d793bea812e07fee3a1bfc91eb622/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/243d793bea812e07fee3a1bfc91eb622/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a0c936db2cfabdf4e4fb7590dc82d494/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a0c936db2cfabdf4e4fb7590dc82d494/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eb8a0fe9e13a0381a9400982157eccde/jetified-exoplayer-hls-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eb8a0fe9e13a0381a9400982157eccde/jetified-exoplayer-hls-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eb3b1b2e6fce6cdfd27fda785508c251/jetified-exoplayer-dash-2.18.0/AndroidManifest.xml:20:5-22:41
@@ -219,28 +256,54 @@ MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/k
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4d4339d5bf71040d00bbe7448a616aa7/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/cdca8c87c086ed3128ffd6b999f5886b/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/cdca8c87c086ed3128ffd6b999f5886b/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/edeaaa7adad5fb3a857907044ae89502/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/edeaaa7adad5fb3a857907044ae89502/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ee6571c1d79735ae091192c96adf08d0/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ee6571c1d79735ae091192c96adf08d0/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e52ce556f61c6c40e4af53b9b529117/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e52ce556f61c6c40e4af53b9b529117/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3675db606a1816f22fc48622f5f71b3a/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3675db606a1816f22fc48622f5f71b3a/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e4eed67bcb7dbacbb9f11dcbb8a9d90c/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e4eed67bcb7dbacbb9f11dcbb8a9d90c/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/c09b628396f587bc5b05c9e3d35fef3b/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/c09b628396f587bc5b05c9e3d35fef3b/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4b933f66da461b62aca365f1bf9405e2/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/4b933f66da461b62aca365f1bf9405e2/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/77cb9e1c75b8e400c5b93a557ce386c9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/77cb9e1c75b8e400c5b93a557ce386c9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/492c1aaf488c80948da0242314b61c4f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/492c1aaf488c80948da0242314b61c4f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f773f2485e57d361a20e8b3642838de7/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f773f2485e57d361a20e8b3642838de7/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5bf109f5cc317547aee9579d2daddbb3/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5bf109f5cc317547aee9579d2daddbb3/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d279a3e2d0797f68e92c9bfc9563a695/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d279a3e2d0797f68e92c9bfc9563a695/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/dec9a9e8433e886831ef22a361b486ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/dec9a9e8433e886831ef22a361b486ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8e3d3c72635991273265cd11de00f915/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8e3d3c72635991273265cd11de00f915/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9a6e41bdc76a0069d9d1bd7a99dba98b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9a6e41bdc76a0069d9d1bd7a99dba98b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/1307b7d92912dd76ed5cccf6e71fa1f1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/1307b7d92912dd76ed5cccf6e71fa1f1/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/06a000b9bbe6042f7190a28a2838418e/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/06a000b9bbe6042f7190a28a2838418e/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/11ef3c0c9e130315cec163e298fed58c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/11ef3c0c9e130315cec163e298fed58c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b5c90a3d6684b72459e7c3bab25df799/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/72fe16d5d6c6dcb17d89b4d8892005ce/jetified-exoplayer-datasource-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/72fe16d5d6c6dcb17d89b4d8892005ce/jetified-exoplayer-datasource-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f0f715a3b514f2d31ed24574c80d709d/jetified-exoplayer-extractor-2.18.0/AndroidManifest.xml:20:5-22:41
@@ -251,42 +314,34 @@ MERGED from [com.google.android.exoplayer:exoplayer-database:2.18.0] /Users/kier
 MERGED from [com.google.android.exoplayer:exoplayer-database:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b13e7003f2bac3dff34e42571077e1ff/jetified-exoplayer-database-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e387cf8a8faa6df6f6f838a71dc1e0d3/jetified-exoplayer-common-2.18.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e387cf8a8faa6df6f6f838a71dc1e0d3/jetified-exoplayer-common-2.18.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/5a52bdba5be8e0efd3eb581b98d67e93/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e6945ada8305ce93cbe054cacf335db4/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7abd29715fbf7468edb16e60842936a1/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7abd29715fbf7468edb16e60842936a1/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/bc28ef320a78db4f673ce50dadaf1ce7/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/bc28ef320a78db4f673ce50dadaf1ce7/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8c355c68e5aba72e73f233a4035dfd6c/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8c355c68e5aba72e73f233a4035dfd6c/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8fbcaf625a49b4311b251dd1bd23cb0c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8fbcaf625a49b4311b251dd1bd23cb0c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f93344c1ea3cc360a58278f6223c6d33/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/f93344c1ea3cc360a58278f6223c6d33/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/be1632c271929061a918c7538ac91c29/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/be1632c271929061a918c7538ac91c29/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/660179eb8da11e4da6703c08b47771ea/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/660179eb8da11e4da6703c08b47771ea/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b743faff062db3a973e31d6121d6139a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/20ce7e5d12965d06473c4870cfd0196f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/20ce7e5d12965d06473c4870cfd0196f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9631c0792ad0524566170d7437892500/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.44.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e719294d411f74ef67fbb910149f402c/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.44.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e719294d411f74ef67fbb910149f402c/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:14:5-67
@@ -302,13 +357,13 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/257df9236a516e661c3c4290c885fd8b/jetified-play-services-measurement-sdk-api-21.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/257df9236a516e661c3c4290c885fd8b/jetified-play-services-measurement-sdk-api-21.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:17:9-23:19
@@ -326,25 +381,101 @@ MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+queries
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
+activity#com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
+	android:configChanges
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
+receiver#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
+	android:enabled
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
+meta-data#io.flutter.embedded_views_preview
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
+	android:value
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required
@@ -529,3 +660,29 @@ ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranw
 		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/50a5feec950d4ed3c09f03a26cbf7aed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
