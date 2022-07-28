@@ -5,7 +5,7 @@ import "package:flutter/material.dart";
 // Module image, which adjusts to the appropriate size dynamically
 
 //Different types of images as an enumerator
-enum ImageType { leaderboard, module, banner }
+enum ImageType { leaderboard, module, banner, banner4 }
 
 class ModuleBannerImage extends StatelessWidget {
   const ModuleBannerImage(
@@ -21,6 +21,8 @@ class ModuleBannerImage extends StatelessWidget {
       // Dynamic width and height depending on the image type
       width: imageType == ImageType.banner
           ? SizeParams().widthWithPadding(context)
+          : imageType == ImageType.banner4
+          ? SizeParams().widthWithPadding(context)
           : imageType == ImageType.leaderboard
               ? SizeParams().leaderboardImageSize(context)
               : imageType == ImageType.module
@@ -28,6 +30,8 @@ class ModuleBannerImage extends StatelessWidget {
                   : 0,
       height: imageType == ImageType.banner
           ? SizeParams().quarterHeight(context)
+          : imageType == ImageType.banner4
+          ? SizeParams().quarterHeight(context)*4
           : imageType == ImageType.leaderboard
               ? SizeParams().leaderboardImageSize(context)
               : imageType == ImageType.module

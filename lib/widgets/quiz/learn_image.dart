@@ -160,7 +160,7 @@ class _LearnImageState
 
           ModuleBannerImage(
             imagePath: widget.data["image_url"],
-            imageType: ImageType.banner,
+            imageType: ImageType.banner4,
           ),
           Padding(
             padding: const EdgeInsets.only(
