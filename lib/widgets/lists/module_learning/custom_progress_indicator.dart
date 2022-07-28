@@ -23,7 +23,7 @@ class CustomProgressIndicator extends StatelessWidget {
 
 
 
-      if (!isComplete) {
+      if (isComplete) {
         // return SizedBox(
         //   width: 20,
         //   height: 20,
@@ -37,7 +37,22 @@ class CustomProgressIndicator extends StatelessWidget {
         //         .secondaryHeaderColor,
         //   ),
         // );
+        return SizedBox(
+          width: 20,
+          height: 20,
 
+
+          child: Icon(Icons.check_box_sharp,
+            color: Colors.green,),
+          // strokeWidth: 2,
+          // value: 0.6,
+          // color: Colors.blue,
+
+
+        );
+
+      }
+      else {
         return SizedBox(
           width: 20,
           height: 20,
@@ -48,21 +63,6 @@ class CustomProgressIndicator extends StatelessWidget {
           // strokeWidth: 2,
           // value: 0.6,
           // color: Colors.blue,
-
-
-        );
-      }
-      else {
-        return SizedBox(
-          width: 20,
-          height: 20,
-
-
-            child: Icon(Icons.check_box_sharp,
-            color: Colors.green,),
-            // strokeWidth: 2,
-            // value: 0.6,
-            // color: Colors.blue,
 
 
         );

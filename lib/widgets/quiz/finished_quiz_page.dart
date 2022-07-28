@@ -25,6 +25,7 @@ class FinishedQuizPage extends StatelessWidget {
       if(name1 == "Module 1"){
         FirebaseFunctions().Module1.update({
           "completed": false,
+
         });
       }
       if(name1 == "Module 2"){
