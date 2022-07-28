@@ -147,6 +147,17 @@ class _LearnImageState
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 16.0,
+              bottom: 8.0,
+            ),
+            child: Text(
+              widget.data["question_title"],
+              style: Theme.of(context).textTheme.headline5,
+            ),
+          ),
+
           ModuleBannerImage(
             imagePath: widget.data["image_url"],
             imageType: ImageType.banner,
@@ -157,13 +168,9 @@ class _LearnImageState
               bottom: 4.0,
             ),
             child: Text(
-              widget.data["question_title"],
-              style: Theme.of(context).textTheme.headline5,
+              widget.data["question_subtitle"],
+              style: Theme.of(context).textTheme.subtitle1,
             ),
-          ),
-          Text(
-            widget.data["question_subtitle"],
-            style: Theme.of(context).textTheme.subtitle1,
           ),
           const ListViewSeparator(),
           CheckboxListTile(
