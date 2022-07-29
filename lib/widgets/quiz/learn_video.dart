@@ -56,11 +56,11 @@ class _learn_videoState
   Future<void> _updatePoints() async {
 
       if (QuizScreen.of(context) != null) {
-        FirebaseFunctions().user.collection("activity").doc("progress").get().then((doc) {
+        FirebaseFunctions().user.get().then((doc) {
           if (doc.data() != null) {
             int points =
                 (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
-            FirebaseFunctions().user.collection("activity").doc("progress").update({
+            FirebaseFunctions().user.update({
               "current_points": points + widget.data["points"] as int,
 
             });

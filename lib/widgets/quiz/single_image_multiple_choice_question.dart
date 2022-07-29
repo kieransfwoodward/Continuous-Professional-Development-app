@@ -69,7 +69,7 @@ class _SingleImageMultipleChoiceQuestionState
             if (doc.data() != null) {
               int correct =
                   (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module2.collection("activity").doc("progress").update({
+              FirebaseFunctions().Module2.update({
                 "correct": correct + 1,
 
               });
@@ -81,7 +81,7 @@ class _SingleImageMultipleChoiceQuestionState
             if (doc.data() != null) {
               int correct =
                   (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module3.collection("activity").doc("progress").update({
+              FirebaseFunctions().Module3.update({
                 "correct": correct + 1,
 
               });
@@ -93,7 +93,7 @@ class _SingleImageMultipleChoiceQuestionState
             if (doc.data() != null) {
               int correct =
                   (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module4.collection("activity").doc("progress").update({
+              FirebaseFunctions().Module4.update({
                 "correct": correct + 1,
 
               });

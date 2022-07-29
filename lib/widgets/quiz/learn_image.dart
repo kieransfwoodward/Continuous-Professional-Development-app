@@ -36,82 +36,22 @@ class _LearnImageState
   bool ticked = false;
 
   Future<void> _updatePoints() async {
-    if (widget.data["correct_answer"] == _groupOptionVal) {
-      if (QuizScreen.of(context) != null) {
 
-        FirebaseFunctions().user.get().then((doc) {
-          if (doc.data() != null) {
-            int points =
-                (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
-            FirebaseFunctions().user.update({
-              "current_points": points + widget.data["points"] as int,
+    if (QuizScreen.of(context) != null) {
+      FirebaseFunctions().user.get().then((doc) {
+        if (doc.data() != null) {
+          int points =
+              (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
+          FirebaseFunctions().user.update({
+            "current_points": points + widget.data["points"] as int,
 
-            });
-
-          }
-        });
-
-        String name1 = QuizScreen.of(context)!.moduleName;
-
-        if(name1 == "Module 1"){
-          FirebaseFunctions().Module1.get().then((doc) {
-            if (doc.data() != null) {
-              int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module1.update({
-                "correct": correct + 1,
-
-              });
-            }
           });
+
         }
-        if(name1 == "Module 2"){
-          FirebaseFunctions().Module2.get().then((doc) {
-            if (doc.data() != null) {
-              int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module2.collection("activity").doc("progress").update({
-                "correct": correct + 1,
+      });
 
-              });
-            }
-          });
-        }
-        if(name1 == "Module 3"){
-          FirebaseFunctions().Module3.get().then((doc) {
-            if (doc.data() != null) {
-              int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module3.collection("activity").doc("progress").update({
-                "correct": correct + 1,
-
-              });
-            }
-          });
-        }
-        if(name1 == "Module 4"){
-          FirebaseFunctions().Module4.get().then((doc) {
-            if (doc.data() != null) {
-              int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-              FirebaseFunctions().Module4.collection("activity").doc("progress").update({
-                "correct": correct + 1,
-
-              });
-            }
-          });
-        }
-
-
-
-
-
-
-
-
-      //  QuizScreen.of(context)!.points =
-      //      QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
-      }
+      // QuizScreen.of(context)!.points =
+      //     QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
     }
     String name1 = QuizScreen.of(context)!.moduleName;
     int page = QuizScreen.of(context)!.currentPageIndex +1;

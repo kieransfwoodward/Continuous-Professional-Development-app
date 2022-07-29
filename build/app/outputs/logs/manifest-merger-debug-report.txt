@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:3:4-33:19
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
-MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
-MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:3:4-33:19
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-46:19
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-analytics:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/899927462a023553c1302215c7034e04/jetified-firebase-analytics-21.0.0/AndroidManifest.xml:7:5-20
@@ -64,21 +64,21 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kier
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-48:12
-MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-48:12
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/b87197f3cd4f3726862964b399a6d469/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
@@ -151,43 +151,43 @@ MERGED from [androidx.print:print:1.0.0] /Users/kieranwoodward/.gradle/caches/tr
 MERGED from [io.grpc:grpc-android:1.44.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e719294d411f74ef67fbb910149f402c/jetified-grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:2:5-27
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/GitHub/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/kieranwoodward/Documents/GitHub/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/kieranwoodward/Documents/github/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] /Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/kieranwoodward/Documents/github/CPD2/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
@@ -332,16 +332,16 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kiera
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/7e316f24e45902e0c67e2188482421bb/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/eebbb7a07a61546a3531c5affd82ed85/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:14:5-67
@@ -357,13 +357,13 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/257df9236a516e661c3c4290c885fd8b/jetified-play-services-measurement-sdk-api-21.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/257df9236a516e661c3c4290c885fd8b/jetified-play-services-measurement-sdk-api-21.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:17:9-23:19
@@ -381,101 +381,101 @@ MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 queries
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
 intent#action:name:android.support.customtabs.action.CustomTabsService
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
 action#android.support.customtabs.action.CustomTabsService
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
 activity#com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
 	android:configChanges
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
 	android:theme
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
 activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
 	android:theme
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
 activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
 	android:theme
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
 activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
 	android:launchMode
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
 	android:theme
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
 activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
 	android:launchMode
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
 	android:theme
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
 receiver#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
 	android:enabled
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
 	android:exported
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
 meta-data#io.flutter.embedded_views_preview
-ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
+ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
 	android:value
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
 	android:name
-		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
+		ADDED from [:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required

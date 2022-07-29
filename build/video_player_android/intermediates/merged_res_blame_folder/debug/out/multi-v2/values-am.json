@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/values-am/values-am.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-am/values-am.xml",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/video_player_android/intermediates/res/merged/debug/values-am/values-am.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-am/values-am.xml",
