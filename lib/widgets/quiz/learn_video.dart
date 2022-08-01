@@ -59,7 +59,7 @@ class _learn_videoState
         FirebaseFunctions().user.get().then((doc) {
           if (doc.data() != null) {
             int points =
-                (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
+                (doc.data() as Map<String, dynamic>)["current_points"] ?? 0;
             FirebaseFunctions().user.update({
               "current_points": points + widget.data["points"] as int,
 

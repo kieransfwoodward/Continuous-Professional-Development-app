@@ -41,7 +41,7 @@ class _SingleImageMultipleChoiceQuestionState
         FirebaseFunctions().user.get().then((doc) {
           if (doc.data() != null) {
             int points =
-                (doc.data() as Map<String, dynamic>)["current_points"] ?? 99;
+                (doc.data() as Map<String, dynamic>)["current_points"] ?? 0;
             FirebaseFunctions().user.update({
               "current_points": points + widget.data["points"] as int,
 
@@ -56,7 +56,7 @@ class _SingleImageMultipleChoiceQuestionState
           FirebaseFunctions().Module1.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module1.update({
                 "correct": correct + 1,
 
@@ -68,7 +68,7 @@ class _SingleImageMultipleChoiceQuestionState
           FirebaseFunctions().Module2.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module2.update({
                 "correct": correct + 1,
 
@@ -80,7 +80,7 @@ class _SingleImageMultipleChoiceQuestionState
           FirebaseFunctions().Module3.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module3.update({
                 "correct": correct + 1,
 
@@ -92,7 +92,7 @@ class _SingleImageMultipleChoiceQuestionState
           FirebaseFunctions().Module4.get().then((doc) {
             if (doc.data() != null) {
               int correct =
-                  (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+                  (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
               FirebaseFunctions().Module4.update({
                 "correct": correct + 1,
 
