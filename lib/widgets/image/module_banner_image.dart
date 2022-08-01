@@ -31,14 +31,14 @@ class ModuleBannerImage extends StatelessWidget {
       height: imageType == ImageType.banner
           ? SizeParams().quarterHeight(context)
           : imageType == ImageType.banner4
-          ? SizeParams().quarterHeight(context)*4
+          ? SizeParams().quarterHeight(context)*2
           : imageType == ImageType.leaderboard
               ? SizeParams().leaderboardImageSize(context)
               : imageType == ImageType.module
                   ? SizeParams().itemImageWidth(context)
                   : 0,
-      child: ClipRRect(
-        borderRadius: CustomBorder().borderRadius,
+      child: InteractiveViewer(
+       // borderRadius: CustomBorder().borderRadius,
         child: imagePath.isEmpty
             ? Container()
             : Image.network(
@@ -50,7 +50,7 @@ class ModuleBannerImage extends StatelessWidget {
                   return loadingProgress == null
                       ? child
                       : Center(
-                          child: imageType == ImageType.banner
+                          child: imageType == InteractiveViewer
                               ? LinearProgressIndicator(
                                   value: _getLoadingValue(loadingProgress),
                                 )

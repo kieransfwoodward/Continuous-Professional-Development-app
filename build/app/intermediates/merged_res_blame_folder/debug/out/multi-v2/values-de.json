@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ad1f5882bd104f544508905877109fd7/browser-1.4.0/res/values-de/values-de.xml",

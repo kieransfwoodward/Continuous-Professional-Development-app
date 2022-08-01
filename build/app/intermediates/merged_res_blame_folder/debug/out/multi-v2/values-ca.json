@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/github/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
                     "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/res/values-ca/values.xml",

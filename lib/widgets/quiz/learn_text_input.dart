@@ -36,7 +36,7 @@ class _learn_text_inputState
 
   @override
   initState(){
-    _updatePoints();
+    // _updatePoints();
     super.initState();
   }
 
@@ -136,9 +136,6 @@ class _learn_text_inputState
   ],
   ),
 
-          Padding(
-            padding: EdgeInsets.only(bottom: 60.0),
-          ),
         ],
       ),
     );

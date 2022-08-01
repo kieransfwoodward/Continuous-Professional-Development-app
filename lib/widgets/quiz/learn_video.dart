@@ -145,9 +145,9 @@ class _learn_videoState
   },
   ),
 
-          Padding(
-            padding: EdgeInsets.only(bottom: 60.0),
-          ),
+          // Padding(
+          //   padding: EdgeInsets.only(bottom: 4.0),
+          // ),
         ],
       ),
     );

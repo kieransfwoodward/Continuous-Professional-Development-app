@@ -12,16 +12,16 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/kieranwoodward/Documents/github/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
 15
 16    <queries>
-16-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
+16-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
 17        <intent>
-17-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
+17-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
 18            <action android:name="android.support.customtabs.action.CustomTabsService" />
-18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
-18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
+18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
+18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
 19        </intent>
 20    </queries>
 21
@@ -79,31 +79,31 @@
 64            android:value="2" />
 65
 66        <service
-66-->[:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+66-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+67-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 68            android:directBootAware="true"
 68-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 69            android:exported="false" >
 69-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:66:13-37
 70            <meta-data
-70-->[:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+70-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-71-->[:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+71-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_auth] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+72-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 73            <meta-data
-73-->[:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+73-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-74-->[:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+74-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:cloud_firestore] /Users/kieranwoodward/Documents/github/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+75-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 76            <meta-data
-76-->[:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+76-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-77-->[:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+77-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_core] /Users/kieranwoodward/Documents/github/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+78-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 79            <meta-data
 79-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
 80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -131,76 +131,76 @@
 91        </service>
 92
 93        <activity
-93-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
+93-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
 94            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
-94-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
+94-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
 95            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-95-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
+95-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
 96            android:exported="true"
-96-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
+96-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
 97            android:theme="@style/AppTheme" />
-97-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
+97-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
 98        <activity
-98-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
+98-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
 99            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
-99-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
+99-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
 100            android:exported="true"
-100-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
+100-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
 101            android:theme="@style/ThemeTransparent" />
-101-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
+101-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
 102        <activity
-102-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
+102-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
 103            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
-103-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
+103-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
 104            android:exported="true"
-104-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
+104-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
 105            android:theme="@style/ThemeTransparent" />
-105-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
+105-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
 106        <activity
-106-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
+106-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
 107            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
-107-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
+107-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
 108            android:exported="true"
-108-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
+108-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
 109            android:launchMode="singleInstance"
-109-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
+109-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
 110            android:theme="@style/ThemeTransparent" />
-110-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
+110-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
 111        <activity
-111-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
+111-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
 112            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
-112-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
+112-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
 113            android:exported="true"
-113-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
+113-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
 114            android:launchMode="singleInstance"
-114-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
+114-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
 115            android:theme="@style/ThemeTransparent" />
-115-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
+115-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
 116
 117        <receiver
-117-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
+117-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
 118            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
-118-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
+118-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
 119            android:enabled="true"
-119-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
+119-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
 120            android:exported="false" />
-120-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+120-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
 121
 122        <meta-data
-122-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
+122-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
 123            android:name="io.flutter.embedded_views_preview"
-123-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
+123-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
 124            android:value="true" />
-124-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/github/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
+124-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
 125
 126        <activity
-126-->[:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+126-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 127            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-127-->[:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+127-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 128            android:exported="false"
-128-->[:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+128-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 129            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-129-->[:url_launcher_android] /Users/kieranwoodward/Documents/github/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+129-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 130
 131        <uses-library
 131-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40

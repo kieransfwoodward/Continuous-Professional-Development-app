@@ -42,7 +42,7 @@ class QuestionListOption extends StatelessWidget {
       borderRadius: CustomBorder().borderRadius,
       child: Card(
         shape: RoundedRectangleBorder(
-          side: BorderSide(color: _getColor(context)),
+          side: BorderSide(color: _getColor(context), width: 5),
           borderRadius: CustomBorder().borderRadius,
         ),
         child: Padding(
