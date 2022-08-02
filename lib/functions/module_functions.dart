@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ModuleFunctions {
-  final double _timePerQuiz = 1.5;
+  final double _timePerQuiz = 1;
 
   // Calculates the total time to complete a quiz
   int calculateQuizTime(int? numOfQuestions) {

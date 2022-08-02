@@ -1,7 +1,9 @@
+import 'package:cpd/widgets/quiz/ColorGame.dart';
 import 'package:cpd/widgets/quiz/learn_text_input.dart';
 import 'package:cpd/widgets/quiz/single_image_multiple_choice_question.dart';
 import 'package:flutter/material.dart';
 
+import '../../widgets/quiz/draggable_list.dart';
 import '../../widgets/quiz/learn_image.dart';
 import '../../widgets/quiz/learn_text.dart';
 import '../../widgets/quiz/learn_video.dart';
@@ -56,6 +58,10 @@ class QuestionFunctions {
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,
+      );
+    }
+    if (type == "drag_drop_module_three") {
+      return ColorGame(
       );
     }
     return Container();

@@ -112,6 +112,7 @@ androidx/core/location/GnssStatusCompat$ConstellationType.class
 androidx/core/location/LocationRequestCompat$Quality.class
 androidx/core/net/ConnectivityManagerCompat$RestrictBackgroundStatus.class
 androidx/core/os/BuildCompat$PrereleaseSdkCheck.class
+androidx/core/os/TraceKt.class
 androidx/core/provider/FontsContractCompat$FontRequestCallback$FontRequestFailReason.class
 androidx/core/text/util/LinkifyCompat$LinkifyMask.class
 androidx/core/view/ContentInfoCompat$Flags.class
