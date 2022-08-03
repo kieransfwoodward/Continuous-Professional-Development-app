@@ -131,9 +131,9 @@ class _learn_textState
   },
   ),
 
-          // Padding(
-          //   padding: EdgeInsets.only(bottom: 20.0),
-          // ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 60.0),
+          ),
         ],
       ),
     );

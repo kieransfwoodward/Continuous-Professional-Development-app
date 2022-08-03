@@ -315,15 +315,19 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                 Expanded(
                   child: Stack(
+
                     fit: StackFit.expand,
                     children: [
-                      ContentArea(
-                        child: _isLoading
-                            ? const CircularProgressIndicator()
-                            : IndexedStack(
-                                index: _currentPageIndex,
-                                children: _pages,
-                              ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ContentArea(
+                          child: _isLoading
+                              ? const CircularProgressIndicator()
+                              : IndexedStack(
+                                  index: _currentPageIndex,
+                                  children: _pages,
+                                ),
+                        ),
                       ),
                       Positioned(
                         bottom: 16,

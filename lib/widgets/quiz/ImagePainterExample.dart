@@ -49,7 +49,7 @@ class _ImagePainterExampleState extends State<ImagePainterExample> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    // return SingleChildScrollView(
       // key: _key,
       // appBar: AppBar(
       //   title: const Text("Design A Tree Swing"),
@@ -60,11 +60,12 @@ class _ImagePainterExampleState extends State<ImagePainterExample> {
       //     )
       //   ],
       // ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          ImagePainter.asset(
+      // child:
+      // return Column(
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   mainAxisAlignment: MainAxisAlignment.start,
+      //   children: [
+          return ImagePainter.asset(
             "assets/TreeSwing.PNG",
             key: _imageKey,
             scalable: true,
@@ -72,8 +73,9 @@ class _ImagePainterExampleState extends State<ImagePainterExample> {
             textDelegate: DutchTextDelegate(),
             initialColor: Colors.red,
             initialPaintMode: PaintMode.freeStyle,
-        ),
-      ]),
-    );
+        );
+
+      // ]);
+    // );
   }
 }

@@ -124,9 +124,9 @@ class _LearnImageState
             },
           ),
 
-          // Padding(
-          //   padding: EdgeInsets.only(bottom: 4.0),
-          // ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 70.0),
+          ),
 
         ],
       ),

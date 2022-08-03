@@ -22,12 +22,17 @@ class ContentArea extends StatelessWidget {
           borderRadius: CustomBorder().topOnlyBorder,
         ),
         clipBehavior: Clip.hardEdge,
-        child: Container(
-          margin: const EdgeInsets.all(16.0),
-          child: SingleChildScrollView(
-            child: child,
+          padding: const EdgeInsets.only(
+            left: 8.0,
+            right: 8.0,
+            top: 8,
           ),
-        ),
+        child: child
+          // margin: const EdgeInsets.all(64.0),
+          // child: Expanded(
+          //   child: child,
+          // ),
+        // ),
       ),
     );
   }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/res/merged/debug/values-lt/values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\d339698a55db5a38973715a903b33c5e\\jetified-exoplayer-core-2.18.0\\res\\values-lt\\values-lt.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\ecccc2959e744e7be090c5d748e4963c\\core-1.7.0\\res\\values-lt\\values-lt.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -33,10 +33,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-lt\\values-lt.xml",
+            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\d339698a55db5a38973715a903b33c5e\\jetified-exoplayer-core-2.18.0\\res\\values-lt\\values-lt.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -46,7 +46,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\ecccc2959e744e7be090c5d748e4963c\\core-1.7.0\\res\\values-lt\\values-lt.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

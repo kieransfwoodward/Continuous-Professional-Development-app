@@ -61,6 +61,10 @@ class QuestionFunctions {
         data: data,
       );
     }
+    if (type == "drag_drop_module_one") {
+      return BasicExample(
+      );
+    }
     if (type == "drag_drop_module_three") {
       return ColorGame(
       );

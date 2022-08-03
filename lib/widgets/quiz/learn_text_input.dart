@@ -135,7 +135,9 @@ class _learn_text_inputState
   Text(widget.data["feedback"])
   ],
   ),
-
+          Padding(
+            padding: EdgeInsets.only(bottom: 70.0),
+          ),
         ],
       ),
     );

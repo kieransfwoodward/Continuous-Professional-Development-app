@@ -40,7 +40,7 @@ class ModuleContent extends StatelessWidget {
                   duration: duration,
                   points: points,
                 ),
-                Expanded(
+                SingleChildScrollView(
                   child: ContentArea(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

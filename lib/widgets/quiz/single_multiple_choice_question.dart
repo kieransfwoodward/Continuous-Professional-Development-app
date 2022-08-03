@@ -186,6 +186,9 @@ class _SingleMultipleChoiceQuestionState
               Text(widget.data["feedback"])
             ],
           ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 70.0),
+          ),
         ],
       ),
 

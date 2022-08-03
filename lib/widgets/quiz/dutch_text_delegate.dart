@@ -5,41 +5,41 @@ class DutchTextDelegate implements TextDelegate {
   String get arrow => "Arrow";
 
   @override
-  String get changeBrushSize => "Penseelgrootte Wijzigen";
+  String get changeBrushSize => "Brush Size";
 
   @override
-  String get changeColor => "Verander Kleur";
+  String get changeColor => "Change Colour";
 
   @override
-  String get changeMode => "Van Modus Veranderen";
+  String get changeMode => "Change Mode";
 
   @override
-  String get circle => "Cirkel";
+  String get circle => "Circle";
 
   @override
-  String get clearAllProgress => "Alle Voortgang Wissen";
+  String get clearAllProgress => "Clear All";
 
   @override
-  String get dashLine => "Dashlane";
+  String get dashLine => "Dash Line";
 
   @override
-  String get done => "Gedaan";
+  String get done => "Done";
 
   @override
-  String get drawing => "Tekening";
+  String get drawing => "Drawing";
 
   @override
-  String get line => "Lijn";
+  String get line => "Line";
 
   @override
-  String get noneZoom => "Geen / Zoom";
+  String get noneZoom => "Zoom";
 
   @override
-  String get rectangle => "Rechthoek";
+  String get rectangle => "Rectangle";
 
   @override
-  String get text => "Tekst";
+  String get text => "Move Text";
 
   @override
-  String get undo => "ongedaan maken";
+  String get undo => "Undo Last";
 }

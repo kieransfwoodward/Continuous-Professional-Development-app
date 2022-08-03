@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\ecccc2959e744e7be090c5d748e4963c\\core-1.7.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/res/merged/debug/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\ecccc2959e744e7be090c5d748e4963c\\core-1.7.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

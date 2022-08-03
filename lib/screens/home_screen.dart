@@ -22,48 +22,50 @@ class HomeScreen extends StatelessWidget {
                 const HomeAppBar(),
                 Expanded(
                   child: ContentArea(
-                    child: StreamBuilder<QuerySnapshot>(
-                      stream: FirebaseFirestore.instance
-                          .collection("modules")
-                          .orderBy("name")
-                          .snapshots(),
-                      builder: (BuildContext context,
-                          AsyncSnapshot<QuerySnapshot> snapshot) {
-                        if (snapshot.hasError) {
-                          return const Text("Something went wrong");
-                        }
+                    child: SingleChildScrollView(
+                      child: StreamBuilder<QuerySnapshot>(
+                        stream: FirebaseFirestore.instance
+                            .collection("modules")
+                            .orderBy("name")
+                            .snapshots(),
+                        builder: (BuildContext context,
+                            AsyncSnapshot<QuerySnapshot> snapshot) {
+                          if (snapshot.hasError) {
+                            return const Text("Something went wrong");
+                          }
 
-                        if (!snapshot.hasData) {
-                          return const Text("There are no modules to show");
-                        }
+                          if (!snapshot.hasData) {
+                            return const Text("There are no modules to show");
+                          }
 
-                        if (snapshot.connectionState ==
-                            ConnectionState.waiting) {
-                          return const Padding(
-                            padding: EdgeInsets.only(top: 8.0),
-                            child: LinearProgressIndicator(),
-                          );
-                        }
-
-                        return ListView.separated(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          separatorBuilder: (context, index) =>
-                              const ListViewSeparator(),
-                          itemCount: snapshot.data!.docs.length,
-                          itemBuilder: (BuildContext ctx, int index) {
-                            QueryDocumentSnapshot document =
-                                snapshot.data!.docs[index];
-                            Map<String, dynamic> data =
-                                document.data() as Map<String, dynamic>;
-                            return ModuleItem(
-                              documentId: document.id,
-                              reference: document.reference,
-                              data: data,
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting) {
+                            return const Padding(
+                              padding: EdgeInsets.only(top: 8.0),
+                              child: LinearProgressIndicator(),
                             );
-                          },
-                        );
-                      },
+                          }
+
+                          return ListView.separated(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            separatorBuilder: (context, index) =>
+                                const ListViewSeparator(),
+                            itemCount: snapshot.data!.docs.length,
+                            itemBuilder: (BuildContext ctx, int index) {
+                              QueryDocumentSnapshot document =
+                                  snapshot.data!.docs[index];
+                              Map<String, dynamic> data =
+                                  document.data() as Map<String, dynamic>;
+                              return ModuleItem(
+                                documentId: document.id,
+                                reference: document.reference,
+                                data: data,
+                              );
+                            },
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ),

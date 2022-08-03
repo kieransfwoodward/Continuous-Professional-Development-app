@@ -189,10 +189,14 @@ class _SingleImageMultipleChoiceQuestionState
                 .toList(),
 
           ),
+
           if(_optionSelected)Column(
             children: <Widget>[
               Text(widget.data["feedback"])
             ],
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 70.0),
           ),
         ],
       ),

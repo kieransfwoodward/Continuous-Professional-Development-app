@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "/Users/will/Documents/CPD2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cmp3parkew\\.gradle\\caches\\transforms-2\\files-2.1\\243d793bea812e07fee3a1bfc91eb622\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/243d793bea812e07fee3a1bfc91eb622/appcompat-1.4.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,14 +21,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cmp3parkew\\Documents\\GitHub\\CPD2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "/Users/will/Documents/CPD2/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "175,820",
+                        "startOffsets": "172,806",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "471,986"
+                        "endOffsets": "464,970"
                     },
                     "to": {
                         "startLines": "2,7",

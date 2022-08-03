@@ -52,18 +52,11 @@ class _BasicExample extends State<BasicExample> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          DragAndDropLists(
+         return DragAndDropLists(
         children: _contents,
         onItemReorder: _onItemReorder,
         onListReorder: _onListReorder,
-      ),
-      ],
-      ),
+      // ),
     );
   }
 
