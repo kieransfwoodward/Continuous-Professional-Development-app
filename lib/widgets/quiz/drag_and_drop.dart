@@ -1,5 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 import '../../custom_divider.dart';
 import '../../item.dart';
@@ -27,32 +28,32 @@ class _drag_and_dropState extends State<drag_and_drop> {
     //List for dragable items
     items = [
       for (String i in <String>[
-        'bicyclebic a bicyclebic bicyclebic bicyclebic bicyclebic bicyclebic bicyclebic',
-        'bus',
-        'camel',
-        'cow',
-        'eagle',
-        'fox',
-        'hen',
-        'horse',
-        'kingfisher',
-        'lion',
+        'Drawings all showing wrong dimensions.',
+        'Accurate setting-out information and specifications not provided before start on site.',
+        'Mobile Elevated Working Platform (MWEP) required to gain safe access is not available on site.',
+        'Wrong material delivered.',
+        'Staff that do not have the required skills or are incompetent.',
+        'Temporary labour have not bought into project ethos.',
+        'Floor layers laying floors in hall ways and preventing access to rooms with materials.',
+        'Bad weather slows down the progress of work on site.',
+        'Other trades working in the area needed to carry out installations. ',
+        'Supervisor instructing labourers to supply material elsewhere rather than near at hand.'
       ])
         ItemModel(value: i, name: i.toCapitalize(), img: '$i')
     ];
     //List for drop locations
     items2 = [
       for (String i in <String>[
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
+        'Information',
+        'Information',
+        'Equipment',
+        'Materials ',
+        'People ',
+        'People ',
+        'Prior Activity',
+        'External Conditions',
+        'Safe Space',
+        'Shared \nUnderstanding'
       ])
         ItemModel(value: i, name: i.toCapitalize(), img: '$i')
     ];
@@ -70,7 +71,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
 
   @override
   Widget build(BuildContext context) {
-    // Pre-conditions before retun widgets
+    // Pre-conditions before return widgets
     gameOver = items.isEmpty;
     return SingleChildScrollView(
         child: Column(
@@ -94,7 +95,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  'Drag and Drop',
+                  'Drag and drop from left to right',
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
@@ -147,13 +148,11 @@ class _drag_and_dropState extends State<drag_and_drop> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
-                                  color: item.accepting
-                                      ? Colors.grey[400]
-                                      : Colors.grey[200],
+                                  color: buildMaterialColor(HexColor("#d47828"))[50],
                                 ),
                                 alignment: Alignment.center,
                                 // height: MediaQuery.of(context).size.width / 6.5,
-                                width: MediaQuery.of(context).size.width / 2.5,
+                                width: MediaQuery.of(context).size.width / 3,
                                 padding: const EdgeInsets.only(left: 6, top: 12, bottom: 12, right: 6),
                                 child: Text(
                                   item.img,
@@ -169,7 +168,12 @@ class _drag_and_dropState extends State<drag_and_drop> {
                         children: items2.map((item) {
                           return DragTarget<ItemModel>(
                             onAccept: (receivedItem) {
-                              if (item.value == receivedItem.value) {
+
+
+                              //if (item.value == receivedItem.value)   Original
+                              //if (items == "Drawings all showing wrong dimensions." && items2 == "Information")
+                              //if (item.value == "Drawings all showing wrong dimensions." && receivedItem.value== "Information")
+                              if (item.value == "Drawings all showing wrong dimensions." && receivedItem.value== "Information") {
                                 item.accepting = false;
                                 player.play('true.wav');
                                 items.remove(receivedItem);
@@ -186,6 +190,8 @@ class _drag_and_dropState extends State<drag_and_drop> {
                                 player.play('false.wav');
                                 setState(() => score -= 5);
                               }
+
+                              
                               appBarText = 'Score: $score/$fullScore';
                             },
                             onWillAccept: (receivedItem) {
@@ -199,13 +205,11 @@ class _drag_and_dropState extends State<drag_and_drop> {
                               return Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
-                                  color: item.accepting
-                                      ? Colors.grey[400]
-                                      : Colors.grey[200],
+                                  color: buildMaterialColor(HexColor("#d47828"))[300],
                                 ),
                                 alignment: Alignment.center,
-                                height: MediaQuery.of(context).size.width / 6.5,
-                                width: MediaQuery.of(context).size.width / 3,
+                                padding: const EdgeInsets.only(left: 6, top: 12, bottom: 12, right: 6),
+                                width: MediaQuery.of(context).size.width / 2.5,
                                 margin: const EdgeInsets.all(8),
                                 child: Text(item.name,
                                     style: Theme.of(context)
@@ -291,6 +295,25 @@ class _drag_and_dropState extends State<drag_and_drop> {
       },
     );
   }
+
+  buildMaterialColor(Color color) {
+  List strengths = <double>[.05];
+  Map<int, Color> swatch = {};
+  final int r = color.red, g = color.green, b = color.blue;
+
+  for (int i = 1; i < 10; i++) {
+  strengths.add(0.1 * i);
+  }
+  for (var strength in strengths) {
+  final double ds = 0.5 - strength;
+  swatch[(strength * 1000).round()] = Color.fromRGBO(
+  r + ((ds < 0 ? r : (255 - r)) * ds).round(),
+  g + ((ds < 0 ? g : (255 - g)) * ds).round(),
+  b + ((ds < 0 ? b : (255 - b)) * ds).round(),
+  1,
+  );
+  };
+  return MaterialColor(color.value, swatch);}
 }
 
 extension StringExtension on String {
