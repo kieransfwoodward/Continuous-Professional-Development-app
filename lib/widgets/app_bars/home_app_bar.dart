@@ -65,7 +65,7 @@ class HomeAppBar extends StatelessWidget {
               children: [
                 Icon(
                   Icons.emoji_people,
-                  color: Theme.of(context).canvasColor,
+                  color: const Color(0xffd47828),
                   size: 12,
                 ),
                 Padding(
@@ -76,7 +76,7 @@ class HomeAppBar extends StatelessWidget {
                     returnValIfNull: "",
                     prefixText: "Welcome ",
                     style: Theme.of(context).textTheme.overline?.copyWith(
-                          color: Theme.of(context).canvasColor,
+                      color: const Color(0xffd47828),
                         ),
                   ),
                 )
@@ -86,7 +86,7 @@ class HomeAppBar extends StatelessWidget {
           Text(
             "What will your CPD be today?",
             style: Theme.of(context).textTheme.headline6?.copyWith(
-                  color: Theme.of(context).canvasColor,
+                  color: const Color(0xffd47828),
                 ),
           ),
         ],

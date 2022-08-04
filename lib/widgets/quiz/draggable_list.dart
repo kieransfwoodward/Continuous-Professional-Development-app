@@ -1,77 +1,132 @@
-import 'package:drag_and_drop_lists/drag_and_drop_item.dart';
+import 'package:drag_and_drop_lists/drag_and_drop_list_expansion.dart';
 import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
-class BasicExample extends StatefulWidget {
-  BasicExample({Key? key}) : super(key: key);
-
+class ExpansionTileExample extends StatefulWidget {
+  ExpansionTileExample({Key? key}) : super(key: key);
   @override
-  _BasicExample createState() => _BasicExample();
+  _ListTileExample createState() => _ListTileExample();
 }
 
-class _BasicExample extends State<BasicExample> {
-  late List<DragAndDropList> _contents;
+class InnerList {
+  String title;
+  String subtitle;
+  InnerList({required this.title, required this.subtitle});
 
+
+}
+
+class _ListTileExample extends State<ExpansionTileExample> {
+  late List<InnerList> _lists;
+  //late List<InnerList> _contents;
   @override
   void initState() {
     super.initState();
-
-    _contents = List.generate(10, (index) {
-      return DragAndDropList(
-        header: Row(
-          children: <Widget>[
-            Expanded(
-              flex: 1,
-              child: Divider(),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              child: Text('Header $index'),
-            ),
-            Expanded(
-              flex: 1,
-              child: Divider(),
-            ),
-          ],
-        ),
-        children: <DragAndDropItem>[
-          DragAndDropItem(
-            child: Text('$index.1'),
-          ),
-          DragAndDropItem(
-            child: Text('$index.2'),
-          ),
-          DragAndDropItem(
-            child: Text('$index.3'),
-          ),
-        ],
+    // // Generate a list
+    // _contents = List.generate(10, (index) {
+    //   return DragAndDropList(
+    //     header: Text('Header $index'),
+    //     children: <DragAndDropItem>[
+    //       DragAndDropItem(
+    //         child: Text('$index.1'),
+    //       ),
+    //       DragAndDropItem(
+    //         child: Text('$index.2'),
+    //       ),
+    //       DragAndDropItem(
+    //         child: Text('$index.3'),
+    //       ),
+    //     ],
+    //   );
+    // });
+    late List<String> title = [
+      "Ideas and Judgment",
+      "Reporting Facts/ Gossip",
+      "Peak Rapport",
+      "Cliché/ Ritual",
+      "Feelings and Emotions",
+    ];
+    late List<String> subtitle = [
+      "This level of communication is when individuals are giving their opinion and judgments on the situation. "
+          "For example, I believe if we were to recruit in the technical area, it will give us a stronger "
+          "presence.",
+      "This is when you are relaying information from someone else, not owning the conversation. For example, "
+          "we might say people have said to me that your team are feeling frustrated, so it’s information, "
+          "whether it’s factual or it’s gossip.",
+      "This idea moves away from facts, rituals and safe subjects to explore hopes, fears, feelings and passions.",
+      "This is the kind of communication where you pass the time of day, or talk about safe subjects such as "
+          "weather, sports, or TV.",
+      "Someone is prepared to say what they think and feel. This usually includes giving feedback, for "
+          "example when you stop imputing at team meetings, I’m unclear what you think, and I become confused.",
+    ];
+    _lists = List.generate(5, (outerIndex) {
+      return InnerList(
+        title: title[outerIndex],
+        subtitle: subtitle[outerIndex],
       );
     });
   }
 
   @override
   Widget build(BuildContext context) {
-         return DragAndDropLists(
-        children: _contents,
+    return Scaffold(
+      body: DragAndDropLists(
+        children: List.generate(_lists.length, (index) => _buildList(index)),
         onItemReorder: _onItemReorder,
         onListReorder: _onListReorder,
-      // ),
+        // listGhost is mandatory when using expansion tiles to prevent multiple widgets using the same globalkey
+        listGhost: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 30.0),
+          child: Center(
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 100.0),
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(7.0),
+              ),
+              child: Icon(Icons.add_box),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  _buildList(int outerIndex) {
+    var innerList = _lists[outerIndex];
+    return DragAndDropListExpansion(
+      //Enter the title into the box
+      title: Text('${innerList.title}'),
+      //Add an Icon to the left hand side of the box
+      leading: Icon(Icons.arrow_downward),
+      //Enter text to the drop down feature
+      children: List.generate(1,(index) => _buildItem(innerList.subtitle)),
+      listKey: ObjectKey(innerList),
+    );
+  }
+
+  _buildItem(String item) {
+    return DragAndDropItem(
+      child: ListTile(
+        title: Text(item),
+      ),
     );
   }
 
   _onItemReorder(
       int oldItemIndex, int oldListIndex, int newItemIndex, int newListIndex) {
     setState(() {
-      var movedItem = _contents[oldListIndex].children.removeAt(oldItemIndex);
-      _contents[newListIndex].children.insert(newItemIndex, movedItem);
+      //var movedItem = _lists[oldListIndex].subtitle.removeAt(oldItemIndex);
+      //_lists[newListIndex].subtitle.insert(newItemIndex, movedItem);
     });
   }
 
   _onListReorder(int oldListIndex, int newListIndex) {
     setState(() {
-      var movedList = _contents.removeAt(oldListIndex);
-      _contents.insert(newListIndex, movedList);
+      var movedList = _lists.removeAt(oldListIndex);
+      _lists.insert(newListIndex, movedList);
     });
   }
 }

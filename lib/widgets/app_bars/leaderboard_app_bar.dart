@@ -24,7 +24,7 @@ class LeaderboardAppBar extends StatelessWidget {
             child: Text(
               "Leaderboard",
               style: Theme.of(context).textTheme.headline6?.copyWith(
-                    color: Theme.of(context).canvasColor,
+                color: const Color(0xffd47828),
                   ),
             ),
           ),

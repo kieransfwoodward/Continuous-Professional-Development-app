@@ -27,12 +27,11 @@ class _DescriptiveIconState extends State<DescriptiveIcon> {
   @override
   void didChangeDependencies() {
     setState(() {
-      _color = widget.isLargeItem
-          ? Theme.of(context).canvasColor
-          : Theme.of(context).primaryColorLight;
+      _color = const Color(0xffd47828);
+
       _style = widget.isLargeItem
           ? Theme.of(context).textTheme.headline6?.copyWith(
-                color: _color,
+        color: const Color(0xffd47828),
                 fontWeight: FontWeight.normal,
               )
           : Theme.of(context).textTheme.bodyText2?.copyWith(color: _color);
@@ -49,7 +48,7 @@ class _DescriptiveIconState extends State<DescriptiveIcon> {
         Icon(
           widget.leadingIcon,
           size: widget.isLargeItem ? null : 18,
-          color: _color,
+          color: const Color(0xffd47828),
         ),
         Padding(
           padding: EdgeInsets.only(

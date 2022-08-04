@@ -19,7 +19,7 @@ class CloseToHome extends StatelessWidget {
       icon: Icon(
         Icons.close,
         size: 36,
-        color: Theme.of(context).canvasColor,
+        color: const Color(0xffd47828),
       ),
     );
   }

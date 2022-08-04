@@ -76,6 +76,7 @@ MERGED from [:cloud_firestore] /Users/will/Documents/CPD2/build/cloud_firestore/
 MERGED from [:firebase_core] /Users/will/Documents/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:audioplayers] /Users/will/Documents/CPD2/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-48:12
+MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:path_provider_android] /Users/will/Documents/CPD2/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -185,6 +186,8 @@ MERGED from [:audioplayers] /Users/will/Documents/CPD2/build/audioplayers/interm
 MERGED from [:audioplayers] /Users/will/Documents/CPD2/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-44
 MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44

@@ -59,7 +59,7 @@ class CustomProgressIndicator extends StatelessWidget {
 
 
           child: Icon(Icons.check_box_outline_blank_outlined,
-            color: Colors.red,),
+            color: const Color(0xffd47828),),
           // strokeWidth: 2,
           // value: 0.6,
           // color: Colors.blue,

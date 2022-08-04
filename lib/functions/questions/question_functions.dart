@@ -1,4 +1,4 @@
-import 'package:cpd/widgets/quiz/ColorGame.dart';
+import 'package:cpd/widgets/quiz/drag_and_drop.dart';
 import 'package:cpd/widgets/quiz/learn_text_input.dart';
 import 'package:cpd/widgets/quiz/single_image_multiple_choice_question.dart';
 import 'package:flutter/material.dart';
@@ -62,11 +62,11 @@ class QuestionFunctions {
       );
     }
     if (type == "drag_drop_module_one") {
-      return BasicExample(
+      return ExpansionTileExample(
       );
     }
     if (type == "drag_drop_module_three") {
-      return ColorGame(
+      return drag_and_drop(
       );
     }
     if (type == "painter") {

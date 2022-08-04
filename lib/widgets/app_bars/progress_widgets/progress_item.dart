@@ -31,7 +31,7 @@ class ProgressItem extends StatelessWidget {
           children: [
             Icon(
               icon,
-              color: Theme.of(context).canvasColor,
+              color: const Color(0xffd47828),
               size: 18,
             ),
             Padding(
@@ -47,7 +47,7 @@ class ProgressItem extends StatelessWidget {
                 prefixText: textToInclude,
                 returnValIfNull: returnValIfNull,
                 style: Theme.of(context).textTheme.subtitle2?.copyWith(
-                      color: Theme.of(context).canvasColor,
+                  color: const Color(0xffd47828),
                     ),
               ),
             )
