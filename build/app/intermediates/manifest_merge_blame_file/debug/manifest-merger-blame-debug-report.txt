@@ -12,36 +12,36 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/will/Documents/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/will/Documents/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/kieranwoodward/Documents/GitHub/CPD2/android/app/src/debug/AndroidManifest.xml:6:22-64
 15
 16    <queries>
-16-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
+16-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-11:15
 17        <intent>
-17-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
+17-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-10:18
 18            <action android:name="android.support.customtabs.action.CustomTabsService" />
-18-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
-18-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
+18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-90
+18-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:9:21-87
 19        </intent>
 20    </queries>
 21
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:5-79
-22-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:22-76
+22-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:5-79
+22-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:22-76
 23    <uses-permission android:name="android.permission.WAKE_LOCK" />
-23-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:5-68
-23-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:22-65
+23-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:5-68
+23-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:22-65
 24    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-24-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:5-79
-24-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:22-76
+24-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:5-79
+24-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:22-76
 25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-25-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:5-110
-25-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:22-107
+25-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:5-110
+25-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:22-107
 26
 27    <application
 28        android:name="android.app.Application"
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.7.0] /Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.7.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
 32        android:label="cpd" >
@@ -79,291 +79,291 @@
 64            android:value="2" />
 65
 66        <service
-66-->[:firebase_auth] /Users/will/Documents/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+66-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[:firebase_auth] /Users/will/Documents/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+67-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 68            android:directBootAware="true"
-68-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+68-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 69            android:exported="false" >
-69-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:66:13-37
+69-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:66:13-37
 70            <meta-data
-70-->[:firebase_auth] /Users/will/Documents/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+70-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-71-->[:firebase_auth] /Users/will/Documents/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+71-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_auth] /Users/will/Documents/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+72-->[:firebase_auth] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 73            <meta-data
-73-->[:cloud_firestore] /Users/will/Documents/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+73-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-74-->[:cloud_firestore] /Users/will/Documents/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+74-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:cloud_firestore] /Users/will/Documents/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+75-->[:cloud_firestore] /Users/kieranwoodward/Documents/GitHub/CPD2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 76            <meta-data
-76-->[:firebase_core] /Users/will/Documents/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+76-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-77-->[:firebase_core] /Users/will/Documents/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+77-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_core] /Users/will/Documents/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+78-->[:firebase_core] /Users/kieranwoodward/Documents/GitHub/CPD2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 79            <meta-data
-79-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
+79-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
 80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-80-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:68:17-109
+80-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:68:17-109
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:69:17-82
+81-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:69:17-82
 82            <meta-data
-82-->[com.google.firebase:firebase-firestore:24.2.0] /Users/will/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:20:13-22:85
+82-->[com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:20:13-22:85
 83                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-83-->[com.google.firebase:firebase-firestore:24.2.0] /Users/will/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:21:17-111
+83-->[com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:21:17-111
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-firestore:24.2.0] /Users/will/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:22:17-82
+84-->[com.google.firebase:firebase-firestore:24.2.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a53a1a527aea830ba8ac4bc99086c7fb/jetified-firebase-firestore-24.2.0/AndroidManifest.xml:22:17-82
 85            <meta-data
-85-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
+85-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
 86                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-86-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
+86-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
 87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
+87-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/e3a5aaff7ce4726db089806125d21a81/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
 88            <meta-data
-88-->[com.google.firebase:firebase-installations:17.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+88-->[com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
 89                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-89-->[com.google.firebase:firebase-installations:17.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+89-->[com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
 90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-installations:17.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+90-->[com.google.firebase:firebase-installations:17.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/712d6f377a69f8db09b9808edaf0d8ef/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
 91        </service>
 92
 93        <activity
-93-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
+93-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-18:47
 94            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
-94-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
+94-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-104
 95            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-95-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
+95-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-137
 96            android:exported="true"
-96-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
+96-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-36
 97            android:theme="@style/AppTheme" />
-97-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
+97-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
 98        <activity
-98-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
+98-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:55
 99            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
-99-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
+99-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-112
 100            android:exported="true"
-100-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
+100-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-36
 101            android:theme="@style/ThemeTransparent" />
-101-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
+101-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-52
 102        <activity
-102-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
+102-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:55
 103            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
-103-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
+103-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-106
 104            android:exported="true"
-104-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
+104-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-36
 105            android:theme="@style/ThemeTransparent" />
-105-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
+105-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-52
 106        <activity
-106-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
+106-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:55
 107            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
-107-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
+107-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-126
 108            android:exported="true"
-108-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
+108-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-36
 109            android:launchMode="singleInstance"
-109-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
+109-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-48
 110            android:theme="@style/ThemeTransparent" />
-110-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
+110-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-52
 111        <activity
-111-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
+111-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-36:55
 112            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
-112-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
+112-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:33:13-120
 113            android:exported="true"
-113-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
+113-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36
 114            android:launchMode="singleInstance"
-114-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
+114-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-48
 115            android:theme="@style/ThemeTransparent" />
-115-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
+115-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-52
 116
 117        <receiver
-117-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
+117-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:38:9-41:40
 118            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
-118-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
+118-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-111
 119            android:enabled="true"
-119-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
+119-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-35
 120            android:exported="false" />
-120-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
+120-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-37
 121
 122        <meta-data
-122-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
+122-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-45:36
 123            android:name="io.flutter.embedded_views_preview"
-123-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
+123-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:44:13-61
 124            android:value="true" />
-124-->[:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
+124-->[:flutter_inappwebview] /Users/kieranwoodward/Documents/GitHub/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-33
 125
 126        <activity
-126-->[:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+126-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 127            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-127-->[:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+127-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 128            android:exported="false"
-128-->[:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+128-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 129            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-129-->[:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+129-->[:url_launcher_android] /Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 130
 131        <uses-library
-131-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+131-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 132            android:name="androidx.window.extensions"
-132-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+132-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
 133            android:required="false" />
-133-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+133-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
 134        <uses-library
-134-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+134-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
 135            android:name="androidx.window.sidecar"
-135-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+135-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
 136            android:required="false" />
-136-->[androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+136-->[androidx.window:window:1.0.0-beta04] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 137
 138        <activity
-138-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
+138-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
 139            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-139-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:28:13-80
+139-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:28:13-80
 140            android:excludeFromRecents="true"
-140-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:29:13-46
+140-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:29:13-46
 141            android:exported="true"
-141-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:30:13-36
+141-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:30:13-36
 142            android:launchMode="singleTask"
-142-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:31:13-44
+142-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:31:13-44
 143            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-143-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:32:13-72
+143-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:32:13-72
 144            <intent-filter>
-144-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:33:13-43:29
+144-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:33:13-43:29
 145                <action android:name="android.intent.action.VIEW" />
-145-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
-145-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+145-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+145-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
 146
 147                <category android:name="android.intent.category.DEFAULT" />
-147-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
-147-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+147-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+147-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
 148                <category android:name="android.intent.category.BROWSABLE" />
-148-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
-148-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+148-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+148-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
 149
 150                <data
-150-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+150-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
 151                    android:host="firebase.auth"
-151-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+151-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
 152                    android:path="/"
-152-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+152-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
 153                    android:scheme="genericidp" />
-153-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+153-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
 154            </intent-filter>
 155        </activity>
 156        <activity
-156-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:45:9-62:20
+156-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:45:9-62:20
 157            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-157-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:46:13-79
+157-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:46:13-79
 158            android:excludeFromRecents="true"
-158-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:47:13-46
+158-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:47:13-46
 159            android:exported="true"
-159-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:48:13-36
+159-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:48:13-36
 160            android:launchMode="singleTask"
-160-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:49:13-44
+160-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:49:13-44
 161            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-161-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:50:13-72
+161-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:50:13-72
 162            <intent-filter>
-162-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:51:13-61:29
+162-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:51:13-61:29
 163                <action android:name="android.intent.action.VIEW" />
-163-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
-163-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+163-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+163-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
 164
 165                <category android:name="android.intent.category.DEFAULT" />
-165-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
-165-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+165-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+165-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
 166                <category android:name="android.intent.category.BROWSABLE" />
-166-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
-166-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+166-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+166-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
 167
 168                <data
-168-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+168-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
 169                    android:host="firebase.auth"
-169-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+169-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
 170                    android:path="/"
-170-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+170-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
 171                    android:scheme="recaptcha" />
-171-->[com.google.firebase:firebase-auth:21.0.6] /Users/will/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+171-->[com.google.firebase:firebase-auth:21.0.6] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/9bbd71af163817c189e4c8aeef45ed3e/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
 172            </intent-filter>
 173        </activity>
 174
 175        <provider
-175-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+175-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
 176            android:name="com.google.firebase.provider.FirebaseInitProvider"
-176-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+176-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
 177            android:authorities="com.citb.cpd.firebaseinitprovider"
-177-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+177-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
 178            android:directBootAware="true"
-178-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+178-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
 179            android:exported="false"
-179-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+179-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
 180            android:initOrder="100" />
-180-->[com.google.firebase:firebase-common:20.1.1] /Users/will/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+180-->[com.google.firebase:firebase-common:20.1.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/3ef515f1ec7e7c12517505c880fde883/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
 181
 182        <receiver
-182-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
+182-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
 183            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-183-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
+183-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
 184            android:enabled="true"
-184-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
+184-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
 185            android:exported="false" >
-185-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
+185-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
 186        </receiver>
 187
 188        <service
-188-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
+188-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
 189            android:name="com.google.android.gms.measurement.AppMeasurementService"
-189-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
+189-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
 190            android:enabled="true"
-190-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
+190-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
 191            android:exported="false" />
-191-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
+191-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
 192        <service
-192-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
+192-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
 193            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-193-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
+193-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
 194            android:enabled="true"
-194-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
+194-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
 195            android:exported="false"
-195-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
+195-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
 196            android:permission="android.permission.BIND_JOB_SERVICE" />
-196-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
+196-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/67914a941f2b34be10daf10d247e26da/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
 197
 198        <activity
-198-->[com.google.android.gms:play-services-base:18.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+198-->[com.google.android.gms:play-services-base:18.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 199            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-199-->[com.google.android.gms:play-services-base:18.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+199-->[com.google.android.gms:play-services-base:18.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 200            android:exported="false"
-200-->[com.google.android.gms:play-services-base:18.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+200-->[com.google.android.gms:play-services-base:18.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
 201            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-201-->[com.google.android.gms:play-services-base:18.0.1] /Users/will/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+201-->[com.google.android.gms:play-services-base:18.0.1] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/693e905576af25746ab711c1eaafb7e4/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 202
 203        <meta-data
-203-->[com.google.android.gms:play-services-basement:18.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+203-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
 204            android:name="com.google.android.gms.version"
-204-->[com.google.android.gms:play-services-basement:18.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+204-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
 205            android:value="@integer/google_play_services_version" />
-205-->[com.google.android.gms:play-services-basement:18.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+205-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8953ca5c8c30192097b77325e3ddddda/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 206
 207        <provider
-207-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+207-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
 208            android:name="androidx.startup.InitializationProvider"
-208-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+208-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
 209            android:authorities="com.citb.cpd.androidx-startup"
-209-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+209-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
 210            android:exported="false" >
-210-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+210-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
 211            <meta-data
-211-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+211-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 212                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-212-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+212-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
 213                android:value="androidx.startup" />
-213-->[androidx.emoji2:emoji2:1.0.0] /Users/will/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+213-->[androidx.emoji2:emoji2:1.0.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/8365ec9125e1f7a6262fb13bdd112867/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
 214            <meta-data
-214-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/will/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+214-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
 215                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-215-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/will/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+215-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 216                android:value="androidx.startup" />
-216-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/will/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+216-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/6c079cadbacb3049d6f10d3c3f99e8c5/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 217        </provider>
 218    </application>
 219

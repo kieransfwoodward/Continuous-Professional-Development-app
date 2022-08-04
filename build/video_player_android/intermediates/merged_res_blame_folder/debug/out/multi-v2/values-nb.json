@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/res/merged/debug/values-nb/values-nb.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-nb/values-nb.xml",
+                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-nb/values-nb.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,193,257,328,408,486,580,677",
+                        "endColumns": "75,61,63,70,79,77,93,96,70",
+                        "endOffsets": "126,188,252,323,403,481,575,672,743"
+                    }
+                },
+                {
+                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,25 +28,25 @@
                         "startOffsets": "748",
                         "endColumns": "100",
                         "endOffsets": "844"
-                    }
-                },
-                {
-                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-nb/values-nb.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,131,193,257,328,408,486,580,677",
-                        "endColumns": "75,61,63,70,79,77,93,96,70",
-                        "endOffsets": "126,188,252,323,403,481,575,672,743"
                     }
                 }
             ]
         },
         {
-            "outputFile": "/Users/will/Documents/CPD2/build/video_player_android/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/video_player_android/intermediates/res/merged/debug/values-nb/values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-nb/values-nb.xml",
+                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-nb/values-nb.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,193,257,328,408,486,580,677",
+                        "endColumns": "75,61,63,70,79,77,93,96,70",
+                        "endOffsets": "126,188,252,323,403,481,575,672,743"
+                    }
+                },
+                {
+                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/ecccc2959e744e7be090c5d748e4963c/core-1.7.0/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -50,16 +60,6 @@
                         "startOffsets": "748",
                         "endColumns": "100",
                         "endOffsets": "844"
-                    }
-                },
-                {
-                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/d339698a55db5a38973715a903b33c5e/jetified-exoplayer-core-2.18.0/res/values-nb/values-nb.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,131,193,257,328,408,486,580,677",
-                        "endColumns": "75,61,63,70,79,77,93,96,70",
-                        "endOffsets": "126,188,252,323,403,481,575,672,743"
                     }
                 }
             ]

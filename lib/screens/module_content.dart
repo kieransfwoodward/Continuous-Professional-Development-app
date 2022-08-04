@@ -28,7 +28,8 @@ class ModuleContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SingleChildScrollView(
+      child: Container(
         color: Theme.of(context).primaryColor,
         child: SafeArea(
           child: Center(
@@ -72,39 +73,42 @@ class ModuleContent extends StatelessWidget {
                             style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ),
-                        Column(
-                          children: (data["content_covered"] as List)
-                              .map(
-                                (content) => Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 6.0),
-                                      child: Icon(
-                                        Icons.circle,
-                                        size: 8,
-                                        color: Theme.of(context).primaryColor,
-                                      ),
-                                    ),
-                                    Flexible(
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 8.0,
-                                          bottom: 8.0,
+                        SingleChildScrollView(
+                          child: Column(
+                              children: (data["content_covered"] as List)
+                                  .map(
+                                    (content) => Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 6.0),
+                                          child: Icon(
+                                            Icons.circle,
+                                            size: 8,
+                                            color: Theme.of(context).primaryColor,
+                                          ),
                                         ),
-                                        child: Text(
-                                          content,
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .subtitle1,
+                                        Flexible(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                              left: 8.0,
+                                              bottom: 8.0,
+                                            ),
+                                            child: Text(
+                                              content,
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .subtitle1,
+                                            ),
+                                          ),
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                  ],
-                                ),
-                              )
-                              .toList(),
+                                  )
+                                  .toList(),
+                            ),
+
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -146,6 +150,7 @@ class ModuleContent extends StatelessWidget {
             ),
           ),
         ),
+      ),
       ),
     );
   }
