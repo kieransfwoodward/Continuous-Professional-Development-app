@@ -36,7 +36,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
         'Temporary labour have not bought into project ethos.',
         'Floor layers laying floors in hall ways and preventing access to rooms with materials.',
         'Bad weather slows down the progress of work on site.',
-        'Other trades working in the area needed to carry out installations. ',
+        'Other trades working in the area needed to carry out installations.',
         'Supervisor instructing labourers to supply material elsewhere rather than near at hand.'
       ])
         ItemModel(value: i, name: i.toCapitalize(), img: '$i')
@@ -47,9 +47,9 @@ class _drag_and_dropState extends State<drag_and_drop> {
         'Information',
         'Information',
         'Equipment',
-        'Materials ',
-        'People ',
-        'People ',
+        'Materials',
+        'People',
+        'People',
         'Prior Activity',
         'External Conditions',
         'Safe Space',
@@ -84,7 +84,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
               borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20)),
-              color: Colors.pink.withOpacity(0.5),
+              color: buildMaterialColor(HexColor("#384a5f"))[100],
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -173,25 +173,132 @@ class _drag_and_dropState extends State<drag_and_drop> {
                               //if (item.value == receivedItem.value)   Original
                               //if (items == "Drawings all showing wrong dimensions." && items2 == "Information")
                               //if (item.value == "Drawings all showing wrong dimensions." && receivedItem.value== "Information")
-                              if (item.value == "Drawings all showing wrong dimensions." && receivedItem.value== "Information") {
+                              if (item.value == "Information" && receivedItem.value == "Drawings all showing wrong dimensions." ||
+                                  item.value == "Information" && receivedItem.value == "Accurate setting-out information and specifications not provided ""before start on site." ||
+                                  item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe ""access is not available on site." ||
+                                  item.value == "Materials" && receivedItem.value == "Wrong material delivered." ||
+                                  item.value == "People" && receivedItem.value == "Staff that do not have the required skills or are incompetent." ||
+                                  item.value == "People" && receivedItem.value == "Temporary labour have not bought into project ethos." ||
+                                  item.value == "Prior Activity" && receivedItem.value == "Floor layers laying floors in hall ways and preventing ""access to rooms with materials." ||
+                                  item.value == "External Conditions" && receivedItem.value == "Bad weather slows down the progress of work on site." ||
+                                  item.value == "Safe Space" && receivedItem.value == "Other trades working in the area needed to carry out ""installations." ||
+                                  item.value == "Shared \nUnderstanding" && receivedItem.value == "Supervisor instructing labourers to supply ""material elsewhere rather than near at hand.") {
                                 item.accepting = false;
-                                player.play('true.wav');
+                                // player.play('true.wav');
                                 items.remove(receivedItem);
                                 items2.remove(item);
                                 setState(() => score += 10);
                                 if (items.isEmpty) {
                                   _showDialog(
                                     title: '📣 Game Over 📣',
-                                    subtitle: generateResult(),
+                                    subtitle: 'Test your knowledge again, or continue with the module.' ,
                                   );
                                 }
-                              } else {
+                              }
+                              // else if (item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe "
+                              //     "access is not available on site.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "Materials" && receivedItem.value == "Wrong material delivered.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "People" && receivedItem.value == "Staff that do not have the required skills or are incompetent." ||
+                              //     item.value == "People" && receivedItem.value == "Temporary labour have not bought into project ethos.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "Prior Activity" && receivedItem.value == "Floor layers laying floors in hall ways and preventing "
+                              //     "access to rooms with materials.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "External Conditions" && receivedItem.value == "Bad weather slows down the progress of work on site.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "Safe Space" && receivedItem.value == "Other trades working in the area needed to carry out "
+                              //     "installations.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+                              // else if (item.value == "Shared \nUnderstanding" && receivedItem.value == "Supervisor instructing labourers to supply "
+                              //     "material elsewhere rather than near at hand.") {
+                              //   item.accepting = false;
+                              //   // player.play('true.wav');
+                              //   items.remove(receivedItem);
+                              //   items2.remove(item);
+                              //   setState(() => score += 10);
+                              //   if (items.isEmpty) {
+                              //     _showDialog(
+                              //       title: '📣 Game Over 📣',
+                              //       subtitle: 'Test your knowledge again, or continue with the module.',
+                              //     );
+                              //   }
+                              // }
+
+                              else {
                                 item.accepting = false;
-                                player.play('false.wav');
+                                // player.play('false.wav');
                                 setState(() => score -= 5);
                               }
 
-                              
+
                               appBarText = 'Score: $score/$fullScore';
                             },
                             onWillAccept: (receivedItem) {
@@ -253,8 +360,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
         return AlertDialog(
           shape:
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          backgroundColor:
-          Theme.of(context).scaffoldBackgroundColor.withOpacity(0.90),
+          backgroundColor: buildMaterialColor(HexColor("#d47828"))[50],
           title: Column(
             children: [
               Text(
