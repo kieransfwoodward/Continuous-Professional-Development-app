@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import '../../custom_divider.dart';
+import '../../functions/firebase_functions.dart';
 import '../../item.dart';
 
 
@@ -165,15 +166,11 @@ class _drag_and_dropState extends State<drag_and_drop> {
                         }).toList(growable: false),
                       ),
                       Column(
-                        children: items2.map((item) {
+                        children: items2.map((item)
+                        {
                           return DragTarget<ItemModel>(
                             onAccept: (receivedItem) {
-
-
-                              //if (item.value == receivedItem.value)   Original
-                              //if (items == "Drawings all showing wrong dimensions." && items2 == "Information")
-                              //if (item.value == "Drawings all showing wrong dimensions." && receivedItem.value== "Information")
-                              if (item.value == "Information" && receivedItem.value == "Drawings all showing wrong dimensions." ||
+                             if (item.value == "Information" && receivedItem.value == "Drawings all showing wrong dimensions." ||
                                   item.value == "Information" && receivedItem.value == "Accurate setting-out information and specifications not provided ""before start on site." ||
                                   item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe ""access is not available on site." ||
                                   item.value == "Materials" && receivedItem.value == "Wrong material delivered." ||
@@ -187,7 +184,17 @@ class _drag_and_dropState extends State<drag_and_drop> {
                                 // player.play('true.wav');
                                 items.remove(receivedItem);
                                 items2.remove(item);
-                                setState(() => score += 10);
+                                FirebaseFunctions().user.get().then((doc) {
+                                  if (doc.data() != null) {
+                                    int points =
+                                        (doc.data() as Map<String, dynamic>)["current_points"] ?? 0;
+                                    FirebaseFunctions().user.update({
+                                      "current_points": points + 2,
+
+                                    });
+
+                                  }
+                                });
                                 if (items.isEmpty) {
                                   _showDialog(
                                     title: '📣 Game Over 📣',
