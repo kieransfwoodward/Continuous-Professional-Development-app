@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.citb.cpd">
    <application
-        android:label="cpd"
+        android:label="Construction Upskill"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -8,10 +8,8 @@
 import 'dart:io'; // flutter_ignore: dart_io_import.
 import 'package:path_provider_android/path_provider_android.dart';
 import 'package:url_launcher_android/url_launcher_android.dart';
-import 'package:video_player_android/video_player_android.dart';
 import 'package:path_provider_ios/path_provider_ios.dart';
 import 'package:url_launcher_ios/url_launcher_ios.dart';
-import 'package:video_player_avfoundation/video_player_avfoundation.dart';
 import 'package:path_provider_linux/path_provider_linux.dart';
 import 'package:url_launcher_linux/url_launcher_linux.dart';
 import 'package:path_provider_macos/path_provider_macos.dart';
@@ -45,16 +43,6 @@ class _PluginRegistrant {
         rethrow;
       }
 
-      try {
-        AndroidVideoPlayer.registerWith();
-      } catch (err) {
-        print(
-          '`video_player_android` threw an error: $err. '
-          'The app may not function as expected until you remove this plugin from pubspec.yaml'
-        );
-        rethrow;
-      }
-
     } else if (Platform.isIOS) {
       try {
         PathProviderIOS.registerWith();
@@ -71,16 +59,6 @@ class _PluginRegistrant {
       } catch (err) {
         print(
           '`url_launcher_ios` threw an error: $err. '
-          'The app may not function as expected until you remove this plugin from pubspec.yaml'
-        );
-        rethrow;
-      }
-
-      try {
-        AVFoundationVideoPlayer.registerWith();
-      } catch (err) {
-        print(
-          '`video_player_avfoundation` threw an error: $err. '
           'The app may not function as expected until you remove this plugin from pubspec.yaml'
         );
         rethrow;

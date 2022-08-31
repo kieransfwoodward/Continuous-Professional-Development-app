@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">860899234123-1hmetcnrk1mo6vje7k0o1ssluriace9g.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">860899234123</string>
+    <string name="google_api_key" translatable="false">AIzaSyCEmpU2O31VkiD2Ib_SWvtkVn7RfQGWvn0</string>
+    <string name="google_app_id" translatable="false">1:860899234123:android:994daf45f1ec1f9ca258ce</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCEmpU2O31VkiD2Ib_SWvtkVn7RfQGWvn0</string>
+    <string name="google_storage_bucket" translatable="false">citb-cpd.appspot.com</string>
+    <string name="project_id" translatable="false">citb-cpd</string>
+</resources>

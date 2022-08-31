@@ -7,8 +7,6 @@ import 'package:cpd/widgets/lists/list_view_separator.dart';
 import 'package:flutter/material.dart';
 import 'package:cpd/functions/firebase_functions.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player/video_player.dart';
-import 'package:vimeo_video_player/vimeo_video_player.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 // Multiple choice question sheet, with the focus being the image
