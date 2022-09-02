@@ -54,10 +54,26 @@ class _ModuleItemState extends State<ModuleItem> {
   @override
   void initState() {
     _getQuestionCount();
-
-    FirebaseFunctions().Module3.get().then((doc) {
-      isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
-    });
+if(widget.data["name"] == "Module 1"){
+  FirebaseFunctions().Module1.get().then((doc) {
+    isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
+  });
+}
+    if(widget.data["name"] == "Module 2"){
+      FirebaseFunctions().Module2.get().then((doc) {
+        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
+      });
+    }
+    if(widget.data["name"] == "Module 3"){
+      FirebaseFunctions().Module3.get().then((doc) {
+        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
+      });
+    }
+    if(widget.data["name"] == "Module 4"){
+      FirebaseFunctions().Module3.get().then((doc) {
+        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
+      });
+    }
 
       super.initState();
   }
