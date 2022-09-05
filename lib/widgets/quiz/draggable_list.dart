@@ -28,13 +28,13 @@ class ExpansionTileExample extends StatefulWidget {
 class InnerList {
   String title;
   String subtitle;
+
   InnerList({required this.title, required this.subtitle});
-
-
 }
 
 class _ListTileExample extends State<ExpansionTileExample> {
   late List<InnerList> _lists;
+
   //late List<InnerList> _contents;
   @override
   void initState() {
@@ -86,32 +86,27 @@ class _ListTileExample extends State<ExpansionTileExample> {
 
   @override
   Widget build(BuildContext context) {
-
-    return Container(
-
-      children: [
-        DragAndDropLists(
-          children: List.generate(_lists.length, (index) => _buildList(index)),
-          onItemReorder: _onItemReorder,
-          onListReorder: _onListReorder,
-          // listGhost is mandatory when using expansion tiles to prevent multiple widgets using the same globalkey
-          listGhost: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 30.0),
-            child: Center(
-              child: Container(
-                padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(7.0),
-                  color: buildMaterialColor(HexColor("#d47828"))[50],
-                ),
-                child: Icon(Icons.add_box),
-              ),
+    return Scaffold(
+        body: DragAndDropLists(
+      children: List.generate(_lists.length, (index) => _buildList(index)),
+      onItemReorder: _onItemReorder,
+      onListReorder: _onListReorder,
+      // listGhost is mandatory when using expansion tiles to prevent multiple widgets using the same globalkey
+      listGhost: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 30.0),
+        child: Center(
+          child: Container(
+            padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(7.0),
+              color: buildMaterialColor(HexColor("#d47828"))[50],
             ),
+            child: Icon(Icons.add_box),
           ),
         ),
-      ],
-    );
+      ),
+    ));
   }
 
   _buildList(int outerIndex) {
@@ -121,11 +116,11 @@ class _ListTileExample extends State<ExpansionTileExample> {
       title: Text('${innerList.title}'),
       //Add an Icon to the left hand side of the box
       leading: Transform.rotate(
-        angle: 90 * pi/180,
+        angle: 90 * pi / 180,
         child: Icon(Icons.multiple_stop_rounded),
       ),
       //Enter text to the drop down feature
-      children: List.generate(1,(index) => _buildItem(innerList.subtitle)),
+      children: List.generate(1, (index) => _buildItem(innerList.subtitle)),
       listKey: ObjectKey(innerList),
     );
   }
@@ -162,8 +157,10 @@ class _ListTileExample extends State<ExpansionTileExample> {
         b + ((ds < 0 ? b : (255 - b)) * ds).round(),
         1,
       );
-    };
-    return MaterialColor(color.value, swatch);}
+    }
+    ;
+    return MaterialColor(color.value, swatch);
+  }
 
   _onListReorder(int oldListIndex, int newListIndex) {
     setState(() {

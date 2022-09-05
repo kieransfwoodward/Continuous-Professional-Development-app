@@ -80,6 +80,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
         mainAxisAlignment: MainAxisAlignment.start,
 
         children: [
+
           Container(
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
@@ -96,7 +97,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  'Drag and drop from left to right',
+                  'Drag and drop from left to right and \n earn 2 points for each correct answer',
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
@@ -105,6 +106,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
               ],
             ),
           ),
+
          // Expanded(
          //   child:
             ListView(
