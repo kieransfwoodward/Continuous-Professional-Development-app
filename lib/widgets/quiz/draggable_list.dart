@@ -7,8 +7,20 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
 
+import 'package:cpd/functions/firebase_functions.dart';
+
 class ExpansionTileExample extends StatefulWidget {
-  ExpansionTileExample({Key? key}) : super(key: key);
+  ExpansionTileExample({
+    Key? key,
+    required this.moduleId,
+    required this.questionNumber,
+    required this.data,
+  }) : super(key: key);
+
+  final String moduleId;
+  final String questionNumber;
+  final Map<String, dynamic> data;
+
   @override
   _ListTileExample createState() => _ListTileExample();
 }
@@ -74,27 +86,31 @@ class _ListTileExample extends State<ExpansionTileExample> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: DragAndDropLists(
-        children: List.generate(_lists.length, (index) => _buildList(index)),
-        onItemReorder: _onItemReorder,
-        onListReorder: _onListReorder,
-        // listGhost is mandatory when using expansion tiles to prevent multiple widgets using the same globalkey
-        listGhost: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 30.0),
-          child: Center(
-            child: Container(
-              padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
-              decoration: BoxDecoration(
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(7.0),
-                color: buildMaterialColor(HexColor("#d47828"))[50],
+
+    return Container(
+
+      children: [
+        DragAndDropLists(
+          children: List.generate(_lists.length, (index) => _buildList(index)),
+          onItemReorder: _onItemReorder,
+          onListReorder: _onListReorder,
+          // listGhost is mandatory when using expansion tiles to prevent multiple widgets using the same globalkey
+          listGhost: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30.0),
+            child: Center(
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(7.0),
+                  color: buildMaterialColor(HexColor("#d47828"))[50],
+                ),
+                child: Icon(Icons.add_box),
               ),
-              child: Icon(Icons.add_box),
             ),
           ),
         ),
-      ),
+      ],
     );
   }
 

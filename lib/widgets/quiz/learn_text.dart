@@ -120,16 +120,16 @@ class _learn_textState
           //     });
           //   },
           // ),
-  CheckboxListTile(
-  title: const Text('I have read it'),
-  value: ticked,
-  onChanged: (bool? value) {
-  setState(() {
-    ticked = true;
-  _updatePoints();
-  });
-  },
-  ),
+          CheckboxListTile(
+          title: const Text('I have read it'),
+          value: ticked,
+          onChanged: (bool? value) {
+          setState(() {
+            ticked = true;
+          _updatePoints();
+          });
+          },
+          ),
 
           Padding(
             padding: EdgeInsets.only(bottom: 60.0),
