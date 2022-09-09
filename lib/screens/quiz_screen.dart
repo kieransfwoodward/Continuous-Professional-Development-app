@@ -188,24 +188,21 @@ class _QuizScreenState extends State<QuizScreen> {
                return HomeScreen();
              }),
            );
-
-
         });
       });
-
-
     }
+
     if(name1 == "Module 2"){
       int correct = 0;
       int total = 0;
       FirebaseFunctions().Module2.get().then((doc){
-         correct =
+        correct =
             (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
             .doc("Module2").get().then((doc){
 
-           total =
+          total =
               (doc.data() as Map<String, dynamic>)["total"] ?? 0;
           if (correct/total > 0.8){
             complete=true;
@@ -215,17 +212,16 @@ class _QuizScreenState extends State<QuizScreen> {
             "completed": complete,
             "correct": 0,
           });
-           Navigator.push(
-             context,
-             MaterialPageRoute(builder: (context) {
-               return HomeScreen();
-             }),
-           );
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return HomeScreen();
+            }),
+          );
         });
       });
-
-
     }
+
     if(name1 == "Module 3"){
       int correct = 0;
       int total = 0;
@@ -254,9 +250,8 @@ class _QuizScreenState extends State<QuizScreen> {
            );
         });
       });
-
-
     }
+
     if(name1 == "Module 4"){
       int correct = 0;
       int total = 0;
@@ -285,8 +280,6 @@ class _QuizScreenState extends State<QuizScreen> {
            );
         });
       });
-
-
     }
   }
 

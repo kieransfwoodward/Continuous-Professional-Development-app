@@ -31,7 +31,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Construction Upskill ",
+      title: "Construction Upskill",
 
       // Create the app theme
       theme: ThemeData(

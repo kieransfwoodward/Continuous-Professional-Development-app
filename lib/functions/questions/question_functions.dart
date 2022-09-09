@@ -10,6 +10,8 @@ import '../../widgets/quiz/learn_text.dart';
 import '../../widgets/quiz/learn_link.dart';
 import '../../widgets/quiz/learn_video.dart';
 import '../../widgets/quiz/single_multiple_choice_question.dart';
+import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
+import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
 
 // Deals with question specific functions
 class QuestionFunctions {
@@ -71,6 +73,20 @@ class QuestionFunctions {
     }
     if (type == "drag_drop_module_one") {
       return ExpansionTileExample(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "drag_drop_module_two_collabskills") {
+      return draggable_list_M2_CollabSkills(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "draggable_list_M2_DesignProcess") {
+      return draggable_list_M2_DesignProcess(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,
