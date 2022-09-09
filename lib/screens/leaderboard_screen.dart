@@ -100,7 +100,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               children: [
                 const LeaderboardAppBar(),
                 Expanded(
-                  child: ContentArea(
+                  child: SingleChildScrollView(
+                    child:ContentArea(
                     child: _isLoading
                         ? const LinearProgressIndicator()
                         : _items.isEmpty
@@ -116,6 +117,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                     _items[i],
                               ),
                   ),
+                ),
                 ),
               ],
             ),

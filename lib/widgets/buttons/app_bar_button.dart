@@ -8,9 +8,11 @@ class AppBarButton extends StatelessWidget {
     Key? key,
     required this.icon,
     required this.onTap,
+
   }) : super(key: key);
   final Function() onTap;
   final IconData icon;
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +21,30 @@ class AppBarButton extends StatelessWidget {
       borderRadius: CustomBorder().borderRadius,
       child: Container(
         decoration: CustomBorder().optionsIconDecoration(context),
-        child: Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Icon(
-            icon,
-            color: const Color(0xffd47828),
-            size: 18,
-          ),
-        ),
+
+            child: Padding(
+              padding: const EdgeInsets.all(4.0),
+
+              child: Row(
+                children: [
+                  Text(
+                    " Leaderboard  ",
+                    style: TextStyle(color: const Color(0xffd47828)),
+
+                  ),
+              Icon(
+
+                icon,
+                color: const Color(0xffd47828),
+                size: 18,
+
+              ),
+
+                ],
+            ),
+
+
+        )
       ),
     );
   }

@@ -9,6 +9,8 @@ import 'package:cpd/widgets/buttons/text/contrast_button_text.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 
 //TODO: Ensure iOS is correctly configured for mobile login at https://firebase.flutter.dev/docs/auth/phone/
 //TODO: May need to change SHA-1 in Firestore if Package Name changes
@@ -261,6 +263,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   onEditingComplete: () {
                                     _usernameFN.unfocus();
                                   },
+                                  maxLength: 15,
                                   focusNode: _usernameFN,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(
