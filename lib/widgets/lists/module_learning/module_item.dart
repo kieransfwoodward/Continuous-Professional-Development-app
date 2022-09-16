@@ -70,7 +70,7 @@ if(widget.data["name"] == "Module 1"){
       });
     }
     if(widget.data["name"] == "Module 4"){
-      FirebaseFunctions().Module3.get().then((doc) {
+      FirebaseFunctions().Module4.get().then((doc) {
         isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
       });
     }

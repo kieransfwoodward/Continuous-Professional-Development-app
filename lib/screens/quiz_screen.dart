@@ -174,7 +174,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
            total =
               (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total > 0.8){
+          if (correct/total >= 0.8){
             complete=true;
           }
           FirebaseFunctions().Module1.update({
@@ -204,7 +204,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
           total =
               (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total > 0.8){
+          if (correct/total >= 0.8){
             complete=true;
           }
           FirebaseFunctions().Module2.update({
@@ -234,7 +234,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
            total =
               (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total > 0.8){
+          if (correct/total >= 0.8){
             complete=true;
           }
            FirebaseFunctions().Module3.update({
@@ -256,15 +256,15 @@ class _QuizScreenState extends State<QuizScreen> {
       int correct = 0;
       int total = 0;
       FirebaseFunctions().Module4.get().then((doc){
-         correct =
+        correct =
             (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
             .doc("Module4").get().then((doc){
 
-           total =
+          total =
               (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total > 0.8){
+          if (correct/total >= 0.8){
             complete=true;
           }
           FirebaseFunctions().Module4.update({
@@ -272,12 +272,12 @@ class _QuizScreenState extends State<QuizScreen> {
             "completed": complete,
             "correct": 0,
           });
-           Navigator.push(
-             context,
-             MaterialPageRoute(builder: (context) {
-               return HomeScreen();
-             }),
-           );
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return HomeScreen();
+            }),
+          );
         });
       });
     }

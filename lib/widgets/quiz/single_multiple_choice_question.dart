@@ -128,7 +128,7 @@ class _SingleMultipleChoiceQuestionState
         "progress": page,
       });
     }
-    if(name1 == "Module4 "){
+    if(name1 == "Module 4"){
       FirebaseFunctions().Module4.update({
         "progress": page,
       });

@@ -78,11 +78,11 @@ class _learn_text_inputState
         "progress": page,
       });
     }
-    if(name1 == "Module4 "){
-      FirebaseFunctions().Module4.update({
-        "progress": page,
-      });
-    }
+      if(name1 == "Module 4"){
+        FirebaseFunctions().Module4.update({
+          "progress": page,
+        });
+      }
 
   }
 
