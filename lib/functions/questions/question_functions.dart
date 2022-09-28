@@ -12,6 +12,8 @@ import '../../widgets/quiz/learn_video.dart';
 import '../../widgets/quiz/single_multiple_choice_question.dart';
 import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
 import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
+import '../../widgets/quiz/interact_image.dart';
+import '../../widgets/quiz/image_slideshow.dart';
 
 // Deals with question specific functions
 class QuestionFunctions {
@@ -98,6 +100,20 @@ class QuestionFunctions {
     }
     if (type == "painter") {
       return ImagePainterExample(
+      );
+    }
+    if (type == "interact_image_m4") {
+      return interact_image(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "image_slideshow2") {
+      return Carousel(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
       );
     }
     return Container();
