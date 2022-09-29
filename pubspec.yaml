@@ -39,6 +39,7 @@ dependencies:
   image_painter: ^0.4.6
   hexcolor: ^2.0.7
   url_launcher: ^6.1.5
+  fancy_shimmer_image: ^2.0.2
 
 
   # The following adds the Cupertino Icons font to your application.

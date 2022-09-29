@@ -77,8 +77,9 @@ MERGED from [:firebase_core] /Users/will/Documents/CPD2/build/firebase_core/inte
 MERGED from [:audioplayers] /Users/will/Documents/CPD2/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-48:12
 MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:sqflite] /Users/will/Documents/CPD2/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:path_provider_android] /Users/will/Documents/CPD2/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/a14b727e1224758810f91ee8ac97baaf/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
@@ -177,10 +178,12 @@ MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_ina
 MERGED from [:flutter_inappwebview] /Users/will/Documents/CPD2/build/flutter_inappwebview/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:hexcolor] /Users/will/Documents/CPD2/build/hexcolor/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/will/Documents/CPD2/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/will/Documents/CPD2/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] /Users/will/Documents/CPD2/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/will/Documents/CPD2/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/will/Documents/CPD2/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/will/Documents/CPD2/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/will/.gradle/caches/transforms-2/files-2.1/350199e59153ae6a9bd2425baa6b511f/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41

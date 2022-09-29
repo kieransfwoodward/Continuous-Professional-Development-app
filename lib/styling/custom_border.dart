@@ -66,11 +66,11 @@ class CustomBorder {
     return BoxDecoration(
       shape: BoxShape.rectangle,
       borderRadius: borderRadius,
-      color: Theme.of(context).secondaryHeaderColor,
-      border: Border.all(
-        color: Theme.of(context).primaryColor,
-        width: 1,
-      ),
+      //color: Theme.of(context).secondaryHeaderColor,
+      // border: Border.all(
+      //   color: Theme.of(context).primaryColor,
+      //   width: 1,
+      // ),
     );
   }
 

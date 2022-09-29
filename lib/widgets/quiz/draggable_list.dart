@@ -39,23 +39,6 @@ class _ListTileExample extends State<ExpansionTileExample> {
   @override
   void initState() {
     super.initState();
-    // // Generate a list
-    // _contents = List.generate(10, (index) {
-    //   return DragAndDropList(
-    //     header: Text('Header $index'),
-    //     children: <DragAndDropItem>[
-    //       DragAndDropItem(
-    //         child: Text('$index.1'),
-    //       ),
-    //       DragAndDropItem(
-    //         child: Text('$index.2'),
-    //       ),
-    //       DragAndDropItem(
-    //         child: Text('$index.3'),
-    //       ),
-    //     ],
-    //   );
-    // });
     late List<String> title = [
       "Ideas and Judgment",
       "Reporting Facts/ Gossip",
@@ -98,9 +81,12 @@ class _ListTileExample extends State<ExpansionTileExample> {
           child: Container(
             padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 70.0),
             decoration: BoxDecoration(
-              border: Border.all(),
+              border: Border.all(
+                  // color: Colors.purple,
+                  // width: 3,
+              ),
               borderRadius: BorderRadius.circular(7.0),
-              color: buildMaterialColor(HexColor("#d47828"))[50],
+              color: buildMaterialColor(HexColor("#d47828")),
             ),
             child: Icon(Icons.add_box),
           ),
