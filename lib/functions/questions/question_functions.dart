@@ -6,14 +6,20 @@ import 'package:flutter/material.dart';
 import '../../widgets/quiz/ImagePainterExample.dart';
 import '../../widgets/quiz/draggable_list.dart';
 import '../../widgets/quiz/learn_image.dart';
+import '../../widgets/quiz/learn_img2.dart';
+import '../../widgets/quiz/learn_img3.dart';
 import '../../widgets/quiz/learn_text.dart';
 import '../../widgets/quiz/learn_link.dart';
+import '../../widgets/quiz/learn_link_mod.dart';
 import '../../widgets/quiz/learn_video.dart';
 import '../../widgets/quiz/single_multiple_choice_question.dart';
 import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
 import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
 import '../../widgets/quiz/interact_image.dart';
 import '../../widgets/quiz/image_slideshow.dart';
+import '../../widgets/quiz/check_understanding.dart';
+import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
+
 
 // Deals with question specific functions
 class QuestionFunctions {
@@ -37,6 +43,12 @@ class QuestionFunctions {
         questionNumber: questionNumber,
         data: data,
       );
+    }if (type.contains("single_multiple_blank")) {
+      return SingleMultipleChoiceQuestionBlank(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
     }
     if (type == "learn_text") {
       return learn_text(
@@ -51,9 +63,36 @@ class QuestionFunctions {
         questionNumber: questionNumber,
         data: data,
       );
+    }if (type == "learn_mod") {
+      return learn_link_mod(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
     }
     if (type == "learn_image") {
       return LearnImage(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_2img") {
+      return Learn2Img(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_3img") {
+      return Learn3Img(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "check_understanding") {
+      return CheckUnderstanding(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

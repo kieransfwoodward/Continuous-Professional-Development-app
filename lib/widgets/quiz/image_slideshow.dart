@@ -123,6 +123,10 @@ class _CarouselState extends State<Carousel> {
           ),
         ),
         const ListViewSeparator(),
+        Text(
+          widget.data["question_subtitle"],
+          style: Theme.of(context).textTheme.subtitle1,
+        ),
         SizedBox(
           width: MediaQuery.of(context).size.width,
           height: 400,

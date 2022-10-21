@@ -109,19 +109,31 @@ class _learn_textState
             ),
           ),
           const ListViewSeparator(),
+          ModuleBannerImage(
+            imagePath: widget.data["image_url"],
+            imageType: ImageType.banner4,
+          ),
           Center(
             child: Text(
               widget.data["question_subtitle"],
               style: Theme.of(context).textTheme.subtitle1,
             ),
           ),
-          Center(
-            child: InkWell(
-              child: const Text('Press here to see more.'),
-              onTap: () => launch( widget.data["link"])
+          Padding(
+            padding: const EdgeInsets.only(top: 10.0),
+            child: Center(
+              child: InkWell(
+                  child: const Text(
+                      'Press here to see more.',
+                    style: TextStyle(
+                      //fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  onTap: () => launch( widget.data["link"])
+              ),
             ),
           ),
-
           // Checkbox(
           //   checkColor: Colors.white,
           //   fillColor: MaterialStateProperty.resolveWith(Colors.blue),

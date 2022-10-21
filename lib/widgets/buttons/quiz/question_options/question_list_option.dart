@@ -28,7 +28,7 @@ class QuestionListOption extends StatelessWidget {
       if (value == groupValue && groupValue == correctAnswer) {
         return Colors.green;
       } else if (value == groupValue && groupValue != correctAnswer) {
-        return Theme.of(context).errorColor;
+        return Colors.red;
       }
       else if (value == correctAnswer) {
         return Colors.green;

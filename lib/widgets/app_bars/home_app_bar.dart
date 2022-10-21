@@ -58,36 +58,28 @@ class HomeAppBar extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 16.0, bottom: 2.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.emoji_people,
-                  color: const Color(0xffd47828),
-                  size: 12,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 4.0),
-                  child: FirebaseFunctions().getFieldByDocId(
-                    ref: FirebaseFunctions().user,
-                    field: "first_name",
-                    returnValIfNull: "",
-                    prefixText: "Welcome ",
-                    style: Theme.of(context).textTheme.overline?.copyWith(
-                      color: const Color(0xffd47828),
-                        ),
-                  ),
-                )
-              ],
+            padding: const EdgeInsets.only(top:12.0, bottom: 4.0),
+            child: Text(
+              "What will your CPD be today?",
+              style: Theme.of(context).textTheme.headline6?.copyWith(
+                color: const Color(0xffd47828),
+              ),
             ),
           ),
-          Text(
-            "What will your CPD be today?",
-            style: Theme.of(context).textTheme.headline6?.copyWith(
-                  color: const Color(0xffd47828),
-                ),
+          Padding(
+            padding: const EdgeInsets.only(top:4.0, bottom: 2.0),
+            child: Text(
+                "Four short CPD modules as part of the Innovation"
+                            "Driven Procurement project – for construction site"
+                            "workers. The modules have been co-created by"
+                            "sub-contractors… hear their thoughts and comments"
+                            "about collaborating and working together on site across"
+                            "all trades, to make the job easier, and more productive"
+                            "for everyone.",
+                        style: Theme.of(context).textTheme.overline?.copyWith(
+                          color: const Color(0xffd47828),
+              ),
+            ),
           ),
         ],
       ),

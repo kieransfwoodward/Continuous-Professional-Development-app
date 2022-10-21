@@ -71,7 +71,7 @@ class ModuleContent extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(bottom: 8.0),
                               child: Text(
-                                "Your CPD is:",
+                                "Find out about:",
                                 style: Theme.of(context).textTheme.subtitle1,
                               ),
                             ),
