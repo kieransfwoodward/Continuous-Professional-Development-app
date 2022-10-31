@@ -37,23 +37,23 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
         mainAxisSize: MainAxisSize.min,
         children: [
 
-          // FlatColourButton(
-          //   onTap: () => widget.isFirstPage
-          //       ? Navigator.pop(context)
-          //       : setState(() {
-          //           // Go back to previous question
-          //           if (QuizScreen.of(context) != null) {
-          //             // Update the current page index
-          //             QuizScreen.of(context)!.currentPage =
-          //                 widget.currentPageIndex - 1;
-          //           }
-          //         }),
-          //   child: Icon(
-          //     Icons.arrow_back_ios_new,
-          //     color: Theme.of(context).canvasColor,
-          //   ),
-          //   width: null,
-          // ),
+          FlatColourButton(
+            onTap: () => widget.isFirstPage
+                ? Navigator.pop(context)
+                : setState(() {
+                    // Go back to previous question
+                    if (QuizScreen.of(context) != null) {
+                      // Update the current page index
+                      QuizScreen.of(context)!.currentPage =
+                          widget.currentPageIndex - 1;
+                    }
+                  }),
+            child: Icon(
+              Icons.arrow_back_ios_new,
+              color: Theme.of(context).canvasColor,
+            ),
+            width: null,
+          ),
 
           Padding(
             padding: const EdgeInsets.only(left: 16.0),
@@ -76,7 +76,7 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
 
                 ),
               ),
-              width: SizeParams().twoThirdsWidthWithExtraSpace(context),
+              width: SizeParams().next(context),
             ),
           ),
         ],

@@ -41,6 +41,7 @@ class interact_image extends StatefulWidget {
 
 class _interact_image extends State<interact_image> {
 
+  bool ticked = false;
   String example1 = "";
 
   void setSample(String tobecome) {
@@ -243,6 +244,17 @@ class _interact_image extends State<interact_image> {
                     child: Text('Managers Support'),
                   ),
                 ],
+              ),
+              const ListViewSeparator(),
+              CheckboxListTile(
+                title: const Text('I have read through the text'),
+                value: ticked,
+                onChanged: (bool? value) {
+                  setState(() {
+                    ticked = true;
+                    _updatePoints();
+                  });
+                },
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 80.0),

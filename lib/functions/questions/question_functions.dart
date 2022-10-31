@@ -16,9 +16,16 @@ import '../../widgets/quiz/single_multiple_choice_question.dart';
 import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
 import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
 import '../../widgets/quiz/interact_image.dart';
+import '../../widgets/quiz/interact_m3image_collab.dart';
+import '../../widgets/quiz/interact_m3image_reliable.dart';
+import '../../widgets/quiz/interact_m4image_nono.dart';
+import '../../widgets/quiz/interact_m4image_calltoaction.dart';
 import '../../widgets/quiz/image_slideshow.dart';
 import '../../widgets/quiz/check_understanding.dart';
 import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
+import '../../widgets/quiz/learn_expandM2.dart';
+import '../../widgets/quiz/learn_expandM3_Const.dart';
+import '../../widgets/quiz/learn_expandM3_DragDropAns.dart';
 
 
 // Deals with question specific functions
@@ -137,12 +144,61 @@ class QuestionFunctions {
       return drag_and_drop(
       );
     }
+    if (type == "learn_M2Expand") {
+      return learn_M2Expand(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_M3Expand_Const") {
+      return learn_M3Expand_Const(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_expandM3_DragDropAns") {
+      return learn_expandM3_DragDropAns(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
     if (type == "painter") {
       return ImagePainterExample(
       );
     }
     if (type == "interact_image_m4") {
       return interact_image(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m3image_collab") {
+      return interact_m3image_collab(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m3image_reliable") {
+      return interact_m3image_reliable(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_nono") {
+      return interact_m4image_nono(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_calltoaction") {
+      return interact_m4image_calltoaction(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

@@ -6,7 +6,6 @@ import '../../custom_divider.dart';
 import '../../functions/firebase_functions.dart';
 import '../../item.dart';
 
-
 class drag_and_drop extends StatefulWidget {
   const drag_and_drop({Key? key}) : super(key: key);
 
@@ -75,17 +74,15 @@ class _drag_and_dropState extends State<drag_and_drop> {
     // Pre-conditions before return widgets
     gameOver = items.isEmpty;
     return SingleChildScrollView(
-        child: Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
-
         children: [
-
           Container(
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(20),
-                  bottomRight: Radius.circular(20)),
+                  bottomLeft: Radius.circular(14),
+                  bottomRight: Radius.circular(14)),
               color: buildMaterialColor(HexColor("#384a5f"))[100],
             ),
             child: Row(
@@ -97,7 +94,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  'Drag and drop from left to right and \n earn 2 points for each correct answer',
+                  'Drag and drop from right to left and \n earn 2 points for each correct answer',
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
@@ -107,246 +104,159 @@ class _drag_and_dropState extends State<drag_and_drop> {
             ),
           ),
 
-         // Expanded(
-         //   child:
-            ListView(
-              shrinkWrap: true,
-              physics: const BouncingScrollPhysics(),
-             // padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-             children: [
-               if (!gameOver) ...[
-                 Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                   children: [
-                      Column(
-                        children: items.map((item) {
-                          return Container(
-                            margin: const EdgeInsets.all(8),
-                            child: Draggable<ItemModel>(
-                              data: item,
-                              //When the item is being dragged
-                              childWhenDragging: CircleAvatar(
-                                backgroundColor: Colors.white,
-                                child: ClipOval(
-                                  child: Text(
-                                    item.img,
+          // Expanded(
+          //   child:
+          ListView(
+            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
+            // padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+            children: [
+              if (!gameOver) ...[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    //Column to control the headings
+                    Column(
+                      children: items2.map((item) {
+                        return DragTarget<ItemModel>(
+                          onAccept: (receivedItem) {
+                            if (item.value == "Information" && receivedItem.value == "Drawings all showing wrong dimensions." ||
+                                item.value == "Information" && receivedItem.value == "Accurate setting-out information and specifications not provided "
+                                            "before start on site." ||
+                                item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe "
+                                            "access is not available on site." ||
+                                item.value == "Materials" && receivedItem.value == "Wrong material delivered." ||
+                                item.value == "People" && receivedItem.value == "Staff that do not have the required skills or are incompetent." ||
+                                item.value == "People" && receivedItem.value == "Temporary labour have not bought into project ethos." ||
+                                item.value == "Prior Activity" && receivedItem.value == "Floor layers laying floors in hall ways and preventing "
+                                            "access to rooms with materials." ||
+                                item.value == "External Conditions" && receivedItem.value == "Bad weather slows down the progress of work on site." ||
+                                item.value == "Safe Space" && receivedItem.value == "Other trades working in the area needed to carry out "
+                                            "installations." ||
+                                item.value == "Shared \nUnderstanding" && receivedItem.value == "Supervisor instructing labourers to supply "
+                                            "material elsewhere rather than near at hand.") {
+                              setState(() => item.accepting = false);
+                              // player.play('true.wav');
+                              items.remove(receivedItem);
+                              items2.remove(item);
 
-                                  ),
-                                ),
-                                radius: MediaQuery.of(context).size.width *
-                                    0.076 *
-                                    1.75,
-                              ),
-                              feedback: CircleAvatar(
-                                backgroundColor: Colors.white,
-                                child: ClipOval(
-                                  child: Text(
-                                    item.img,
+                              FirebaseFunctions().user.get().then((doc) {
+                                if (doc.data() != null) {
+                                  int points = (doc.data() as Map<String,
+                                          dynamic>)["current_points"] ??
+                                      0;
+                                  FirebaseFunctions().user.update({
+                                    "current_points": points + 2,
+                                  });
+                                }
+                              });
+                              if (items.isEmpty) {
+                                _showDialog(
+                                  title: '📣 Game Over 📣',
+                                  subtitle:
+                                      'Test your knowledge again, or continue with the module.',
+                                );
+                              }
+                            } else {
+                              item.accepting = false;
+                              // player.play('false.wav');
+                              setState(() => score -= 5);
+                            }
 
-                                  ),
-                                ),
-                                radius:
-                                MediaQuery.of(context).size.width * 0.0775,
+                            appBarText = 'Score: $score/$fullScore';
+                          },
+                          onWillAccept: (receivedItem) {
+                            setState(() => item.accepting = true);
+                            return true;
+                          },
+                          onLeave: (receivedItem) {
+                            setState(() => item.accepting = false);
+                          },
+                          builder: (context, acceptedItems, rejectedItems) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: buildMaterialColor(
+                                    HexColor("#d47828"))[300],
                               ),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: buildMaterialColor(HexColor("#d47828"))[50],
-                                ),
-                                alignment: Alignment.center,
-                                // height: MediaQuery.of(context).size.width / 6.5,
-                                width: MediaQuery.of(context).size.width / 3,
-                                padding: const EdgeInsets.only(left: 6, top: 12, bottom: 12, right: 6),
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.only(
+                                  left: 6, top: 12, bottom: 12, right: 6),
+                              width: MediaQuery.of(context).size.width / 3.1,
+                              margin: const EdgeInsets.all(8),
+                              child: Text(item.name,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15,
+                                  ),
+                                  // Theme.of(context)
+                                  //     .textTheme
+                                  //     .headline6!
+                                  //     .copyWith(
+                                  //         color:
+                                  //             Colors.black.withOpacity(0.60))
+                              ),
+                            );
+                          },
+                        );
+                      }).toList(growable: false),
+                    ),
+                    //Column to control the statements
+                    Column(
+                      children: items.map((item) {
+                        return Container(
+                          margin: const EdgeInsets.all(8),
+                          child: Draggable<ItemModel>(
+                            data: item,
+                            //When the item is being dragged
+                            childWhenDragging: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: ClipOval(
                                 child: Text(
                                   item.img,
-
                                 ),
                               ),
-
+                              radius: MediaQuery.of(context).size.width *
+                                  0.076 *
+                                  1.75,
                             ),
-                          );
-                        }).toList(growable: false),
-                      ),
-                      Column(
-                        children: items2.map((item)
-                        {
-                          return DragTarget<ItemModel>(
-                            onAccept: (receivedItem) {
-                             if (item.value == "Information" && receivedItem.value == "Drawings all showing wrong dimensions." ||
-                                  item.value == "Information" && receivedItem.value == "Accurate setting-out information and specifications not provided ""before start on site." ||
-                                  item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe ""access is not available on site." ||
-                                  item.value == "Materials" && receivedItem.value == "Wrong material delivered." ||
-                                  item.value == "People" && receivedItem.value == "Staff that do not have the required skills or are incompetent." ||
-                                  item.value == "People" && receivedItem.value == "Temporary labour have not bought into project ethos." ||
-                                  item.value == "Prior Activity" && receivedItem.value == "Floor layers laying floors in hall ways and preventing ""access to rooms with materials." ||
-                                  item.value == "External Conditions" && receivedItem.value == "Bad weather slows down the progress of work on site." ||
-                                  item.value == "Safe Space" && receivedItem.value == "Other trades working in the area needed to carry out ""installations." ||
-                                  item.value == "Shared \nUnderstanding" && receivedItem.value == "Supervisor instructing labourers to supply ""material elsewhere rather than near at hand.") {
-                                item.accepting = false;
-                                // player.play('true.wav');
-                                items.remove(receivedItem);
-                                items2.remove(item);
-                                FirebaseFunctions().user.get().then((doc) {
-                                  if (doc.data() != null) {
-                                    int points =
-                                        (doc.data() as Map<String, dynamic>)["current_points"] ?? 0;
-                                    FirebaseFunctions().user.update({
-                                      "current_points": points + 2,
-
-                                    });
-
-                                  }
-                                });
-                                if (items.isEmpty) {
-                                  _showDialog(
-                                    title: '📣 Game Over 📣',
-                                    subtitle: 'Test your knowledge again, or continue with the module.' ,
-                                  );
-                                }
-                              }
-                              // else if (item.value == "Equipment" && receivedItem.value == "Mobile Elevated Working Platform (MWEP) required to gain safe "
-                              //     "access is not available on site.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "Materials" && receivedItem.value == "Wrong material delivered.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "People" && receivedItem.value == "Staff that do not have the required skills or are incompetent." ||
-                              //     item.value == "People" && receivedItem.value == "Temporary labour have not bought into project ethos.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "Prior Activity" && receivedItem.value == "Floor layers laying floors in hall ways and preventing "
-                              //     "access to rooms with materials.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "External Conditions" && receivedItem.value == "Bad weather slows down the progress of work on site.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "Safe Space" && receivedItem.value == "Other trades working in the area needed to carry out "
-                              //     "installations.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-                              // else if (item.value == "Shared \nUnderstanding" && receivedItem.value == "Supervisor instructing labourers to supply "
-                              //     "material elsewhere rather than near at hand.") {
-                              //   item.accepting = false;
-                              //   // player.play('true.wav');
-                              //   items.remove(receivedItem);
-                              //   items2.remove(item);
-                              //   setState(() => score += 10);
-                              //   if (items.isEmpty) {
-                              //     _showDialog(
-                              //       title: '📣 Game Over 📣',
-                              //       subtitle: 'Test your knowledge again, or continue with the module.',
-                              //     );
-                              //   }
-                              // }
-
-                              else {
-                                item.accepting = false;
-                                // player.play('false.wav');
-                                setState(() => score -= 5);
-                              }
-
-
-                              appBarText = 'Score: $score/$fullScore';
-                            },
-                            onWillAccept: (receivedItem) {
-                              setState(() => item.accepting = true);
-                              return true;
-                            },
-                            onLeave: (receivedItem) {
-                              setState(() => item.accepting = false);
-                            },
-                            builder: (context, acceptedItems, rejectedItems) {
-                              return Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: buildMaterialColor(HexColor("#d47828"))[300],
+                            feedback: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: ClipOval(
+                                child: Text(
+                                  item.img,
                                 ),
-                                alignment: Alignment.center,
-                                padding: const EdgeInsets.only(left: 6, top: 12, bottom: 12, right: 6),
-                                width: MediaQuery.of(context).size.width / 2.5,
-                                margin: const EdgeInsets.all(8),
-                                child: Text(item.name,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .headline6!
-                                        .copyWith(
-                                        color: Colors.black
-                                            .withOpacity(0.60))),
-                              );
-                            },
-                          );
-                        }).toList(growable: false),
-                      ),
-                   ],
-                 ),
-               ],
-             ],
-           ),
-       //   ),
+                              ),
+                              radius:
+                                  MediaQuery.of(context).size.width * 0.0775,
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color:
+                                    buildMaterialColor(HexColor("#d47828"))[50],
+                              ),
+                              alignment: Alignment.center,
+                              // height: MediaQuery.of(context).size.width / 6.5,
+                              width: MediaQuery.of(context).size.width / 2.5,
+                              padding: const EdgeInsets.only(
+                                  left: 6, top: 12, bottom: 12, right: 6),
+                              child: Text(
+                                item.img,
+                              ),
+                            ),
+                          ),
+                        );
+                      }).toList(growable: false),
+                    ),
+                  ],
+                ),
+              ],
+            ],
+          ),
+          //   ),
         ],
-        ),
+      ),
     );
   }
 
@@ -368,7 +278,7 @@ class _drag_and_dropState extends State<drag_and_drop> {
       builder: (BuildContext context) {
         return AlertDialog(
           shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           backgroundColor: buildMaterialColor(HexColor("#d47828"))[50],
           title: Column(
             children: [
@@ -412,23 +322,25 @@ class _drag_and_dropState extends State<drag_and_drop> {
   }
 
   buildMaterialColor(Color color) {
-  List strengths = <double>[.05];
-  Map<int, Color> swatch = {};
-  final int r = color.red, g = color.green, b = color.blue;
+    List strengths = <double>[.05];
+    Map<int, Color> swatch = {};
+    final int r = color.red, g = color.green, b = color.blue;
 
-  for (int i = 1; i < 10; i++) {
-  strengths.add(0.1 * i);
+    for (int i = 1; i < 10; i++) {
+      strengths.add(0.1 * i);
+    }
+    for (var strength in strengths) {
+      final double ds = 0.5 - strength;
+      swatch[(strength * 1000).round()] = Color.fromRGBO(
+        r + ((ds < 0 ? r : (255 - r)) * ds).round(),
+        g + ((ds < 0 ? g : (255 - g)) * ds).round(),
+        b + ((ds < 0 ? b : (255 - b)) * ds).round(),
+        1,
+      );
+    }
+    ;
+    return MaterialColor(color.value, swatch);
   }
-  for (var strength in strengths) {
-  final double ds = 0.5 - strength;
-  swatch[(strength * 1000).round()] = Color.fromRGBO(
-  r + ((ds < 0 ? r : (255 - r)) * ds).round(),
-  g + ((ds < 0 ? g : (255 - g)) * ds).round(),
-  b + ((ds < 0 ? b : (255 - b)) * ds).round(),
-  1,
-  );
-  };
-  return MaterialColor(color.value, swatch);}
 }
 
 extension StringExtension on String {

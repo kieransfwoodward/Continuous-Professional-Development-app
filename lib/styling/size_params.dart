@@ -21,6 +21,9 @@ class SizeParams {
   double twoThirdsWidthWithExtraSpace(BuildContext context) =>
       ((MediaQuery.of(context).size.width / 4) * 3) - 38;
 
+  double next(BuildContext context) =>
+      ((MediaQuery.of(context).size.width / 4) * 2.5) - 38;
+
   double quarterHeight(BuildContext context) =>
       MediaQuery.of(context).size.height / 4;
 
