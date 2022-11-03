@@ -137,7 +137,7 @@ class Card1 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "Possible efficiensies may be found and maybe revisits, "
+            "Possible efficiencies may be found and maybe revisits, "
                 "and partial installations avoided, and a better way of working "
                 "established."
           ])
@@ -216,7 +216,7 @@ class Card2 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "Having the confidence to make those calls may mean problem"
+            "Having the confidence to make those calls may mean problem "
                 "resolutions are found sooner and resolved quicker."
           ])
             buildItem("${i}"),
@@ -294,7 +294,7 @@ class Card3 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "We might also start hearing all the good ideas"
+            "We might also start hearing all the good ideas "
                 "that may have previously remained unheard."
           ])
             buildItem("${i}"),
@@ -372,8 +372,8 @@ class Card4 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "The quantity and effetiveness of problem-solving"
-                "discussions held on site resolving a problem is phenomenal"
+            "The quantity and effectiveness of problem-solving "
+                "discussions held on site resolving a problem is phenomenal."
                 ""
           ])
             buildItem("${i}"),

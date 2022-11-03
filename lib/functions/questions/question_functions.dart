@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/quiz/ImagePainterExample.dart';
 import '../../widgets/quiz/draggable_list.dart';
+import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
+import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
+import '../../widgets/quiz/reorder_m1_pyramid.dart';
+import '../../widgets/quiz/reorder_m2_collaborative.dart';
+import '../../widgets/quiz/reorder_m2_designProcess.dart';
 import '../../widgets/quiz/learn_image.dart';
 import '../../widgets/quiz/learn_img2.dart';
 import '../../widgets/quiz/learn_img3.dart';
@@ -13,8 +18,6 @@ import '../../widgets/quiz/learn_link.dart';
 import '../../widgets/quiz/learn_link_mod.dart';
 import '../../widgets/quiz/learn_video.dart';
 import '../../widgets/quiz/single_multiple_choice_question.dart';
-import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
-import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
 import '../../widgets/quiz/interact_image.dart';
 import '../../widgets/quiz/interact_m3image_collab.dart';
 import '../../widgets/quiz/interact_m3image_reliable.dart';
@@ -26,6 +29,7 @@ import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
 import '../../widgets/quiz/learn_expandM2.dart';
 import '../../widgets/quiz/learn_expandM3_Const.dart';
 import '../../widgets/quiz/learn_expandM3_DragDropAns.dart';
+import '../../widgets/quiz/learn_expandM1_peakRapport.dart';
 
 
 // Deals with question specific functions
@@ -140,6 +144,27 @@ class QuestionFunctions {
         data: data,
       );
     }
+    if (type == "reorder_m1_pyramid") {
+      return reorder_m1_pyramid(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "reorder_m2_collaborative") {
+      return reorder_m2_collaborative(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "reorder_m2_designProcess") {
+      return reorder_m2_designProcess(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
     if (type == "drag_drop_module_three") {
       return drag_and_drop(
       );
@@ -160,6 +185,13 @@ class QuestionFunctions {
     }
     if (type == "learn_expandM3_DragDropAns") {
       return learn_expandM3_DragDropAns(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_expandM1_peakRapport") {
+      return learn_expandM1_peakRapport(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

@@ -141,7 +141,7 @@ class Card1 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "Not having access to the correct information at the right time can affect flow of site "
+            "Not having access to the correct information at the right time can affect the flow of site "
                 "production.\n\nFor example: Correct information for ground conditions has not been "
                 "provided."
           ])
@@ -224,7 +224,7 @@ class Card2 extends StatelessWidget {
           for (var i in [
             "Not having the right equipment for a task or getting it late can affect site "
                 "workflow.\n\nFor example: Welfare facilities on the site are not suitable "
-                "sufficient."
+                "or sufficient."
           ])
             buildItem("${i}"),
         ],
@@ -384,9 +384,9 @@ class Card4 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "Not having competent people at the right time who can collaborate with each"
-                "other can affect flow and site production.\n\nFor example: Labour expected on site did"
-                " not turn up."
+            "Not having competent people at the right time who can collaborate with each "
+                "other can affect flow and site production.\n\nFor example: Labour expected "
+                "on site did not turn up."
           ])
             buildItem("${i}"),
         ],
@@ -708,7 +708,7 @@ class Card8 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "Not having clear andf common understanding and expectations between various "
+            "Not having clear and common understanding and expectations between various "
                 "construction workers can affect flow and site production.\n\nFor example: Understanding "
                 "safety limits whilst on site."
           ])
