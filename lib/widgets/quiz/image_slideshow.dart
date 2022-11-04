@@ -218,6 +218,7 @@ buildMaterialColor(Color color) {
       1,
     );
   };
-  return MaterialColor(color.value, swatch);}
+  return MaterialColor(color.value, swatch);
+}
 
 //backgroundColor: buildMaterialColor(HexColor("#d47828"))[50],
