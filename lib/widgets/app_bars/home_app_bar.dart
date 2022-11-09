@@ -36,20 +36,19 @@ class HomeAppBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // GestureDetector(
-              // child:
-                const ProgressWidgets(
+              GestureDetector(
+                child: const ProgressWidgets(
                   crossAxisAlignment: CrossAxisAlignment.start,
                 ),
-              //   onTap: () {
-              //     showDialog(
-              //       context: context,
-              //       builder: (BuildContext context) {
-              //         return alert1;
-              //       },
-              //     );
-              //   },
-              // ),
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return alert1;
+                    },
+                  );
+                },
+              ),
               // GestureDetector(
               //   child: Icon(
               //     Icons.info_outline,

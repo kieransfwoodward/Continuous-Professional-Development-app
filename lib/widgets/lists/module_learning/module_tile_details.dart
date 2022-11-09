@@ -17,8 +17,7 @@ class ModuleTileDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     AlertDialog alert1 = const AlertDialog(
       title: Text("Duration"),
-      content: Text("To earn points, play through each of the modules."
-          "\n\nCheck out the leaderboard to see how you compare to other users."),
+      content: Text("This is a rough indication of how long the module takes to finish."),
       actions: [
         //okButton,
       ],
@@ -35,43 +34,40 @@ class ModuleTileDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        // GestureDetector(
-        //   child:
-          DescriptiveIcon(
+        GestureDetector(
+          child: DescriptiveIcon(
             leadingIcon: Icons.access_time,
             trailingText: "$duration min",
             isLargeItem: largeItem,
           ),
-        //   onTap: () {
-        //     showDialog(
-        //       context: context,
-        //       builder: (BuildContext context) {
-        //         return alert1;
-        //       },
-        //     );
-        //   },
-        // ),
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return alert1;
+              },
+            );
+          },
+        ),
         Padding(
           padding: EdgeInsets.only(
             left: largeItem ? 16.0 : 8.0,
           ),
-          child:
-    // GestureDetector(
-    //         child:
-            DescriptiveIcon(
+          child: GestureDetector(
+            child: DescriptiveIcon(
               leadingIcon: Icons.star_outline,
-              trailingText: "$points xp",
+              trailingText: "$points pts",
               isLargeItem: largeItem,
             ),
-          //   onTap: () {
-          //     showDialog(
-          //       context: context,
-          //       builder: (BuildContext context) {
-          //         return alert2;
-          //       },
-          //     );
-          //   },
-          // ),
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return alert2;
+                },
+              );
+            },
+          ),
         ),
       ],
     );

@@ -24,8 +24,8 @@ class CustomProgressIndicator extends StatelessWidget {
 
     AlertDialog alert1 = const AlertDialog(
       title: Text("Completion"),
-      content: Text("To complete a module, finsih it while scoring at least 80% to earn a completion tick."
-          "\n\nIf you would like to comeplete the module, feel free, but if you don't reach the 80% mark "
+      content: Text("To complete a module, finish it while scoring at least 80% to earn a completion tick."
+          "\n\nIf you would like to redo the module, feel free, but if you don't reach the 80% mark "
           "again, you will lose your tick."),
       actions: [
         //okButton,
@@ -51,20 +51,18 @@ class CustomProgressIndicator extends StatelessWidget {
           height: 20,
 
 
-          child:
-          // GestureDetector(
-          //   child:
-            Icon(Icons.check_box_sharp,
+          child: GestureDetector(
+            child: Icon(Icons.check_box_sharp,
               color: Colors.green,),
-          //   onTap: () {
-          //     showDialog(
-          //       context: context,
-          //       builder: (BuildContext context) {
-          //         return alert1;
-          //       },
-          //     );
-          //   },
-          // ),
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return alert1;
+                },
+              );
+            },
+          ),
           // strokeWidth: 2,
           // value: 0.6,
           // color: Colors.blue,
@@ -79,20 +77,18 @@ class CustomProgressIndicator extends StatelessWidget {
           height: 20,
 
 
-          child:
-          // GestureDetector(
-          //   child:
-            Icon(Icons.check_box_outline_blank_outlined,
+          child: GestureDetector(
+            child: Icon(Icons.check_box_outline_blank_outlined,
               color: const Color(0xffd47828),),
-          //   onTap: () {
-          //     showDialog(
-          //       context: context,
-          //       builder: (BuildContext context) {
-          //         return alert1;
-          //       },
-          //     );
-          //   },
-          // ),
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return alert1;
+                },
+              );
+            },
+          ),
           // strokeWidth: 2,
           // value: 0.6,
           // color: Colors.blue,
