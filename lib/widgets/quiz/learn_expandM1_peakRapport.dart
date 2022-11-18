@@ -104,7 +104,7 @@ class _learn_expandM1_peakRapport extends State<learn_expandM1_peakRapport> {
             Card5(),
             const ListViewSeparator(),
             CheckboxListTile(
-              title: const Text('I have read through the text'),
+              title: const Text('Save progress'),
               value: ticked,
               onChanged: (bool? value) {
                 setState(() {

@@ -104,7 +104,7 @@ class _learn_M2Expand extends State<learn_M2Expand> {
             Card5(),
             const ListViewSeparator(),
             CheckboxListTile(
-              title: const Text('I have read through the text'),
+              title: const Text('Save progress'),
               value: ticked,
               onChanged: (bool? value) {
                 setState(() {

@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/citb/cpd/BuildConfig.java
+ com.citb.cpd.BuildConfig
+com/citb/cpd/MainActivity.java
+ com.citb.cpd.MainActivity

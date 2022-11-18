@@ -120,8 +120,9 @@ class _learn_textState
           //     });
           //   },
           // ),
+          const ListViewSeparator(),
           CheckboxListTile(
-          title: const Text('I have read it'),
+          title: const Text('Save progress'),
           value: ticked,
           onChanged: (bool? value) {
           setState(() {

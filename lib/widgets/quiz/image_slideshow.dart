@@ -41,6 +41,9 @@ class Carousel extends StatefulWidget {
 }
 
 class _CarouselState extends State<Carousel> {
+
+  bool ticked = false;
+
   Future<void> _updatePoints() async {
 
     if (QuizScreen.of(context) != null) {
@@ -147,6 +150,17 @@ class _CarouselState extends State<Carousel> {
         Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: indicators(images.length,activePage)
+        ),
+        const ListViewSeparator(),
+        CheckboxListTile(
+          title: const Text('Save progress'),
+          value: ticked,
+          onChanged: (bool? value) {
+            setState(() {
+              ticked = true;
+              _updatePoints();
+            });
+          },
         ),
         Padding(
           padding: EdgeInsets.only(bottom: 80.0),

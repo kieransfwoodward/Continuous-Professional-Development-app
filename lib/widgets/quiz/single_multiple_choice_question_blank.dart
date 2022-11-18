@@ -184,7 +184,10 @@ class _SingleMultipleChoiceQuestionBlank
           ),
           if(_optionSelected)Column(
             children: <Widget>[
-              Text(widget.data["feedback"])
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Text(widget.data["feedback"]),
+              )
             ],
           ),
           Padding(

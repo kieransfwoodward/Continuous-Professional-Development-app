@@ -124,7 +124,7 @@ class _Learn2Img
           ),
           const ListViewSeparator(),
           CheckboxListTile(
-            title: const Text('I have analysed the image'),
+            title: const Text('Save progress'),
             value: ticked,
             onChanged: (bool? value) {
               setState(() {

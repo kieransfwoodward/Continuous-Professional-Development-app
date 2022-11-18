@@ -130,8 +130,9 @@ class _learn_textState extends State<learn_link> {
           //     });
           //   },
           // ),
+          const ListViewSeparator(),
           CheckboxListTile(
-            title: const Text('I have read it'),
+            title: const Text('Save progress'),
             value: ticked,
             onChanged: (bool? value) {
               setState(() {

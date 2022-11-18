@@ -108,7 +108,7 @@ class _learn_M3Expand_Const extends State<learn_M3Expand_Const> {
             Card8(),
             const ListViewSeparator(),
             CheckboxListTile(
-              title: const Text('I have read through the text'),
+              title: const Text('Save progress'),
               value: ticked,
               onChanged: (bool? value) {
                 setState(() {

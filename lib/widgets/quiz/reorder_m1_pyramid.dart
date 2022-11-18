@@ -40,6 +40,17 @@ class reorder_m1_pyramid extends StatefulWidget {
 }
 
 class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
+
+  AlertDialog alert1 = const AlertDialog(
+    title: Text("Re-order Activities"),
+    content: Text("Follow the instruction to complete the activity.\n\n"
+        "Touch and hold each box to initiate the drag and drop function. Move "
+        "the item to where you think it belongs and let go."),
+    actions: [
+      //okButton,
+    ],
+  );
+
   final ScrollController reorderScrollController = ScrollController();
   bool ticked = false;
 
@@ -122,9 +133,29 @@ class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
               top: 16.0,
               bottom: 4.0,
             ),
-            child: Text(
-              widget.data["question_title"],
-              style: Theme.of(context).textTheme.headline5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  widget.data["question_title"],
+                  style: Theme.of(context).textTheme.headline5,
+                ),
+                GestureDetector(
+                  child: Icon(
+                    Icons.info_rounded,
+                    size: 32,
+                    color: buildMaterialColor(HexColor("#d47828")),
+                  ),
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return alert1;
+                      },
+                    );
+                  },
+                ),
+              ],
             ),
           ),
           const ListViewSeparator(),
@@ -150,12 +181,8 @@ class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "${productName}",
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyText1!
-                            ),
+                            Text("${productName}",
+                                style: Theme.of(context).textTheme.bodyText1!),
                             Transform.rotate(
                               angle: 90 * pi / 180,
                               child: const Icon(
@@ -192,7 +219,7 @@ class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
               }),
           const ListViewSeparator(),
           CheckboxListTile(
-            title: const Text('I am happy with my order'),
+            title: const Text('Save progress'),
             value: ticked,
             onChanged: (bool? value) {
               setState(() {

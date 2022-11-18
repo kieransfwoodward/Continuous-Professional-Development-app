@@ -25,11 +25,12 @@ class WelcomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //TODO: Replace this with the app icon
-                    Icon(
-                      Icons.route,
-                      size: SizeParams().welcomeLogoWidth(context),
-                      color: Theme.of(context).canvasColor,
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 16.0),
+                      child: Image.asset(
+                        'assets/logoAlt.PNG',
+                        width: 200,
+                      ),
                     ),
                     SizedBox(
                       width: SizeParams().welcomeLogoWidth(context),
@@ -37,6 +38,7 @@ class WelcomeScreen extends StatelessWidget {
                         "Part of the Innovation Driven Procurement Project",
                         style: Theme.of(context).textTheme.bodyText2?.copyWith(
                               color: Theme.of(context).canvasColor,
+                          fontSize: 15,
                             ),
                         textAlign: TextAlign.center,
                       ),

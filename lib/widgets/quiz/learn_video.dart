@@ -107,8 +107,10 @@ class _learn_videoState extends State<learn_video> {
             aspectRatio: 16 / 9,
           ),
 
+          const ListViewSeparator(),
+
           CheckboxListTile(
-            title: const Text('I have watched the video'),
+            title: const Text('Save progress'),
             value: ticked,
             onChanged: (bool? value) {
               setState(() {

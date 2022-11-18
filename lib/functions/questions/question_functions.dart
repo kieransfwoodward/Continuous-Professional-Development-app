@@ -30,6 +30,7 @@ import '../../widgets/quiz/learn_expandM2.dart';
 import '../../widgets/quiz/learn_expandM3_Const.dart';
 import '../../widgets/quiz/learn_expandM3_DragDropAns.dart';
 import '../../widgets/quiz/learn_expandM1_peakRapport.dart';
+import '../../widgets/quiz/learn_expandM3_flowActivities.dart';
 
 
 // Deals with question specific functions
@@ -192,6 +193,13 @@ class QuestionFunctions {
     }
     if (type == "learn_expandM1_peakRapport") {
       return learn_expandM1_peakRapport(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_expandM3_flowActivities") {
+      return learn_expandM3_flowActivities(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

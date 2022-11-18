@@ -1,6 +1,6 @@
 import 'package:cpd/functions/firebase_functions.dart';
 import 'package:cpd/functions/messages.dart';
-import 'package:cpd/screens/home_screen.dart';
+import 'home_screen.dart';
 import 'package:cpd/styling/custom_border.dart';
 import 'package:cpd/widgets/buttons/flat_border_button.dart';
 import 'package:cpd/widgets/buttons/flat_colour_button.dart';
@@ -10,6 +10,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'intro.dart';
 
 
 //TODO: Ensure iOS is correctly configured for mobile login at https://firebase.flutter.dev/docs/auth/phone/
@@ -71,7 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // Navigate to the home page
     Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(
-        builder: (context) => const HomeScreen(),
+        builder: (context) => OnBoardingPage(),
       ),
       (Route<dynamic> route) => false,
     );
@@ -239,7 +240,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const Padding(padding: EdgeInsets.zero),
                   Center(
                     child: Text(
-                      "Login",
+                      "Sign Up\nor\nLogin",
                       style: Theme.of(context).textTheme.headline4,
                       textAlign: TextAlign.center,
                     ),
@@ -333,6 +334,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ],
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 8),
+                        child: Text(""
+                            "Enter your mobile number and press the tick to "
+                            "receive a confirmation code. Enter this code into the box that will "
+                            "appear bellow.",
                         ),
                       ),
 

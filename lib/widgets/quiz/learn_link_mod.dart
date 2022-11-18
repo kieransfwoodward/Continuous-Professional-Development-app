@@ -128,6 +128,7 @@ class _learn_link_mod extends State<learn_link_mod> {
           //     });
           //   },
           // ),
+          const ListViewSeparator(),
           CheckboxListTile(
             title: const Text('Complete module'),
             value: ticked,

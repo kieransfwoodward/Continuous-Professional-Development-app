@@ -236,7 +236,7 @@ class _interact_m3image_reliable extends State<interact_m3image_reliable> {
               ),
               const ListViewSeparator(),
               CheckboxListTile(
-                title: const Text('I have read through the text'),
+                title: const Text('Save progress'),
                 value: ticked,
                 onChanged: (bool? value) {
                   setState(() {

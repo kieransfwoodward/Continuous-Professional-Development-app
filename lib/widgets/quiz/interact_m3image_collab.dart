@@ -297,7 +297,7 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
               ),
               const ListViewSeparator(),
               CheckboxListTile(
-                title: const Text('I have read through the text'),
+                title: const Text('Save progress'),
                 value: ticked,
                 onChanged: (bool? value) {
                   setState(() {

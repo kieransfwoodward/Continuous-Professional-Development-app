@@ -60,23 +60,28 @@ class FinishedQuizPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //TODO: Replace this with the app icon
-            Icon(
-              Icons.route,
-              size: SizeParams().welcomeLogoWidth(context),
-              color: Theme.of(context).primaryColor,
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Image.asset(
+                'assets/logoAlt.PNG',
+                width: 200,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 4.0),
               child: Text(
-                "You've finished ${_getModuleName(context)}.",
+                "Congratulations!\n\nYou've finished ${_getModuleName(context)}",
                 style: Theme.of(context).textTheme.headline6,
+                textAlign: TextAlign.center,
               ),
             ),
-            Text(
-              "If you got over 80% correct the module will be marked as complete.",
-              style: Theme.of(context).textTheme.bodyText1,
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0),
+              child: Text(
+                "If you got over 80% correct the module will be marked as complete.",
+                style: Theme.of(context).textTheme.bodyText1,
+                textAlign: TextAlign.center,
+              ),
             )
           ],
         ),

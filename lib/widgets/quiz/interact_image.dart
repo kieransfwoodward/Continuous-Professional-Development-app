@@ -247,7 +247,7 @@ class _interact_image extends State<interact_image> {
               ),
               const ListViewSeparator(),
               CheckboxListTile(
-                title: const Text('I have read through the text'),
+                title: const Text('Save progress'),
                 value: ticked,
                 onChanged: (bool? value) {
                   setState(() {

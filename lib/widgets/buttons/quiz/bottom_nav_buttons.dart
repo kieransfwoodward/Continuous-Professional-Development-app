@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:cpd/screens/home_screen.dart';
 import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/styling/size_params.dart';
@@ -20,12 +22,29 @@ class BottomNavButtons extends StatefulWidget {
   final bool isFirstPage, isLastPage;
   final int currentPageIndex;
 
+
   @override
   State<BottomNavButtons> createState() => _BottomNavButtonsState();
 }
 
 class _BottomNavButtonsState extends State<BottomNavButtons> {
+  bool _visible = false;
   @override
+  void initState() {
+    super.initState(); //when this route starts, it will execute this code
+    nextTimer();
+  }
+
+  void nextTimer(){
+    Future.delayed(const Duration(seconds: 5), () { //asynchronous delay
+      if (this.mounted) { //checks if widget is still active and not disposed
+        setState(() { //tells the widget builder to rebuild again because ui has updated
+          _visible=true; //update the variable declare this under your class so its accessible for both your widget build and initState which is located under widget build{}
+        });
+      }
+    });
+  }
+
   Widget build(BuildContext context) {
     return Padding(
 
@@ -57,26 +76,32 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
 
           Padding(
             padding: const EdgeInsets.only(left: 16.0),
-            child: FlatColourButton(
-              onTap: () => widget.isLastPage
-                  ? finish()
-                  : setState(() {
+            child: Visibility(
+              child: FlatColourButton(
+                onTap: () => widget.isLastPage
+                    ? finish()
+                    : setState(() {
 
-                      // Go to next question
-                      if (QuizScreen.of(context) != null) {
-                        // Update the current page index
-                        QuizScreen.of(context)!.currentPage =
-                            widget.currentPageIndex + 1;
-                      }
-                    }),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 2.0),
-                child: ContrastButtonText(
-                  text: widget.isLastPage ? "Finish" : "Next",
+                        // Go to next question
+                        if (QuizScreen.of(context) != null) {
+                          // Update the current page index
+                          QuizScreen.of(context)!.currentPage =
+                              widget.currentPageIndex + 1;
+                        }
+                        _visible = false;
+                        nextTimer();
+                      }),
 
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 2.0),
+                  child: ContrastButtonText(
+                    text: widget.isLastPage ? "Finish" : "Next",
+
+                  ),
                 ),
+                width: SizeParams().next(context),
               ),
-              width: SizeParams().next(context),
+              visible: _visible,
             ),
           ),
         ],

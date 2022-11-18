@@ -31,6 +31,20 @@ class SingleMultipleChoiceQuestion extends StatefulWidget {
 
 class _SingleMultipleChoiceQuestionState
     extends State<SingleMultipleChoiceQuestion> {
+
+  AlertDialog alert1 = const AlertDialog(
+    title: Text("Multiple Choice Activities"),
+    content: Text("Carefully read the question and available answers.\n\n"
+        "When you are ready, touch the answer you think is correct. If you're right "
+        "the box will glow green and you will earn 10 points.\n\n"
+        "Don't worry if you get it wrong, the text that appears after will help "
+        "develop your knowledge and there are plenty more opportunities to build "
+        "your score."),
+    actions: [
+      //okButton,
+    ],
+  );
+
   int _groupOptionVal = 1;
   bool _optionSelected = false;
 
@@ -101,12 +115,6 @@ class _SingleMultipleChoiceQuestionState
           });
         }
 
-
-
-
-
-
-
         // QuizScreen.of(context)!.points =
         //     QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
       }
@@ -149,9 +157,29 @@ class _SingleMultipleChoiceQuestionState
               top: 16.0,
               bottom: 4.0,
             ),
-            child: Text(
-              widget.data["question_title"],
-              style: Theme.of(context).textTheme.headline5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  widget.data["question_title"],
+                  style: Theme.of(context).textTheme.headline5,
+                ),
+                GestureDetector(
+                  child: Icon(
+                    Icons.info_rounded,
+                    size: 32,
+                    color: buildMaterialColor(HexColor("#d47828")),
+                  ),
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return alert1;
+                      },
+                    );
+                  },
+                ),
+              ],
             ),
           ),
           Text(
@@ -184,7 +212,10 @@ class _SingleMultipleChoiceQuestionState
           ),
           if(_optionSelected)Column(
             children: <Widget>[
-              Text(widget.data["feedback"])
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Text(widget.data["feedback"]),
+              )
             ],
           ),
           Padding(

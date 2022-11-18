@@ -264,7 +264,7 @@ class _interact_m4image_calltoaction extends State<interact_m4image_calltoaction
 
               const ListViewSeparator(),
               CheckboxListTile(
-                title: const Text('I have read through the text'),
+                title: const Text('Save progress'),
                 value: ticked,
                 onChanged: (bool? value) {
                   setState(() {
