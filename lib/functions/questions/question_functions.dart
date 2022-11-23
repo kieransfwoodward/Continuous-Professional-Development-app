@@ -9,6 +9,7 @@ import '../../widgets/quiz/draggable_list_M2_CollabSkills.dart';
 import '../../widgets/quiz/draggable_list_M2_DesignProcess.dart';
 import '../../widgets/quiz/reorder_m1_pyramid.dart';
 import '../../widgets/quiz/reorder_m2_collaborative.dart';
+import '../../widgets/quiz/ans_reorder_m2_collaborative.dart';
 import '../../widgets/quiz/reorder_m2_designProcess.dart';
 import '../../widgets/quiz/learn_image.dart';
 import '../../widgets/quiz/learn_img2.dart';
@@ -154,6 +155,13 @@ class QuestionFunctions {
     }
     if (type == "reorder_m2_collaborative") {
       return reorder_m2_collaborative(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "ans_reorder_m2_collaborative") {
+      return ans_reorder_m2_collaborative(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

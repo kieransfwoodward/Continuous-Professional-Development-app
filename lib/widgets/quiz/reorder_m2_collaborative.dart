@@ -4,6 +4,7 @@ import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/widgets/lists/list_view_separator.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../functions/firebase_functions.dart';
 
@@ -35,11 +36,22 @@ class reorder_m2_collaborative extends StatefulWidget {
   final String questionNumber;
   final Map<String, dynamic> data;
 
+
   @override
   State<reorder_m2_collaborative> createState() => _reorder_m2_collaborative();
 }
 
 class _reorder_m2_collaborative extends State<reorder_m2_collaborative> {
+
+  List<String> newTitles = [];
+  Future<void> saveList() async {
+    for (var i = 0; i < titles.length; i++) {
+      newTitles.add(titles[i]);
+    }
+    print(newTitles);
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setStringList('newTitles', newTitles);
+  }
 
   AlertDialog alert1 = const AlertDialog(
     title: Text("Re-order Activities"),
@@ -236,7 +248,10 @@ class _reorder_m2_collaborative extends State<reorder_m2_collaborative> {
                 ticked = true;
                 _updatePoints();
               });
-            },
+
+
+              saveList();
+            }
           ),
           Padding(
             padding: EdgeInsets.only(bottom: 80.0),

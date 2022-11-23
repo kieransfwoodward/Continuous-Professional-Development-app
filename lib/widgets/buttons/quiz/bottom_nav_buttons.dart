@@ -29,6 +29,11 @@ class BottomNavButtons extends StatefulWidget {
 
 class _BottomNavButtonsState extends State<BottomNavButtons> {
   bool _visible = false;
+
+  void hideKeyboard(){
+    FocusManager.instance.primaryFocus?.unfocus();
+  }
+
   @override
   void initState() {
     super.initState(); //when this route starts, it will execute this code
@@ -90,6 +95,7 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
                         }
                         _visible = false;
                         nextTimer();
+                        hideKeyboard();
                       }),
 
                 child: Padding(
