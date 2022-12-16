@@ -47,15 +47,15 @@ class QuizQuestionAppBar extends StatelessWidget {
               : Container(),
 
           // Only show question number while the quiz is in progress
-          totalQuestions != currentQuestionIndex
-              ? Text(
-                  // Starting index of 0 means question 1, add 1 to show this
-                  "Q${currentQuestionIndex + 1}",
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
-                    color: const Color(0xffd47828),
-                      ),
-                )
-              : Container(),
+          // totalQuestions != currentQuestionIndex
+          //     ? Text(
+          //         // Starting index of 0 means question 1, add 1 to show this
+          //         "Q${currentQuestionIndex + 1}",
+          //         style: Theme.of(context).textTheme.headline6?.copyWith(
+          //           color: const Color(0xffd47828),
+          //             ),
+          //       )
+          //     : Container(),
         ],
       ),
     );

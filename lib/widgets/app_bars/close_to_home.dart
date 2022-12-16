@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../screens/home_screen.dart';
+
 // Button to take the user to the home page
 
 class CloseToHome extends StatelessWidget {
@@ -13,8 +15,8 @@ class CloseToHome extends StatelessWidget {
         vertical: -4,
         horizontal: -4,
       ),
-      onPressed: () => Navigator.of(context).popUntil(
-        (route) => route.isFirst,
+      onPressed: () => Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => HomeScreen()),
       ),
       icon: Icon(
         Icons.close,

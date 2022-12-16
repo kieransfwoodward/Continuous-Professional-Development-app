@@ -1,3 +1,4 @@
+import 'package:cpd/screens/splash.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -33,7 +34,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => HomeScreen()),
+      MaterialPageRoute(builder: (_) => welcomeSplash()),
     );
   }
 
@@ -115,11 +116,11 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ),
         ),
         PageViewModel(
-          title: "Test You Knowledge",
+          title: "Test Your Knowledge",
           body:
           "Throughout the modules you will get the chance to test your knowledge. Don't worry if you "
               "get the answer wrong, there will be plenty of opportunities throughout to earn "
-              "enough score to pass the module.",
+              "enough points to pass the module.",
           image: _buildImage('introKnowledge.PNG'),
           decoration: pageDecoration.copyWith(
             contentMargin: const EdgeInsets.symmetric(horizontal: 12),

@@ -24,6 +24,10 @@ import '../../widgets/quiz/interact_m3image_collab.dart';
 import '../../widgets/quiz/interact_m3image_reliable.dart';
 import '../../widgets/quiz/interact_m4image_nono.dart';
 import '../../widgets/quiz/interact_m4image_calltoaction.dart';
+import '../../widgets/quiz/interact_m4image_pillars.dart';
+import '../../widgets/quiz/interact_m4image_exchange.dart';
+import '../../widgets/quiz/interact_m4image_use.dart';
+import '../../widgets/quiz/interact_m4image_esteem.dart';
 import '../../widgets/quiz/image_slideshow.dart';
 import '../../widgets/quiz/check_understanding.dart';
 import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
@@ -176,6 +180,7 @@ class QuestionFunctions {
     }
     if (type == "drag_drop_module_three") {
       return drag_and_drop(
+
       );
     }
     if (type == "learn_M2Expand") {
@@ -247,6 +252,34 @@ class QuestionFunctions {
     }
     if (type == "interact_m4image_calltoaction") {
       return interact_m4image_calltoaction(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_pillars") {
+      return interact_m4image_pillars(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_exchange") {
+      return interact_m4image_exchange(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_use") {
+      return interact_m4image_use(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "interact_m4image_esteem") {
+      return interact_m4image_esteem(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

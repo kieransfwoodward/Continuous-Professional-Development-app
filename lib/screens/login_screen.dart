@@ -341,7 +341,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Text(""
                             "Enter your mobile number and press the tick to "
                             "receive a confirmation code. Enter this code into the box that will "
-                            "appear bellow.",
+                            "appear below.",
                         ),
                       ),
 

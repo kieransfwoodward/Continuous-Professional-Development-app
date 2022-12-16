@@ -1,4 +1,5 @@
 import 'package:cpd/screens/home_screen.dart';
+import 'package:cpd/screens/splash.dart';
 import 'package:cpd/screens/welcome_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -77,7 +78,7 @@ class _AppState extends State<App> {
           if (snapshot.connectionState == ConnectionState.done) {
             return FirebaseAuth.instance.currentUser == null
                 ? const WelcomeScreen()
-                : const HomeScreen();
+                : welcomeSplash();
           }
 
           // Show a loading indicator while the Firebase Core services are loading
