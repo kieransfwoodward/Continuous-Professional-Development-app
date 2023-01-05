@@ -92,6 +92,7 @@ flutter:
     - assets/introLeader.PNG
     - assets/introFinal.PNG
     - assets/ModuleCog.PNG
+    - lib/widgets/quiz/audio/success.wav
 
   # To add assets to your application, add an assets section, like this:
   # assets:

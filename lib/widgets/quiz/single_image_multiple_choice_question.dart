@@ -1,5 +1,6 @@
 import 'dart:collection';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/widgets/buttons/quiz/question_options/question_list_option.dart';
 import 'package:cpd/widgets/image/module_banner_image.dart';
@@ -13,7 +14,7 @@ import 'package:cpd/functions/firebase_functions.dart';
 //TODO: Save completion of question
 
 class SingleImageMultipleChoiceQuestion extends StatefulWidget {
-  const SingleImageMultipleChoiceQuestion({
+   SingleImageMultipleChoiceQuestion({
     Key? key,
     required this.moduleId,
     required this.questionNumber,
@@ -31,13 +32,14 @@ class SingleImageMultipleChoiceQuestion extends StatefulWidget {
 
 class _SingleImageMultipleChoiceQuestionState
     extends State<SingleImageMultipleChoiceQuestion> {
+  final AudioCache player = AudioCache(prefix: "/audio/");
   int _groupOptionVal = 1;
   bool _optionSelected = false;
 
   Future<void> _updatePoints() async {
     if (widget.data["correct_answer"] == _groupOptionVal) {
+      player.play('success.wav');
       if (QuizScreen.of(context) != null) {
-
         FirebaseFunctions().user.get().then((doc) {
           if (doc.data() != null) {
             int points =
@@ -100,14 +102,6 @@ class _SingleImageMultipleChoiceQuestionState
             }
           });
         }
-
-
-
-
-
-
-
-
       //  QuizScreen.of(context)!.points =
       //      QuizScreen.of(context)!.finalPoints + (widget.data["points"] as int);
       }

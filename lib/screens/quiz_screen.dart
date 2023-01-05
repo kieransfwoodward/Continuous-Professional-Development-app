@@ -5,6 +5,7 @@ import 'package:cpd/widgets/buttons/quiz/bottom_nav_buttons.dart';
 import 'package:cpd/widgets/content_area.dart';
 import 'package:cpd/widgets/quiz/finished_quiz_page.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import '../functions/firebase_functions.dart';
 import 'home_screen.dart';
@@ -41,58 +42,44 @@ class _QuizScreenState extends State<QuizScreen> {
         () => _currentPageIndex = currentPageIndex,
       );
 
-
-
   // Used to update the points as a callback
   void points() {
     // Updates the Finished Quiz Page
-  //  _pages.removeAt(_pages.length - 1);
+    //  _pages.removeAt(_pages.length - 1);
 
     // Updates the total score
-     //_totalPoints = totalPoints + _totalPoints;
+    //_totalPoints = totalPoints + _totalPoints;
 
     if (moduleName == "Module 1") {
       FirebaseFunctions().Module1.get().then((doc) {
         if (doc.data() != null) {
-          _totalPoints =
-              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
         }
       });
-    }
-    else if (moduleName == "Module 2") {
+    } else if (moduleName == "Module 2") {
       FirebaseFunctions().Module2.get().then((doc) {
         if (doc.data() != null) {
-          _totalPoints =
-              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
         }
       });
-    }
-    else if (moduleName == "Module 3") {
+    } else if (moduleName == "Module 3") {
       FirebaseFunctions().Module3.get().then((doc) {
         if (doc.data() != null) {
-          _totalPoints =
-              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
         }
       });
-    }
-    else if (moduleName == "Module 4") {
+    } else if (moduleName == "Module 4") {
       FirebaseFunctions().Module4.get().then((doc) {
         if (doc.data() != null) {
-          _totalPoints =
-              (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
+          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
         }
       });
     }
 
-
-
-  //  _pages.add(const FinishedQuizPage());
+    //  _pages.add(const FinishedQuizPage());
 
     //return _totalPoints;
   }
-
-
-
 
   // Gets the points
   int get currentPageIndex => _currentPageIndex;
@@ -104,31 +91,30 @@ class _QuizScreenState extends State<QuizScreen> {
 
   // Gets the quiz questions
   Future<void> _prepareQuiz() async {
-
-      if(moduleName == "Module 1"){
-        FirebaseFunctions().Module1.get().then((doc){
-          _currentPageIndex =
-              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-        });
-      }
-      if(moduleName == "Module 2"){
-        FirebaseFunctions().Module2.get().then((doc){
-          _currentPageIndex =
-              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-        });
-      }
-      if(moduleName == "Module 3"){
-        FirebaseFunctions().Module3.get().then((doc){
-          _currentPageIndex =
-              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-        });
-      }
-      if(moduleName == "Module 4"){
-        FirebaseFunctions().Module4.get().then((doc){
-          _currentPageIndex =
-              (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-        });
-      }
+    if (moduleName == "Module 1") {
+      FirebaseFunctions().Module1.get().then((doc) {
+        _currentPageIndex =
+            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+      });
+    }
+    if (moduleName == "Module 2") {
+      FirebaseFunctions().Module2.get().then((doc) {
+        _currentPageIndex =
+            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+      });
+    }
+    if (moduleName == "Module 3") {
+      FirebaseFunctions().Module3.get().then((doc) {
+        _currentPageIndex =
+            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+      });
+    }
+    if (moduleName == "Module 4") {
+      FirebaseFunctions().Module4.get().then((doc) {
+        _currentPageIndex =
+            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
+      });
+    }
 
     await FirebaseFirestore.instance
         .collection("modules")
@@ -158,59 +144,31 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
-  reset(){
+  reset() {
     bool complete = false;
 
     String name1 = moduleName;
-    if(name1 == "Module 1"){
+    if (name1 == "Module 1") {
       int correct = 0;
       int total = 0;
-      FirebaseFunctions().Module1.get().then((doc){
-         correct =
-            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+      double totalScore = 0;
+      FirebaseFunctions().Module1.get().then((doc) {
+        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
-            .doc("Module1").get().then((doc){
-
-           total =
-              (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total >= 0.8){
-            complete=true;
+            .doc("Module1")
+            .get()
+            .then((doc) {
+          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+          totalScore = ((correct/total) *100) as double;
+          if (totalScore >= 80) {
+            complete = true;
           }
           FirebaseFunctions().Module1.update({
             "progress": 0,
             "completed": complete,
             "correct": 0,
-          });
-           Navigator.push(
-             context,
-             MaterialPageRoute(builder: (context) {
-               return HomeScreen();
-             }),
-           );
-        });
-      });
-    }
-
-    if(name1 == "Module 2"){
-      int correct = 0;
-      int total = 0;
-      FirebaseFunctions().Module2.get().then((doc){
-        correct =
-            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
-        FirebaseFirestore.instance
-            .collection("modules")
-            .doc("Module2").get().then((doc){
-
-          total =
-              (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total >= 0.8){
-            complete=true;
-          }
-          FirebaseFunctions().Module2.update({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
+            "totalScore": totalScore
           });
           Navigator.push(
             context,
@@ -222,55 +180,123 @@ class _QuizScreenState extends State<QuizScreen> {
       });
     }
 
-    if(name1 == "Module 3"){
+    if (name1 == "Module 2") {
       int correct = 0;
       int total = 0;
-      FirebaseFunctions().Module3.get().then((doc){
-         correct =
-            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+      double totalScore = 0;
+      FirebaseFunctions().Module2.get().then((doc) {
+        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
-            .doc("Module3").get().then((doc){
-
-           total =
-              (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total >= 0.8){
-            complete=true;
+            .doc("Module2")
+            .get()
+            .then((doc) {
+          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+          totalScore = ((correct/total) *100) as double;
+          if (totalScore >= 80) {
+            complete = true;
           }
-           FirebaseFunctions().Module3.update({
-             "progress": 0,
-             "completed": complete,
-             "correct": 0,
-           });
-           Navigator.push(
-             context,
-             MaterialPageRoute(builder: (context) {
-               return HomeScreen();
-             }),
-           );
+          FirebaseFunctions().Module2.update({
+            "progress": 0,
+            "completed": complete,
+            "correct": 0,
+            "totalScore": totalScore
+          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return HomeScreen();
+            }),
+          );
         });
       });
     }
 
-    if(name1 == "Module 4"){
+    if (name1 == "Module 3") {
       int correct = 0;
       int total = 0;
-      FirebaseFunctions().Module4.get().then((doc){
-        correct =
-            (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+      double totalScore = 0;
+      FirebaseFunctions().Module3.get().then((doc) {
+        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
-            .doc("Module4").get().then((doc){
+            .doc("Module3")
+            .get()
+            .then((doc) {
+          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+          totalScore = ((correct/total) *100) as double;
+          if (totalScore >= 80) {
+            complete = true;
+          }
+          FirebaseFunctions().Module3.update({
+            "progress": 0,
+            "completed": complete,
+            "correct": 0,
+            "totalScore": totalScore
+          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return HomeScreen();
+            }),
+          );
+        });
+      });
+    }
 
-          total =
-              (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          if (correct/total >= 0.8){
-            complete=true;
+    if (name1 == "Module 4") {
+      int correct = 0;
+      int total = 0;
+      double totalScore = 0;
+      FirebaseFunctions().Module4.get().then((doc) {
+        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        FirebaseFirestore.instance
+            .collection("modules")
+            .doc("Module4")
+            .get()
+            .then((doc) {
+          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+          totalScore = ((correct/total) *100) as double;
+          if (totalScore >= 80) {
+            complete = true;
           }
           FirebaseFunctions().Module4.update({
             "progress": 0,
             "completed": complete,
             "correct": 0,
+            "totalScore": totalScore
+          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return HomeScreen();
+            }),
+          );
+        });
+      });
+    }
+
+    if (name1 == "Survey") {
+      int correct = 0;
+      int total = 0;
+      double totalScore = 0;
+      FirebaseFunctions().Module4.get().then((doc) {
+        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
+        FirebaseFirestore.instance
+            .collection("modules")
+            .doc("Module4")
+            .get()
+            .then((doc) {
+          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
+          totalScore = ((correct/total) *100) as double;
+          if (totalScore >= 80) {
+            complete = true;
+          }
+          FirebaseFunctions().Module4.update({
+            "progress": 0,
+            "completed": complete,
+            "correct": 0,
+            "totalScore": totalScore
           });
           Navigator.push(
             context,
@@ -308,7 +334,6 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                 Expanded(
                   child: Stack(
-
                     fit: StackFit.expand,
                     children: [
                       Padding(
@@ -347,6 +372,4 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
     );
   }
-
-
 }

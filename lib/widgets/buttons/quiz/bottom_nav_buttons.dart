@@ -102,7 +102,6 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
                   padding: const EdgeInsets.symmetric(vertical: 2.0),
                   child: ContrastButtonText(
                     text: widget.isLastPage ? "Finish" : "Next",
-
                   ),
                 ),
                 width: SizeParams().next(context),
