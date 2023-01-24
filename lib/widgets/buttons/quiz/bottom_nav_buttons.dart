@@ -41,7 +41,7 @@ class _BottomNavButtonsState extends State<BottomNavButtons> {
   }
 
   void nextTimer(){
-    Future.delayed(const Duration(seconds: 5), () { //asynchronous delay
+    Future.delayed(const Duration(seconds: 1), () { //asynchronous delay
       if (this.mounted) { //checks if widget is still active and not disposed
         setState(() { //tells the widget builder to rebuild again because ui has updated
           _visible=true; //update the variable declare this under your class so its accessible for both your widget build and initState which is located under widget build{}

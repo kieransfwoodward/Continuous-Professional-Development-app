@@ -1,5 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/styling/size_params.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cpd/functions/firebase_functions.dart';
 
@@ -21,28 +23,19 @@ class FinishedQuizPage extends StatelessWidget {
     QuizScreen.of(context)?.points();
 
     if (QuizScreen.of(context) != null) {
-      String name1 = QuizScreen.of(context)!.moduleName;
-      if(name1 == "Module 1"){
-        FirebaseFunctions().Module1.update({
-          "completed": false,
 
-        });
-      }
-      if(name1 == "Module 2"){
-        FirebaseFunctions().Module2.update({
-          "completed": false,
-        });
-      }
-      if(name1 == "Module 3"){
-        FirebaseFunctions().Module3.update({
-          "completed": false,
-        });
-      }
-      if(name1 == "Module 4"){
-        FirebaseFunctions().Module4.update({
-          "completed": false,
-        });
-      }
+      String name1 = QuizScreen.of(context)!.moduleName;
+      int page = QuizScreen.of(context)!.currentPageIndex +1;
+      FirebaseFirestore.instance
+          .collection("modules")
+          .doc(name1).collection("users")
+          .doc(FirebaseAuth.instance.currentUser!.uid).set({
+        "completed": false,
+      });
+
+
+
+
 
     }
 

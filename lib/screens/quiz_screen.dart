@@ -4,6 +4,7 @@ import 'package:cpd/widgets/app_bars/quiz_question_app_bar.dart';
 import 'package:cpd/widgets/buttons/quiz/bottom_nav_buttons.dart';
 import 'package:cpd/widgets/content_area.dart';
 import 'package:cpd/widgets/quiz/finished_quiz_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -50,31 +51,16 @@ class _QuizScreenState extends State<QuizScreen> {
     // Updates the total score
     //_totalPoints = totalPoints + _totalPoints;
 
-    if (moduleName == "Module 1") {
-      FirebaseFunctions().Module1.get().then((doc) {
+
+      FirebaseFirestore.instance
+          .collection("modules")
+          .doc(moduleName).collection("users")
+          .doc(FirebaseAuth.instance.currentUser!.uid).get().then((doc) {
         if (doc.data() != null) {
           _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
         }
       });
-    } else if (moduleName == "Module 2") {
-      FirebaseFunctions().Module2.get().then((doc) {
-        if (doc.data() != null) {
-          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-        }
-      });
-    } else if (moduleName == "Module 3") {
-      FirebaseFunctions().Module3.get().then((doc) {
-        if (doc.data() != null) {
-          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-        }
-      });
-    } else if (moduleName == "Module 4") {
-      FirebaseFunctions().Module4.get().then((doc) {
-        if (doc.data() != null) {
-          _totalPoints = (doc.data() as Map<String, dynamic>)["correct"] ?? 99;
-        }
-      });
-    }
+
 
     //  _pages.add(const FinishedQuizPage());
 
@@ -91,30 +77,15 @@ class _QuizScreenState extends State<QuizScreen> {
 
   // Gets the quiz questions
   Future<void> _prepareQuiz() async {
-    if (moduleName == "Module 1") {
-      FirebaseFunctions().Module1.get().then((doc) {
+
+      FirebaseFirestore.instance
+          .collection("modules")
+          .doc(moduleName).collection("users")
+          .doc(FirebaseAuth.instance.currentUser!.uid).get().then((doc) {
         _currentPageIndex =
             (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
       });
-    }
-    if (moduleName == "Module 2") {
-      FirebaseFunctions().Module2.get().then((doc) {
-        _currentPageIndex =
-            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-      });
-    }
-    if (moduleName == "Module 3") {
-      FirebaseFunctions().Module3.get().then((doc) {
-        _currentPageIndex =
-            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-      });
-    }
-    if (moduleName == "Module 4") {
-      FirebaseFunctions().Module4.get().then((doc) {
-        _currentPageIndex =
-            (doc.data() as Map<String, dynamic>)["progress"] ?? 0;
-      });
-    }
+
 
     await FirebaseFirestore.instance
         .collection("modules")
@@ -148,111 +119,20 @@ class _QuizScreenState extends State<QuizScreen> {
     bool complete = false;
 
     String name1 = moduleName;
-    if (name1 == "Module 1") {
-      int correct = 0;
-      int total = 0;
-      double totalScore = 0;
-      FirebaseFunctions().Module1.get().then((doc) {
-        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
-        FirebaseFirestore.instance
-            .collection("modules")
-            .doc("Module1")
-            .get()
-            .then((doc) {
-          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          totalScore = ((correct/total) *100) as double;
-          if (totalScore >= 80) {
-            complete = true;
-          }
-          FirebaseFunctions().Module1.update({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
-            "totalScore": totalScore
-          });
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return HomeScreen();
-            }),
-          );
-        });
-      });
-    }
 
-    if (name1 == "Module 2") {
-      int correct = 0;
-      int total = 0;
-      double totalScore = 0;
-      FirebaseFunctions().Module2.get().then((doc) {
-        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
-        FirebaseFirestore.instance
-            .collection("modules")
-            .doc("Module2")
-            .get()
-            .then((doc) {
-          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          totalScore = ((correct/total) *100) as double;
-          if (totalScore >= 80) {
-            complete = true;
-          }
-          FirebaseFunctions().Module2.update({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
-            "totalScore": totalScore
-          });
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return HomeScreen();
-            }),
-          );
-        });
-      });
-    }
 
-    if (name1 == "Module 3") {
-      int correct = 0;
-      int total = 0;
-      double totalScore = 0;
-      FirebaseFunctions().Module3.get().then((doc) {
-        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
-        FirebaseFirestore.instance
-            .collection("modules")
-            .doc("Module3")
-            .get()
-            .then((doc) {
-          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          totalScore = ((correct/total) *100) as double;
-          if (totalScore >= 80) {
-            complete = true;
-          }
-          FirebaseFunctions().Module3.update({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
-            "totalScore": totalScore
-          });
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return HomeScreen();
-            }),
-          );
-        });
-      });
-    }
 
-    if (name1 == "Module 4") {
       int correct = 0;
       int total = 0;
       double totalScore = 0;
-      FirebaseFunctions().Module4.get().then((doc) {
+      FirebaseFirestore.instance
+          .collection("modules")
+          .doc(name1).collection("users")
+          .doc(FirebaseAuth.instance.currentUser!.uid).get().then((doc) {
         correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
         FirebaseFirestore.instance
             .collection("modules")
-            .doc("Module4")
+            .doc(name1)
             .get()
             .then((doc) {
           total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
@@ -260,7 +140,10 @@ class _QuizScreenState extends State<QuizScreen> {
           if (totalScore >= 80) {
             complete = true;
           }
-          FirebaseFunctions().Module4.update({
+          FirebaseFirestore.instance
+              .collection("modules")
+              .doc(name1).collection("users")
+              .doc(FirebaseAuth.instance.currentUser!.uid).set({
             "progress": 0,
             "completed": complete,
             "correct": 0,
@@ -274,39 +157,10 @@ class _QuizScreenState extends State<QuizScreen> {
           );
         });
       });
-    }
 
-    if (name1 == "Survey") {
-      int correct = 0;
-      int total = 0;
-      double totalScore = 0;
-      FirebaseFunctions().Module4.get().then((doc) {
-        correct = (doc.data() as Map<String, dynamic>)["correct"] ?? 0;
-        FirebaseFirestore.instance
-            .collection("modules")
-            .doc("Module4")
-            .get()
-            .then((doc) {
-          total = (doc.data() as Map<String, dynamic>)["total"] ?? 0;
-          totalScore = ((correct/total) *100) as double;
-          if (totalScore >= 80) {
-            complete = true;
-          }
-          FirebaseFunctions().Module4.update({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
-            "totalScore": totalScore
-          });
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return HomeScreen();
-            }),
-          );
-        });
-      });
-    }
+
+
+
   }
 
   @override

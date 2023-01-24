@@ -166,26 +166,9 @@ class _LoginScreenState extends State<LoginScreen> {
             "account_setup": true,
           }),
         );
-        FirebaseFunctions().Module1.set({
-          "completed": false,
-          "correct": 0,
-          "progress": 0,
-        });
-        FirebaseFunctions().Module2.set({
-          "completed": false,
-          "correct": 0,
-          "progress": 0,
-        });
-        FirebaseFunctions().Module3.set({
-          "completed": false,
-          "correct": 0,
-          "progress": 0,
-        });
-        FirebaseFunctions().Module4.set({
-          "completed": false,
-          "correct": 0,
-          "progress": 0,
-        });
+        //loop through firebase count number of modules
+        //for loop .set()
+
       }
     });
   }

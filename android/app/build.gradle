@@ -48,7 +48,7 @@ android {
     defaultConfig {
         multiDexEnabled true
         applicationId "com.citb.cpd"
-        minSdkVersion localProperties.getProperty('flutter.minSdkVersion').toInteger()
+        minSdkVersion 19
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

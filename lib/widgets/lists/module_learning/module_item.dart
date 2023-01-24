@@ -5,6 +5,7 @@ import 'package:cpd/styling/custom_border.dart';
 import 'package:cpd/widgets/image/module_banner_image.dart';
 import 'package:cpd/widgets/lists/module_learning/custom_progress_indicator.dart';
 import 'package:cpd/widgets/lists/module_learning/module_tile_details.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../../functions/firebase_functions.dart';
@@ -54,26 +55,14 @@ class _ModuleItemState extends State<ModuleItem> {
   @override
   void initState() {
     _getQuestionCount();
-if(widget.data["name"] == "Module 1"){
-  FirebaseFunctions().Module1.get().then((doc) {
+
+  FirebaseFirestore.instance
+      .collection("modules")
+      .doc(widget.data["name"]).collection("users")
+      .doc(FirebaseAuth.instance.currentUser!.uid).get().then((doc) {
     isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
   });
-}
-    if(widget.data["name"] == "Module 2"){
-      FirebaseFunctions().Module2.get().then((doc) {
-        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
-      });
-    }
-    if(widget.data["name"] == "Module 3"){
-      FirebaseFunctions().Module3.get().then((doc) {
-        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
-      });
-    }
-    if(widget.data["name"] == "Module 4"){
-      FirebaseFunctions().Module4.get().then((doc) {
-        isComplete = (doc.data() as Map<String, dynamic>)["completed"] ?? false;
-      });
-    }
+
 
       super.initState();
   }
@@ -101,7 +90,7 @@ if(widget.data["name"] == "Module 1"){
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(widget.data["name"],
+                      Text(widget.data["title"],
                           style: Theme.of(context).textTheme.headline6),
                       CustomProgressIndicator(module: 'widget.data["name"]', isComplete: isComplete),
                     ],

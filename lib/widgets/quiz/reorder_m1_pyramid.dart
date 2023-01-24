@@ -1,7 +1,9 @@
 import 'dart:math';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cpd/screens/quiz_screen.dart';
 import 'package:cpd/widgets/lists/list_view_separator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -72,26 +74,12 @@ class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
 
     String name1 = QuizScreen.of(context)!.moduleName;
     int page = QuizScreen.of(context)!.currentPageIndex + 1;
-    if (name1 == "Module 1") {
-      FirebaseFunctions().Module1.update({
-        "progress": page,
-      });
-    }
-    if (name1 == "Module 2") {
-      FirebaseFunctions().Module2.update({
-        "progress": page,
-      });
-    }
-    if (name1 == "Module 3") {
-      FirebaseFunctions().Module3.update({
-        "progress": page,
-      });
-    }
-    if (name1 == "Module 4") {
-      FirebaseFunctions().Module4.update({
-        "progress": page,
-      });
-    }
+    FirebaseFirestore.instance
+        .collection("modules")
+        .doc(name1).collection("users")
+        .doc(FirebaseAuth.instance.currentUser!.uid).set({
+      "progress": page,
+    });
   }
 
   List<String> titles = [
