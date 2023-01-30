@@ -53,7 +53,9 @@ class _learn_expandM1_peakRapport extends State<learn_expandM1_peakRapport> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   @override
@@ -81,8 +83,15 @@ class _learn_expandM1_peakRapport extends State<learn_expandM1_peakRapport> {
               ),
             ),
             const ListViewSeparator(),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Text(
+                widget.data["question_subtitle1"],
+                style: Theme.of(context).textTheme.subtitle1,
+              ),
+            ),
             Text(
-              widget.data["question_subtitle"],
+              widget.data["question_subtitle2"],
               style: Theme.of(context).textTheme.subtitle1,
             ),
             Card1(),
@@ -125,7 +134,7 @@ class Card1 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in [
-            "This level of communication is when individuals are giving their opinion and judgments on the situation. "
+            "This level of communication is when individuals are giving their opinion and judgements on the situation. "
                 "For example, I believe if we were to recruit in the technical area, it will give us a stronger "
                 "presence."
           ])
@@ -438,7 +447,7 @@ class Card5 extends StatelessWidget {
       return Column(
         children: <Widget>[
           for (var i in ["Someone is prepared to say what they think and feel. This usually includes giving feedback, for "
-              "example when you stop imputing at team meetings, I’m unclear what you think, and I become confused."]) buildItem("${i}"),
+              "example when you stop inputting at team meetings, I’m unclear what you think, and I become confused."]) buildItem("${i}"),
         ],
       );
     }

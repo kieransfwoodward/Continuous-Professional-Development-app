@@ -1,5 +1,7 @@
 import 'package:cpd/widgets/quiz/drag_and_drop.dart';
 import 'package:cpd/widgets/quiz/learn_text_input.dart';
+import 'package:cpd/widgets/quiz/learn_text_input_self.dart';
+import 'package:cpd/widgets/quiz/learn_text_input2.dart';
 import 'package:cpd/widgets/quiz/single_image_multiple_choice_question.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +17,8 @@ import '../../widgets/quiz/learn_image.dart';
 import '../../widgets/quiz/learn_img2.dart';
 import '../../widgets/quiz/learn_img3.dart';
 import '../../widgets/quiz/learn_text.dart';
+import '../../widgets/quiz/learn_text2.dart';
+import '../../widgets/quiz/learn_text3.dart';
 import '../../widgets/quiz/learn_link.dart';
 import '../../widgets/quiz/learn_link_mod.dart';
 import '../../widgets/quiz/learn_video.dart';
@@ -32,6 +36,8 @@ import '../../widgets/quiz/image_slideshow.dart';
 import '../../widgets/quiz/check_understanding.dart';
 import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
 import '../../widgets/quiz/learn_expandM2.dart';
+import '../../widgets/quiz/learn_expandM1_collaboration.dart';
+import '../../widgets/quiz/learn_expandM1_push.dart';
 import '../../widgets/quiz/learn_expandM3_Const.dart';
 import '../../widgets/quiz/learn_expandM3_DragDropAns.dart';
 import '../../widgets/quiz/learn_expandM1_peakRapport.dart';
@@ -69,6 +75,20 @@ class QuestionFunctions {
     }
     if (type == "learn_text") {
       return learn_text(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_text2") {
+      return learn_text2(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_text3") {
+      return learn_text3(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,
@@ -129,6 +149,20 @@ class QuestionFunctions {
         data: data,
       );
     }
+    if (type == "learn_text_input_self") {
+      return learn_text_input_self(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_text_input2") {
+      return learn_text_input2(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
     if (type == "drag_drop_module_one") {
       return ExpansionTileExample(
         moduleId: moduleId,
@@ -181,6 +215,20 @@ class QuestionFunctions {
     if (type == "drag_drop_module_three") {
       return drag_and_drop(
 
+      );
+    }
+    if (type == "learn_expandM1_collaboration") {
+      return learn_expandM1_collaboration(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type == "learn_expandM1_push") {
+      return learn_expandM1_push(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
       );
     }
     if (type == "learn_M2Expand") {

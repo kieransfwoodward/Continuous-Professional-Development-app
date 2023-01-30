@@ -112,6 +112,19 @@ class ModuleContent extends StatelessWidget {
                                 ),
 
                             ),
+                            const ListViewSeparator(),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                top: 10.0,
+                                bottom: 4.0,
+                              ),
+                              child: Text(
+                                "At the end of the module you will be presented "
+                                    "with a series of questions. If you get over 80% "
+                                    "correct you will have completed the module successfully.",
+                                style: Theme.of(context).textTheme.subtitle1,
+                              ),
+                            ),
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 16.0),
                               child: InkWell(

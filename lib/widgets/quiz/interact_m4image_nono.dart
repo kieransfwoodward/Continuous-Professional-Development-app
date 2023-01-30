@@ -80,7 +80,9 @@ class _interact_m4image_nono extends State<interact_m4image_nono> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
   }
 

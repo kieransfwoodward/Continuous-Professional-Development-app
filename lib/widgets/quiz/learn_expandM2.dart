@@ -53,7 +53,9 @@ class _learn_M2Expand extends State<learn_M2Expand> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   @override

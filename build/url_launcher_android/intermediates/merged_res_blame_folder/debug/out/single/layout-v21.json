@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+        "merged": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+        "merged": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+        "merged": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_action.xml"
+        "merged": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
     }
 ]

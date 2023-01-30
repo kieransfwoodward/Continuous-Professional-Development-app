@@ -62,7 +62,9 @@ class _CheckUnderstanding
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
 
 

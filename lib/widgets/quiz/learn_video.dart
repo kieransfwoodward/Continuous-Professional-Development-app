@@ -68,7 +68,9 @@ class _learn_videoState extends State<learn_video> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   @override

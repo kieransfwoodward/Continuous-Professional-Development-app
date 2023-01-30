@@ -70,7 +70,9 @@ class _SingleImageMultipleChoiceQuestionState
                   .doc(FirebaseAuth.instance.currentUser!.uid).set({
                 "correct": correct + 1,
 
-              });
+              },
+                SetOptions(merge:true),
+              );
             }
           });
 
@@ -86,7 +88,9 @@ class _SingleImageMultipleChoiceQuestionState
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
 
 

@@ -80,7 +80,9 @@ class _interact_m4image_calltoaction extends State<interact_m4image_calltoaction
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
   }
 
@@ -110,8 +112,8 @@ class _interact_m4image_calltoaction extends State<interact_m4image_calltoaction
     title: Text("5. Generate"),
     content: Text("Innovation is an ongoing process and often you need to generate different possibilities and refine "
         "knowledge as you go along. Keep going back to developing the idea, learning, refining, testing and experimenting. "
-        "Remember there are many different ways of adding value, financial, social and environmental for example, and "
-        "there are many different ways of innovating. Think about processes, products, people and beyond."),
+        "\n\nRemember there are many different ways of adding value, financial, social and environmental for example, and "
+        "there are many different ways of innovating. \n\nThink about processes, products, people and beyond."),
     actions: [
       //okButton,
     ],

@@ -91,12 +91,14 @@ class _reorder_m2_collaborative extends State<reorder_m2_collaborative> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   List<String> titles = [
     "Conflict Resolution",
-    "Emotional Intellegence",
+    "Emotional Intelligence",
     "Open-Mindedness",
     "Adoptability",
     "Organisation",

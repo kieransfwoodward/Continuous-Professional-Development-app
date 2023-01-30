@@ -80,7 +80,9 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
   }
 
@@ -99,7 +101,7 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
     ],
   );
   AlertDialog alert3 = const AlertDialog(
-    title: Text("Connections"),
+    title: Text("Lessons-learned"),
     content: Text("No connection between lessons-learned and the work on site."),
     actions: [
       //okButton,
@@ -120,14 +122,14 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
     ],
   );
   AlertDialog alert6 = const AlertDialog(
-    title: Text("Ignorance"),
+    title: Text("Ignored"),
     content: Text("Solutions and suggestions ignored."),
     actions: [
       //okButton,
     ],
   );
   AlertDialog alert7 = const AlertDialog(
-    title: Text("Reactions"),
+    title: Text("Habits"),
     content: Text("Reacting with habits and emotions rather than analytical thinking."),
     actions: [
       //okButton,
@@ -201,7 +203,7 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
                         },
                       );
                     },
-                    child: Text('Connections'),
+                    child: Text('Lessons-learned'),
                   ),
                 ],
               ),
@@ -263,7 +265,7 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
                           },
                         );
                       },
-                      child: Text('Ignorance'),
+                      child: Text('Ignored'),
                     ),
                   ),
                   Padding(
@@ -278,7 +280,7 @@ class _interact_m3image_collab extends State<interact_m3image_collab> {
                           },
                         );
                       },
-                      child: Text('Reactions'),
+                      child: Text('Habits'),
                     ),
                   ),
                 ],

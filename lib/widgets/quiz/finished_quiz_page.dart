@@ -31,7 +31,9 @@ class FinishedQuizPage extends StatelessWidget {
           .doc(name1).collection("users")
           .doc(FirebaseAuth.instance.currentUser!.uid).set({
         "completed": false,
-      });
+      },
+        SetOptions(merge:true),
+      );
 
 
 

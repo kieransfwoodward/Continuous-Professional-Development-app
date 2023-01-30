@@ -80,7 +80,9 @@ class _interact_m4image_exchange extends State<interact_m4image_exchange> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
   }
 

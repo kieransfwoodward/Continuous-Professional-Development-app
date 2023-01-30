@@ -61,7 +61,9 @@ class _learn_text_inputState extends State<learn_text_input> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   @override

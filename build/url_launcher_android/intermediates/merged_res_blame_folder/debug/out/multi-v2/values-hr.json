@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
-                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/values-hr/values-hr.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/kieranwoodward/Documents/GitHub/CPD2/build/url_launcher_android/intermediates/res/merged/debug/values-hr/values-hr.xml",
+            "outputFile": "/Users/will/Documents/Work/CPD2/build/url_launcher_android/intermediates/res/merged/debug/values-hr/values-hr.xml",
             "map": [
                 {
-                    "source": "/Users/kieranwoodward/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/values-hr/values-hr.xml",
+                    "source": "/Users/will/.gradle/caches/transforms-2/files-2.1/80aa5a7ccd46ef3ad88c257ba4115b28/core-1.6.0/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

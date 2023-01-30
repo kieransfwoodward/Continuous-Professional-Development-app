@@ -36,14 +36,20 @@ class _LoginScreenState extends State<LoginScreen> {
   // Initialise the required functionality for receiving and processing entered data
   final GlobalKey<FormState> _numberKey = GlobalKey<FormState>();
   final GlobalKey<FormState> _usernameKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _lastnameKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _companyKey = GlobalKey<FormState>();
 
   final GlobalKey<FormState> _verifyKey = GlobalKey<FormState>();
   final TextEditingController _phoneNumber = TextEditingController();
   final TextEditingController _username = TextEditingController();
+  final TextEditingController _lastname = TextEditingController();
+  final TextEditingController _company = TextEditingController();
   final TextEditingController _verificationCode = TextEditingController();
 
   late FocusNode _phoneNumberFN;
   late FocusNode _usernameFN;
+  late FocusNode _lastnameFN;
+  late FocusNode _companyFN;
   late FocusNode _verifyFN;
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -55,6 +61,8 @@ class _LoginScreenState extends State<LoginScreen> {
     // Initialise the focus nodes, for listening to on-click events
     _phoneNumberFN = FocusNode();
     _usernameFN = FocusNode();
+    _lastnameFN = FocusNode();
+    _companyFN = FocusNode();
     _verifyFN = FocusNode();
     super.initState();
   }
@@ -64,6 +72,8 @@ class _LoginScreenState extends State<LoginScreen> {
     // Close the focus nodes to prevent memory leaks
     _phoneNumberFN.dispose();
     _usernameFN.dispose();
+    _lastnameFN.dispose();
+    _companyFN.dispose();
     _verifyFN.dispose();
     super.dispose();
   }
@@ -162,8 +172,11 @@ class _LoginScreenState extends State<LoginScreen> {
         }).then(
           (value) => FirebaseFunctions().user.set({
             "full_name": _username.text,
+            "last_name": _lastname.text,
+            "company_name": _company.text,
             "profile_url": "",
             "account_setup": true,
+            "time_created": DateTime.now()
           }),
         );
         //loop through firebase count number of modules
@@ -237,7 +250,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         //Used for validation
                         key: _usernameKey,
                         child: Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
+                          padding: const EdgeInsets.only(bottom: 10),
                           child: Row(
                             children: [
                               Expanded(
@@ -247,26 +260,99 @@ class _LoginScreenState extends State<LoginScreen> {
                                   onEditingComplete: () {
                                     _usernameFN.unfocus();
                                   },
-                                  maxLength: 15,
+                                  //maxLength: 15,
                                   focusNode: _usernameFN,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(
                                       borderRadius: CustomBorder().borderRadius,
                                     ),
-                                    labelText: "Username",
-                                    hintText: "E.g., JohnSmith",
+                                    labelText: "First Name",
+                                    hintText: "E.g., John",
                                   ),
                                   textInputAction: TextInputAction.done,
                                   keyboardType: TextInputType.text,
                                   validator: (name) {
                                     if (name == null || name.isEmpty) {
-                                      return "Enter a valid username";
+                                      return "Enter a valid first name";
                                     }
                                     return null;
                                   },
                                 ),
                               ),
-
+                            ],
+                          ),
+                        ),
+                      ),
+                      Form(
+                        //Used for validation
+                        key: _lastnameKey,
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: TextFormField(
+                                  controller: _lastname,
+                                  onTap: () => _lastnameFN.requestFocus(),
+                                  onEditingComplete: () {
+                                    _lastnameFN.unfocus();
+                                  },
+                                  //maxLength: 15,
+                                  focusNode: _lastnameFN,
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                      borderRadius: CustomBorder().borderRadius,
+                                    ),
+                                    labelText: "Last Name",
+                                    hintText: "E.g., Smith",
+                                  ),
+                                  textInputAction: TextInputAction.done,
+                                  keyboardType: TextInputType.text,
+                                  validator: (name) {
+                                    if (name == null || name.isEmpty) {
+                                      return "Enter a valid last name";
+                                    }
+                                    return null;
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Form(
+                        //Used for validation
+                        key: _companyKey,
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: TextFormField(
+                                  controller: _company,
+                                  onTap: () => _companyFN.requestFocus(),
+                                  onEditingComplete: () {
+                                    _companyFN.unfocus();
+                                  },
+                                  //maxLength: 20,
+                                  focusNode: _companyFN,
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                      borderRadius: CustomBorder().borderRadius,
+                                    ),
+                                    labelText: "Company",
+                                    hintText: "E.g., Morgan Sindall",
+                                  ),
+                                  textInputAction: TextInputAction.done,
+                                  keyboardType: TextInputType.text,
+                                  validator: (name) {
+                                    if (name == null || name.isEmpty) {
+                                      return "Enter a valid company name";
+                                    }
+                                    return null;
+                                  },
+                                ),
+                              ),
                             ],
                           ),
                         ),

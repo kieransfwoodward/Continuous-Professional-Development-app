@@ -54,7 +54,9 @@ class _learn_expandM3_DragDropAns extends State<learn_expandM3_DragDropAns> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   @override

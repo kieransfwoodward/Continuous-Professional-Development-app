@@ -79,7 +79,9 @@ class _reorder_m1_pyramid extends State<reorder_m1_pyramid> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   List<String> titles = [

@@ -79,7 +79,9 @@ class _reorder_m2_designProcess extends State<reorder_m2_designProcess> {
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
   }
 
   List<String> titles = [

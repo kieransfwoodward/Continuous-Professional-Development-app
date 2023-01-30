@@ -82,7 +82,9 @@ class _SingleMultipleChoiceQuestionState
                   .doc(FirebaseAuth.instance.currentUser!.uid).set({
                 "correct": correct + 1,
 
-              });
+              },
+                SetOptions(merge:true),
+              );
             }
           });
 
@@ -99,7 +101,9 @@ class _SingleMultipleChoiceQuestionState
         .doc(name1).collection("users")
         .doc(FirebaseAuth.instance.currentUser!.uid).set({
       "progress": page,
-    });
+    },
+      SetOptions(merge:true),
+    );
 
   }
 
