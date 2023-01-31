@@ -12,9 +12,9 @@ class FinishedQuizPage extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  String _getModuleName(BuildContext context) {
+  String _getModuleTitle(BuildContext context) {
     if (QuizScreen.of(context) != null) {
-      return QuizScreen.of(context)!.moduleName;
+      return QuizScreen.of(context)!.moduleTitle;
     }
     return "Unknown Module";
   }
@@ -65,7 +65,7 @@ class FinishedQuizPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 4.0),
               child: Text(
-                "Congratulations!\n\nYou've finished ${_getModuleName(context)}",
+                "Congratulations!\n\nYou've finished ${_getModuleTitle(context)}",
                 style: Theme.of(context).textTheme.headline6,
                 textAlign: TextAlign.center,
               ),

@@ -35,6 +35,7 @@ import '../../widgets/quiz/interact_m4image_esteem.dart';
 import '../../widgets/quiz/image_slideshow.dart';
 import '../../widgets/quiz/check_understanding.dart';
 import '../../widgets/quiz/single_multiple_choice_question_blank.dart';
+import '../../widgets/quiz/single_multiple_choice_question_review.dart';
 import '../../widgets/quiz/learn_expandM2.dart';
 import '../../widgets/quiz/learn_expandM1_collaboration.dart';
 import '../../widgets/quiz/learn_expandM1_push.dart';
@@ -66,8 +67,16 @@ class QuestionFunctions {
         questionNumber: questionNumber,
         data: data,
       );
-    }if (type.contains("single_multiple_blank")) {
+    }
+    if (type.contains("single_multiple_blank")) {
       return SingleMultipleChoiceQuestionBlank(
+        moduleId: moduleId,
+        questionNumber: questionNumber,
+        data: data,
+      );
+    }
+    if (type.contains("single_multiple_review")) {
+      return SingleMultipleChoiceQuestionReview(
         moduleId: moduleId,
         questionNumber: questionNumber,
         data: data,

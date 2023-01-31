@@ -74,6 +74,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
   // Gets the module name
   String get moduleName => widget.data["name"];
+  // Gets the module title
+  String get moduleTitle => widget.data["title"];
 
   // Gets the quiz questions
   Future<void> _prepareQuiz() async {
@@ -117,6 +119,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
   reset() {
     bool complete = false;
+    double complete_score = 0;
+    String timeComplete = "";
 
     String name1 = moduleName;
 
@@ -139,16 +143,35 @@ class _QuizScreenState extends State<QuizScreen> {
           totalScore = ((correct/total) *100) as double;
           if (totalScore >= 80) {
             complete = true;
+            complete_score = totalScore;
+            //timeComplete
           }
-          FirebaseFirestore.instance
-              .collection("modules")
-              .doc(name1).collection("users")
-              .doc(FirebaseAuth.instance.currentUser!.uid).set({
-            "progress": 0,
-            "completed": complete,
-            "correct": 0,
-            "totalScore": totalScore
-          });
+          if (totalScore >= 80){
+            FirebaseFirestore.instance
+                .collection("modules")
+                .doc(name1).collection("users")
+                .doc(FirebaseAuth.instance.currentUser!.uid).update({
+              "progress": 0,
+              "completed": complete,
+              "correct": 0,
+              "totalScore": totalScore,
+              "time_completed": DateTime.now(),
+              "score_complete": complete_score,
+            });
+          }
+          else{
+            FirebaseFirestore.instance
+                .collection("modules")
+                .doc(name1).collection("users")
+                .doc(FirebaseAuth.instance.currentUser!.uid).update({
+              "progress": 0,
+              "completed": complete,
+              "correct": 0,
+              "totalScore": totalScore,
+              // "time_completed": DateTime.now(),
+              // "score_complete": totalScore,
+            });
+          }
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
