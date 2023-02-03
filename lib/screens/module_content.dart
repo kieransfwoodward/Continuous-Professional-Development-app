@@ -119,9 +119,7 @@ class ModuleContent extends StatelessWidget {
                                 bottom: 4.0,
                               ),
                               child: Text(
-                                "At the end of the module you will be presented "
-                                    "with a series of questions. If you get over 80% "
-                                    "correct you will have completed the module successfully.",
+                                data["review"],
                                 style: Theme.of(context).textTheme.subtitle1,
                               ),
                             ),

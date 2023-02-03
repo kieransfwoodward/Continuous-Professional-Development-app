@@ -136,7 +136,6 @@ class Card1 extends StatelessWidget {
                 "\n\nThe key behaviours are:"
                 "\nGiving information. "
                 "\nProposing. "
-                "\nShutting out."
           ])
             buildItem("${i}"),
         ],
@@ -218,7 +217,6 @@ class Card2 extends StatelessWidget {
                 "\nThe key behaviours are: "
                 "\nSeeking information. "
                 "\nSeeking proposals. "
-                "\nBuilding."
           ])
             buildItem("${i}"),
         ],

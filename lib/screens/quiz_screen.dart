@@ -150,27 +150,31 @@ class _QuizScreenState extends State<QuizScreen> {
             FirebaseFirestore.instance
                 .collection("modules")
                 .doc(name1).collection("users")
-                .doc(FirebaseAuth.instance.currentUser!.uid).update({
+                .doc(FirebaseAuth.instance.currentUser!.uid).set({
               "progress": 0,
               "completed": complete,
               "correct": 0,
               "totalScore": totalScore,
               "time_completed": DateTime.now(),
               "score_complete": complete_score,
-            });
+            },
+              SetOptions(merge:true),
+            );
           }
           else{
             FirebaseFirestore.instance
                 .collection("modules")
                 .doc(name1).collection("users")
-                .doc(FirebaseAuth.instance.currentUser!.uid).update({
+                .doc(FirebaseAuth.instance.currentUser!.uid).set({
               "progress": 0,
               "completed": complete,
               "correct": 0,
               "totalScore": totalScore,
               // "time_completed": DateTime.now(),
               // "score_complete": totalScore,
-            });
+            },
+              SetOptions(merge:true),
+            );
           }
           Navigator.push(
             context,

@@ -479,7 +479,7 @@ class Card5 extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Work Together",
+                            "Working Together",
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText1!

@@ -219,8 +219,8 @@ class _interact_m3image_reliable extends State<interact_m3image_reliable> {
               const Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: Text(
-                    'By following these rules, problems can be raised early so that where possible '
-                    ', solutions can  be sought.',
+                    'By following these rules, problems can be raised early so that where possible,'
+                    ' solutions can be sought.',
                   textAlign: TextAlign.center ,
                 ),
               ),
